@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 注册登录按钮样式 */
+.register-login {
+  float: right;
+}
+
+.register-login a {
+  color: #fff;
+  background-color: #333;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.register-login a:hover {
+  background-color: #555;
+}
+
+/* 正文图片 */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.image-row div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  width: calc((100% - 8%) / 4);
+}
+
+.image-row div:nth-child(4n + 4),
+.image-row div:last-child {
+  margin-right: 0;
+}
+
+.image-row p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .image-row div {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 0;
+  }
+
+  .image-row div:last-child {
+    margin-bottom: 0;
+  }
+}
