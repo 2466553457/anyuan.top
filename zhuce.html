@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册</title>
+    <link
+      rel="Shortcut Icon"
+      href="https://tuchuang.xkyfzs.top/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/zhuce.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>创建新账户</h1>
+      <form action="chenggong.html" method="GET">
+        <label for="fname">姓式：</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="您的姓氏"
+          required
+          style="
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding: 10px;
+          "
+        />
+        <label for="lname">名字：</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="您的名字"
+          required
+          style="
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding: 10px;
+          "
+        />
+
+        <label for="email">电子邮件：</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="您的QQ邮箱"
+          required
+        />
+
+        <label for="password">密码：</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="设置您的账户密码"
+          required
+        />
+
+        <label for="confirm-password">确认密码：</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="请再次输入您的密码"
+          required
+        />
+
+        <label for="age">年龄：</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          placeholder="请输入您的年龄"
+          style="
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding: 10px;
+          "
+        />
+
+        <label for="gender">性别：</label>
+        <div class="radio-buttons">
+          <label><input type="radio" name="gender" value="female" />女性</label>
+          <label><input type="radio" name="gender" value="male" />男性</label>
+          <label
+            ><input
+              type="radio"
+              name="gender"
+              value="other"
+            />不想透露性别</label
+          >
+        </div>
+        <hr />
+        <p></p>
+        <label for="agree-terms" style="text-align: center"
+          >我同意<a href="javascript:">条款和条件</a>
+          <input type="checkbox" id="agree-terms" name="agree-terms" required />
+        </label>
+
+        <input type="submit" value="注册" />
+      </form>
+      <p>
+        已有账户？<a href="denglu.html">立即登录</a>&nbsp;《<a href="index.html"
+          >返回主页</a
+        >》
+      </p>
+    </div>
+  </body>
+  <script src="js/scripts.js"></script>
+</html>
