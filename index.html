@@ -11,6 +11,42 @@
       href="https://tuchuang.xkyfzs.top/img/favicon.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script>
+      var alertBox;
+
+      function showAlert() {
+        var message = "您好，查看该文件请先注册/登录！";
+        alertBox = document.createElement("div");
+        alertBox.innerHTML =
+          '<div style="display: flex; justify-content: center; align-items: center; height: 100%;"><div style="text-align: center;">' +
+          message +
+          '</div></div><button style="background: none; border: none; cursor: pointer; position: absolute; top: 5px; right: 5px;" onclick="closeAlert()">X</button>';
+        alertBox.style.backgroundColor = "#7ad6ffff";
+        alertBox.style.border = "2px solid #0010f3ff";
+        alertBox.style.color = "#000000ff";
+        alertBox.style.padding = "10px";
+        alertBox.classList.add("animate__animated", "animate__fadeIn"); // 添加动画类名
+        alertBox.style.borderRadius = "5px";
+        alertBox.style.width = "400px"; // 设置宽度
+        alertBox.style.height = "200px"; // 设置高度
+        alertBox.style.position = "fixed";
+        alertBox.style.top = "50%";
+        alertBox.style.left = "50%";
+        alertBox.style.transform = "translate(-50%, -50%)";
+        alertBox.style.zIndex = "1000";
+        document.body.appendChild(alertBox);
+      }
+
+      function closeAlert() {
+        if (alertBox) {
+          alertBox.remove();
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -36,51 +72,746 @@
       </p>
     </main>
 
-    <!-- 正文图片 -->
-    <div class="image-row">
-      <div>
-        <a href="wzgg.html"
-          ><img src="img/slzi4.png" alt="Image 1" style="width: 40%"
-        /></a>
-        <p style="font-family: yahei"><a href="wzgg.html">森林之子</a></p>
-      </div>
-      <div>
-        <img src="image2.jpg" alt="Image 2" />
-        <p>游戏</p>
-      </div>
-      <div>
-        <img src="image3.jpg" alt="Image 3" />
-        <p>游戏</p>
-      </div>
-      <div>
-        <img src="image4.jpg" alt="Image 4" />
-        <p>游戏</p>
-      </div>
+    <!-- 正文游戏图片 -->
+    <div style="margin: 3%">
+      <div class="row">
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img
+                  src="https://tuchuang.xkyfzs.top/img/tkf.png"
+                  alt="Pulpit rock"
+                  width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >逃离塔科夫</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
 
-      <div>
-        <img src="image5.jpg" alt="Image 5" />
-        <p>游戏</p>
-      </div>
-      <div>
-        <img src="image6.jpg" alt="Image 6" />
-        <p>游戏</p>
-      </div>
-      <div>
-        <img src="image7.jpg" alt="Image 7" />
-        <p>游戏</p>
-      </div>
-      <div>
-        <img src="image8.jpg" alt="Image 8" />
-        <p>游戏</p>
-      </div>
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img
+                  src="https://tuchuang.xkyfzs.top/img/qmyks2b.png"
+                  alt="Pulpit rock"
+                  width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >骑马与砍杀2霸主</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
 
-      <div>
-        <img src="image9.jpg" alt="Image 9" />
-        <p>游戏</p>
-      </div>
-      <div>
-        <img src="image10.jpg" alt="Image 10" />
-        <p>游戏</p>
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img
+                  src="https://tuchuang.xkyfzs.top/img/zhilang2.png"
+                  alt="Pulpit rock"
+                  width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >只狼影逝二度</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/nsyx1.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >虐杀原形1</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/nsyx2.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >虐杀原形2</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/wz2.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >无主之地2</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/wz3.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >无主之地3</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/gtxx4.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >钢铁雄心4</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/sx3.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >杀手3</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/nejxjy.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >尼尔机械纪元年度</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/dpx5.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >极限竞速地平线5</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img
+                  src="https://tuchuang.xkyfzs.top/img/hydbk2.png"
+                  alt="Pulpit rock"
+                  width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >荒野大镖客2救赎</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/ylx.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >幽灵线：东京</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/yld.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >刺客信条英灵殿终极</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/ads.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >刺客信条奥德赛</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/gq5.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >鬼泣5维吉尔</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/sg.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >全面战争三国</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/ggsl.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >港诡实录</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/dtlq.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >地铁离去</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/nba.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >NBA 2K20</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img
+                  src="https://tuchuang.xkyfzs.top/img/zhuluoji5.png"
+                  alt="Pulpit rock"
+                  width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >侏罗纪世界进化1</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img
+                  src="https://tuchuang.xkyfzs.top/img/zhuluoji22.png"
+                  alt="Pulpit rock"
+                  width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >侏罗纪世界进化2</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/fpjxs.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >废品机械师</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/jxgd.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >极限国度</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/sgjz5.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >上古卷轴5天际</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/mnnc19.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >模拟农场19</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/mnnc22.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >模拟农场22</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/qljzs.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >桥梁建筑师1</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/xxmy2.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >小小梦魇2</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                ><img src="img/ozkc2.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="javascript:" target="_blank" onclick="showAlert()"
+                >欧洲卡车模拟器2</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
       </div>
     </div>
 
