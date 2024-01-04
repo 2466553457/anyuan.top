@@ -1,3 +1,15 @@
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+<urlrewrite>
+      <rule>
+          <from>^/ques_([0-9]+).html$</from>
+          <to >/file/html/ques_$1.html</to> 
+     </rule>
+</urlrewrite>
+//上面是标准的伪静态规则，修改成自己想要的即可。
+ 
+<filter-mapping>
+    <filter-name>struts2</filter-name>
+    <url-pattern>*.action</url-pattern>
+    <dispatcher>REQUEST </dispatcher>  //加入一下代码  
+        <dispatcher>FORWARD </dispatcher>    
+        <dispatcher>INCLUDE </dispatcher> 
+ </filter-mapping>
