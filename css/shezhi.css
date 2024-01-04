@@ -5,25 +5,30 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 400%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 10%;
   text-align: center;
 }
 
 .profile {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 50%;
 }
 
 .profile-image img {
-  width: 150px;
-  height: 150px;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    display: none;
+  }
 }
 
 .profile-info {
@@ -61,11 +66,7 @@ body {
   font-weight: bold;
 }
 
-.profile-info span.value {
-  margin-left: 5px;
-}
-
 .profile-info p.bio {
-  font-size: 24px;
-  margin: 30px 0 0;
+  font-size: 20px;
+  margin: 20px 0 0;
 }

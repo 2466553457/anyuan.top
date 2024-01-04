@@ -97,3 +97,43 @@ footer {
     margin-bottom: 0;
   }
 }
+/* 正文 */
+/* 创建三个相等的列 */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* 列后清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 响应式布局 - 小于 600 px 时改为上下布局 */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/* 弹窗按钮 */
+.alert-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.alert-button:hover {
+  background-color: #0069d9;
+}
