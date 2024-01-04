@@ -9,3 +9,7 @@ function login(event) {
 }
 
 document.getElementById("login-btn").addEventListener("click", login);
+
+// 获取用户名
+
+localStorage.setItem("email", email);
