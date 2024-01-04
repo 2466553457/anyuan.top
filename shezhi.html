@@ -32,7 +32,7 @@
             </li>
             <li>
               <span class="label">游客:</span>
-              <span class="value">郁郁匆匆</span>
+              <span class="value"><span id="email"></span></span>
             </li>
             <li>
               <span class="label">地址:</span>
@@ -45,5 +45,18 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // 从localStorage中读取用户名
+      var username = localStorage.getItem("email");
+
+      if (username) {
+        // 如果用户名存在
+        document.getElementById("email").textContent = username;
+      } else {
+        // 如果用户名不存在
+        document.getElementById("email").textContent = "未输入名称！";
+      }
+    </script>
   </body>
 </html>
