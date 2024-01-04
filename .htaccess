@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /example/
+RewriteRule ^index\.html$ /example/ [R=301,L]
+
+RewriteEngine On
+RewriteBase /example/
+RewriteRule ^index2\.html$ /example/ [R=301,L]
