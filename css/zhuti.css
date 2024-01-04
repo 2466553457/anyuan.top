@@ -1,0 +1,18 @@
+/* 主题切换 */
+/* 浅色主题样式 */
+.light-theme {
+  background-color: #fff;
+  color: #414141;
+}
+
+/* 深色主题样式 */
+.dark-theme {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* 主题切换过渡效果 */
+
+body {
+  transition: background-color 1s ease;
+}
