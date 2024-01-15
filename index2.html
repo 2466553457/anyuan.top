@@ -13,8 +13,13 @@
       href="https://tuchuang.xkyfzs.top/img/favicon.png"
       type="image/x-icon"
     />
+    <style>
+      .bookmark { 
+   display: none; 
+} 
+    </style>
   </head>
-  <body class="light-theme">
+  <body class="light-theme" onload="disableBookmark();">
     <header>
       <nav>
         <ul>
@@ -913,4 +918,18 @@
         <p>本站为非盈利性站点，打赏功能仅仅作为用户喜欢本站捐赠打赏，本站不贩卖软件，所有内容不作为商业行为。</p></p>
     </footer>
   </body>
+  <script>
+    function disableBookmark() { 
+   if (typeof window.sidebar === 'object' && typeof window.sidebar.addPanel === 'function') { 
+       window.sidebar.addPanel('', '', ''); 
+       setTimeout(function() { 
+           document.body.removeChild(iframe); 
+       }, 10); 
+   } else if (typeof window.external === 'object') { 
+       window.external.AddFavorite('', '', ''); 
+   } else { 
+       alert('目前网页不支持添加收藏功能'); 
+   } 
+}
+  </script>
 </html>
