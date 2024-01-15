@@ -1,5 +1,0 @@
-RewriteEngine On
-RewriteBase /
-
-# 将访问 URL 地址中的 /item/123 重写为 /viewitem.php?id=123
-RewriteRule ^item/([^/]*)$ /viewitem.php?id=$1 [L]
