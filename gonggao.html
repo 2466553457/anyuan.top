@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>网站公告</title>
+    <link rel="stylesheet" href="css/gonggao.css" />
+    <link
+      rel="Shortcut Icon"
+      href="https://tuchuang.xkyfzs.top/img/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>网站公告</h1>
+    </header>
+    <main>
+      <section class="category">
+        <h2>最新公告[2024/02/16]</h2>
+        <ul>
+          <li><a href="xingonggao.html">更新内容</a></li>
+          <li><a href="#" onclick="openPopup(); return false;">修复内容</a></li>
+          <li><a href="#" onclick="openPopup(); return false;">删除内容</a></li>
+        </ul>
+      </section>
+      <section class="category">
+        <h2>往期公告[2024/01/06]</h2>
+        <ul>
+          <li><a href="wzgg.html">更新内容</a></li>
+          <li><a href="#" onclick="openPopup(); return false;">修复内容</a></li>
+          <li><a href="#" onclick="openPopup(); return false;">删除内容</a></li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      // 根据浏览器窗口宽度设置页面字体大小
+      function setFontSize() {
+        var width = window.innerWidth;
+        var fontSize = width / 20;
+        document.body.style.fontSize = fontSize + "px";
+      }
+
+      // 页面加载时设置字体大小
+      window.onload = setFontSize;
+
+      // 窗口大小改变时重新设置字体大小
+      window.onresize = setFontSize;
+
+      //弹窗监听
+      function openPopup() {
+        document.querySelector(".bg").style.display = "block";
+        document.querySelector(".popup").style.display = "block";
+        setTimeout(function () {
+          document.querySelector(".bg").style.opacity = "1";
+          document.querySelector(".popup").style.opacity = "1";
+        }, 10);
+      }
+
+      function closePopup() {
+        document.querySelector(".bg").style.opacity = "0";
+        document.querySelector(".popup").style.opacity = "0";
+        setTimeout(function () {
+          document.querySelector(".bg").style.display = "none";
+          document.querySelector(".popup").style.display = "none";
+        }, 300);
+      }
+    </script>
+    <!-- 弹窗 -->
+    <div class="bg"></div>
+    <div class="popup">
+      <span class="close-btn" onclick="closePopup();">&times;</span>
+      <h2>暂无更新内容，请关闭窗口...</h2>
+    </div>
+  </body>
+</html>
