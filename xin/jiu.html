@@ -10,13 +10,59 @@
       href="https://tuchuang.xkyfzs.top/img/favicon.png"
       type="image/x-icon"
     />
+    <style>
+      input[type="button"] {
+        background-color: red; /* 新公告颜色 */
+        /* background-color: rgb(0, 81, 255); */ /* 旧公告颜色 */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      input[type="button"]:hover {
+        cursor: pointer;
+      }
+      /* 第一个点击效果变色 */
+      /* input[type="button"]:active {
+        background-color: darkred;
+        color: lightgray;
+      } */
+      /* 第二个点击效果 */
+      /* input[type="button"]:active {
+        transform: scale(0.9);
+        transition: all 0.2s ease-in-out;
+      } */
+      /* 第三个点击效果 */
+      /* input[type="button"]:active {
+        transform: scale(0.9);
+        transition: all 0.2s ease-in-out;
+        -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+        -ms-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+      } */
+      /* 第四个点击效果小旋转 */
+      input[type="button"]:active {
+        background-color: #000;
+        color: #fff;
+        border: 2px solid #000;
+        transform: rotate(10deg);
+        transition: all 0.2s ease-in-out;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <h1>网站最新公告</h1>
       <p>尊敬的用户：</p>
-      <p>今天的内容进行了更新[2024/02/17]</p>
-      <p>今天更新的内容：赛博朋克2077、艾尔登法环。</p>
+      <p>今天的内容进行了更新[2024/02/20]</p>
+      <p>
+        今天更新的内容：骑马与砍杀战团、放逐之城、侏罗纪世界进化1、侏罗纪世界进化2。
+      </p>
+      <p>不再更新内容：</p>
+      <p>1.骑马与砍杀战团已是最后一个版本，除非链接失效，则后续不再更新。</p>
+      <p>2.放逐之城已是最后一个版本，除非链接失效，则后续不再更新。</p>
+      <p>3.侏罗纪世界进化1，目前看来官方已停止改动，后续不再更新。</p>
       <p>感谢语：非常感谢您的耐心等待，后续会更新出更多的内容，敬请期待！</p>
       <p>
         如有任何问题，请查看我们专门的<a
@@ -24,6 +70,11 @@
           >暗源使用手册</a
         >。
       </p>
+      <input
+        type="button"
+        value="返回公告首页"
+        onclick="javascript:history.back(-1);"
+      />
     </div>
   </body>
 </html>
