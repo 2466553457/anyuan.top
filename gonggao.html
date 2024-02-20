@@ -10,6 +10,42 @@
       href="https://tuchuang.xkyfzs.top/img/favicon.png"
       type="image/x-icon"
     />
+    <style>
+      /* 添加颜色的直接方式 */
+      hr {
+        color: red; /* 将hr的文本颜色指定为红色 */
+        background-color: red; /* 将hr的背景颜色指定为红色（从左到右渐变） */
+        height: 2px; /* 设置hr的高度 */
+        border: none; /* 去掉hr的边框 */
+      }
+
+      /* 添加双线样式的伪元素方式 */
+      hr {
+        position: relative; /* 为hr设置相对定位 */
+        border: none; /* 去掉hr的默认样式 */
+        height: 2px; /* 设置hr的高度 */
+      }
+
+      hr::before {
+        content: ""; /* 为hr伪元素添加一个空内容 */
+        position: absolute; /* 绝对定位 */
+        top: -2px; /* 与hr的上边缘对齐 */
+        left: 0; /* 与hr的左侧对齐 */
+        width: 100%; /* 宽度占满整个hr */
+        height: 2px; /* 设置伪元素的高度 */
+        background-color: red; /* 设置伪元素的背景颜色 */
+      }
+
+      hr::after {
+        content: ""; /* 为hr伪元素添加一个空内容 */
+        position: absolute; /* 绝对定位 */
+        top: 2px; /* 与hr的下边缘对齐 */
+        left: 0; /* 与hr的左侧对齐 */
+        width: 100%; /* 宽度占满整个hr */
+        height: 2px; /* 设置伪元素的高度 */
+        background-color: red; /* 设置伪元素的背景颜色 */
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -17,29 +53,29 @@
     </header>
     <main>
       <section class="category">
-        <h2>最新公告[2024/02/20]</h2>
+        <h2 style="color: rgb(2, 120, 2)">最新公告[2024/02/20]</h2>
         <ul>
           <li><a href="xin/jiu.html">更新内容</a></li>
           <li><a href="#" onclick="openPopup(); return false;">修复内容</a></li>
           <li><a href="#" onclick="openPopup(); return false;">删除内容</a></li>
         </ul>
       </section>
+      <hr />
       <section class="category">
-        <h2>最新公告[2024/02/17]</h2>
+        <h2 style="color: rgb(2, 85, 120)">往期公告3[2024/02/17]</h2>
         <ul>
           <li><a href="jiu/jiu2.html">更新内容</a></li>
           <li><a href="#" onclick="openPopup(); return false;">修复内容</a></li>
           <li><a href="#" onclick="openPopup(); return false;">删除内容</a></li>
         </ul>
-        <hr />
-        <h2>最新公告[2024/02/16]</h2>
+
+        <h2 style="color: rgb(98, 2, 120)">往期公告2[2024/02/16]</h2>
         <ul>
           <li><a href="jiu/jiu1.html">更新内容</a></li>
           <li><a href="#" onclick="openPopup(); return false;">修复内容</a></li>
           <li><a href="#" onclick="openPopup(); return false;">删除内容</a></li>
         </ul>
-        <hr />
-        <h2>往期公告[2024/01/06]</h2>
+        <h2 style="color: rgb(2, 85, 120)">往期公告1[2024/01/06]</h2>
         <ul>
           <li><a href="jiu/wzgg.html">更新内容</a></li>
           <li><a href="#" onclick="openPopup(); return false;">修复内容</a></li>
