@@ -18,6 +18,17 @@
    display: none; 
 } 
     </style>
+    <script type="text/javascript">
+  window.onload = function () {
+    if (localStorage.getItem('isVisited')) {
+      return // 如果已经弹出过提示框，则不再弹出
+    }
+    localStorage.setItem('isVisited', true) // 首次打开，设置一个标记
+    alert('内容已经更新，详细内容请点击公告按钮！')
+  }
+</script>
+
+
   </head>
   <body class="light-theme" onload="disableBookmark();">
     <header>
