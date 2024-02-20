@@ -13,21 +13,6 @@
       href="https://tuchuang.xkyfzs.top/img/favicon.png"
       type="image/x-icon"
     />
-    <style>
-      .bookmark { 
-   display: none; 
-} 
-    </style>
-    <script type="text/javascript">
-  window.onload = function () {
-    if (localStorage.getItem('isVisited')) {
-      return // 如果已经弹出过提示框，则不再弹出
-    }
-    localStorage.setItem('isVisited', true) // 首次打开，设置一个标记
-    alert('内容已经更新，详细内容请点击公告按钮！')
-  }
-</script>
-
 
   </head>
   <body class="light-theme" onload="disableBookmark();">
@@ -49,11 +34,34 @@
       </nav>
     </header>
 
-    <main>
+    <main style="width: 30%;">
       <h1 style="text-align: center">欢迎来到暗源网站！</h1>
       <p style="text-align: center">
         感谢大家，能够来到此网站，我把网站重新的简洁化了一下！
       </p>
+      <script>
+    var texts = [
+      "网站更新内容啦！",
+      "快来看吧！",
+      "2024年2月20日",
+      "请看网页黑色导航栏的左上角",
+    ];
+
+    var index = 0;
+    function showNextText() {
+      var textContainer = document.querySelector("#text-container");
+      textContainer.innerHTML = texts[index];
+      index++;
+      if (index >= texts.length) {
+        index = 0;
+      }
+    }
+
+    setInterval(showNextText, 2000);
+  </script>
+  <hr>
+      <div id="text-container" style="color: rgb(28, 0, 130);text-align: center;font-size: 130%;background-color: rgb(255, 138, 138);">网站更新内容啦！</div>
+      <hr>
     </main>
 
     <!-- 正文游戏图片 -->
