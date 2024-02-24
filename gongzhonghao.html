@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>微信公众号</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 图片库容器 */
+      .gallery {
+        display: flex; /* 使用 flex 布局 */
+        flex-wrap: wrap; /* 当图库项目过多时换行 */
+        justify-content: center; /* 中心对齐 */
+        
+      }
+
+      /* 图片项容器 */
+      .gallery-item {
+        margin: 20px; /* 图片项之间的空隙 */
+      }
+
+      /* 图片项标题 */
+      .gallery-title {
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      /* 图片项描述信息 */
+      .gallery-description {
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      /* 图片元素 */
+      .gallery-image {
+        display: block; /* 去掉图片下方的空白空间 */
+        margin: auto;
+        width: 50%;
+        height: auto;
+        object-fit: cover; /* 缩放填充 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img
+          class="gallery-image"
+          src="https://imgs.xkyfzs.top/weixin/erweima.jpg"
+          alt="微信搜索：意闪科技"
+        />
+        <hr>
+        <h3 class="gallery-title">意闪科技</h3>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
