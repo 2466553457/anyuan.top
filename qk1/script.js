@@ -6,7 +6,7 @@ const passwordInput = document.getElementById("password-input");
 const goToNextPageButton = document.getElementById("go-to-next-page-button");
 
 // 设置密码
-const password = "ay5633";
+const password = "ayqk1zt";
 
 // 监听密码输入表单的提交事件
 passwordForm.addEventListener("submit", function (event) {
@@ -23,7 +23,7 @@ passwordForm.addEventListener("submit", function (event) {
     passwordPage.classList.add("hidden");
 
     // 自动跳转到下一个页面
-    window.location.href = "nuesha5929.html";
+    window.location.href = "qkzt2365.html";
   } else {
     // 如果密码错误，则弹出警告框
     alert("密码错误，请重新输入！");
