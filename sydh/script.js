@@ -23,7 +23,7 @@ passwordForm.addEventListener("submit", function (event) {
     passwordPage.classList.add("hidden");
 
     // 自动跳转到下一个页面
-    window.location.href = "sydh.html";
+    window.location.href = "sydh3955.html";
   } else {
     // 如果密码错误，则弹出警告框
     alert("密码错误，请重新输入！");
