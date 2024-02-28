@@ -23,7 +23,7 @@ passwordForm.addEventListener("submit", function (event) {
     passwordPage.classList.add("hidden");
 
     // 自动跳转到下一个页面
-    window.location.href = "rllm.html";
+    window.location.href = "rllm4730.html";
   } else {
     // 如果密码错误，则弹出警告框
     alert("密码错误，请重新输入！");
