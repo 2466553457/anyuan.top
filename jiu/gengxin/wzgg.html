@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>网站公告</title>
+    <link rel="stylesheet" href="css/wzgg.css" />
+    <link
+      rel="Shortcut Icon"
+      href="https://tuchuang.xkyfzs.top/img/favicon.png"
+      type="image/x-icon"
+    />
+    <style>
+      input[type="button"] {
+        background-color: rgb(0, 81, 255);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      input[type="button"]:hover {
+        cursor: pointer;
+      }
+      /* 第一个点击效果变色 */
+      /* input[type="button"]:active {
+        background-color: darkred;
+        color: lightgray;
+      } */
+      /* 第二个点击效果 */
+      /* input[type="button"]:active {
+        transform: scale(0.9);
+        transition: all 0.2s ease-in-out;
+      } */
+      /* 第三个点击效果 */
+      /* input[type="button"]:active {
+        transform: scale(0.9);
+        transition: all 0.2s ease-in-out;
+        -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+        -ms-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+      } */
+      /* 第四个点击效果小旋转 */
+      input[type="button"]:active {
+        background-color: #000;
+        color: #fff;
+        border: 2px solid #000;
+        transform: rotate(10deg);
+        transition: all 0.2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>网站公告</h1>
+      <p>尊敬的用户：</p>
+      <p>
+        欢迎访问我们的网站。本站正在建立初期，可能会出现一些不便之处，我们深表歉意。
+      </p>
+      <p>
+        如果想使用本网站的所有文件，都是需要注册登录的，注册登录完成之后才可继续使用。
+      </p>
+      <p>
+        在此期间，您注册的游客账号并不能每次都是自动登录状态，您每次启动网站都需要重新登录/注册。
+      </p>
+      <p>
+        如有任何问题，请查看我们专门的<a
+          href="https://anyuan.xkyfzs.top/404.html"
+          >暗源使用手册</a
+        >。
+      </p>
+      <input
+        type="button"
+        value="返回公告首页"
+        onclick="javascript:history.back(-1);"
+      />
+    </div>
+  </body>
+</html>
