@@ -49,7 +49,7 @@ footer {
 
 .register-login a {
   color: #fff;
-  background-color: #333;
+  background-color: #33333300;
   text-transform: uppercase;
   padding: 10px 10px;
   border-radius: 5px;
@@ -57,7 +57,7 @@ footer {
 }
 
 .register-login a:hover {
-  background-color: #555;
+  background-color: #555555;
 }
 
 /* 正文图片 */
