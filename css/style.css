@@ -126,7 +126,7 @@ a {
 .alert-button {
   display: inline-block;
   background-color: #007bff;
-  color: #fff;
+  color: #b50e0e;
   padding: 10px 20px;
   border-radius: 3px;
   text-decoration: none;
@@ -136,4 +136,84 @@ a {
 
 .alert-button:hover {
   background-color: #0069d9;
+}
+
+/* 下拉菜单 */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #75a0ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #8e8e8e;
+}
+
+.dropdown p {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background-color: #2e2e2e;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(96, 101, 60);
+}
+
+/* 下拉菜单效果 */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  background-color: #5196fc;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
