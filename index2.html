@@ -15,14 +15,64 @@
       type="image/x-icon"
     />
 
+    <script>
+      // 弹窗
+      var alertBox;
+
+    function showAlert() {
+      var message = "您好，该项目未完成！";
+      alertBox = document.createElement("div");
+      alertBox.innerHTML =
+        '<div style="display: flex; justify-content: center; align-items: center; height: 100%;"><div style="text-align: center;">' +
+        message +
+        '</div></div><button style="background: none; border: none; cursor: pointer; position: absolute; top: 5px; right: 5px;" onclick="closeAlert()">X</button>';
+      alertBox.style.backgroundColor = "rgb(149, 155, 255)";
+      alertBox.style.border = "2px solid #0010f3ff";
+      alertBox.style.color = "#000000ff";
+      alertBox.style.padding = "10px";
+      alertBox.classList.add("animate__animated", "animate__fadeIn"); // 添加动画类名
+      alertBox.style.borderRadius = "5px";
+      alertBox.style.width = "20%"; // 设置宽度
+      alertBox.style.height = "20%"; // 设置高度
+      alertBox.style.position = "fixed";
+      alertBox.style.top = "50%";
+      alertBox.style.left = "50%";
+      alertBox.style.transform = "translate(-50%, -50%)";
+      alertBox.style.zIndex = "1000";
+      document.body.appendChild(alertBox);
+
+      // 两秒后自动关闭提示框
+      setTimeout(closeAlert, 1000);
+    }
+
+    function closeAlert() {
+      if (alertBox) {
+        alertBox.classList.add("animate__animated", "animate__fadeOut"); // 添加淡出动画类名
+        setTimeout(function() {
+          alertBox.remove();
+        }, 500); // 延迟 0.5 秒后移除提示框
+      }
+    }
+    </script>
+
+
   </head>
   <body class="light-theme" onload="disableBookmark();">
     <header>
       <nav>
         <ul>
+          <div class="dropdown">
+  <button>菜单</button>
+  <div class="dropdown-content">
+    <a href="https://www.xkyfzs.top" target="_blank">博客</a>
+    <a href="gonggao.html" target="_blank">公告</a>
+    <a href="javascript:" onclick="showAlert()">网站使用教程</a>
+    <a href="javascript:" onclick="showAlert()">网站使用手册</a>
+  </div>
+</div>
           <!-- <li><a href="gongzhonghao.html" target="_blank">公众号</a></li> -->
-          <li><a href="https://www.xkyfzs.top" target="_blank">博客</a></li>
-          <li><a href="gonggao.html" target="_blank">公告</a></li>
+          <!-- <li><a href="https://www.xkyfzs.top" target="_blank">博客</a></li>
+          <li><a href="gonggao.html" target="_blank">公告</a></li> -->
           <!-- <li>
             <a href="javascript:" onclick="switchTheme()"
               >主题切换</a
@@ -683,7 +733,7 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="https://www.downkuai.com/soft/118218.html" target="_blank"
+                href="ckxtyld/mima.html" target="_blank"
                
                 ><img src="https://imgs.xkyfzs.top/anyuan/yld.png" alt="Pulpit rock" width="70%"
               /></a>
@@ -698,9 +748,9 @@
               "
             >
               <a
-                href="https://www.downkuai.com/soft/118218.html" target="_blank"
+                href="ckxtyld/mima.html" target="_blank"
                
-                >刺客信条英灵殿终极</a
+                >刺客信条英灵殿</a
               >
             </p>
             <hr />
@@ -795,7 +845,7 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="https://www.downkuai.com/soft/108700.html" target="_blank"
+                href="qmzzsg/mima.html" target="_blank"
                
                 ><img src="https://imgs.xkyfzs.top/anyuan/sg.png" alt="Pulpit rock" width="70%"
               /></a>
@@ -810,7 +860,7 @@
               "
             >
               <a
-                href="https://www.downkuai.com/soft/108700.html" target="_blank"
+                href="qmzzsg/mima.html" target="_blank"
                
                 >全面战争三国</a
               >
@@ -851,7 +901,7 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="https://www.downkuai.com/soft/109910.html" target="_blank"
+                href="dtlq/mima.html" target="_blank"
                
                 ><img src="https://imgs.xkyfzs.top/anyuan/dtlq.png" alt="Pulpit rock" width="70%"
               /></a>
@@ -866,7 +916,7 @@
               "
             >
               <a
-                href="https://www.downkuai.com/soft/109910.html" target="_blank"
+                href="dtlq/mima.html" target="_blank"
                
                 >地铁离去</a
               >
@@ -969,7 +1019,7 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="https://www.downkuai.com/soft/160164.html" target="_blank"
+                href="fpjxs1/mima.html" target="_blank"
                
                 ><img src="https://imgs.xkyfzs.top/anyuan/fpjxs.png" alt="Pulpit rock" width="70%"
               /></a>
@@ -984,7 +1034,7 @@
               "
             >
               <a
-                href="https://www.downkuai.com/soft/160164.html" target="_blank"
+                href="fpjxs1/mima.html" target="_blank"
                
                 >废品机械师</a
               >
@@ -1328,16 +1378,16 @@ var contentArray = [
   { title: "极限竞速地平线5", content: "", url: "dipingxian5/mima.html" },
   { title: "荒野大镖客2救赎", content: "", url: "https://www.xkyfzs.top/post/a50912a.html" },
   { title: "幽灵线：东京", content: "", url: "https://www.downkuai.com/soft/155927.html" },
-  { title: "刺客信条英灵殿", content: "", url: "https://www.downkuai.com/soft/118218.html" },
+  { title: "刺客信条英灵殿", content: "", url: "ckxtyld/mima.html" },
   { title: "放逐之城", content: "", url: "fzzc/mima.html" },
   { title: "刺客信条奥德赛", content: "", url: "ckxtads/mima.html" },
   { title: "鬼泣5维吉尔", content: "", url: "https://www.downkuai.com/soft/125394.html" },
-  { title: "全面战争三国", content: "", url: "https://www.downkuai.com/soft/108700.html" },
+  { title: "全面战争三国", content: "", url: "qmzzsg/mima.html" },
   { title: "港诡实录", content: "", url: "ggsl/mima.html" },
-  { title: "地铁离去", content: "", url: "https://www.downkuai.com/soft/109910.html" },
+  { title: "地铁离去", content: "", url: "dtlq/mima.html" },
   { title: "侏罗纪世界进化1", content: "", url: "zhuluoji1/mima.html" },
   { title: "侏罗纪世界进化2", content: "", url: "zhuluoji2/mima.html" },
-  { title: "废品机械师", content: "", url: "https://www.downkuai.com/soft/160164.html" },
+  { title: "废品机械师", content: "", url: "fpjxs1/mima.html" },
   { title: "极限国度", content: "", url: "https://www.aiweibk.com/435312.html" },
   { title: "上古卷轴5天际", content: "", url: "sgjz5tj/mima.html" },
   { title: "模拟农场19", content: "", url: "https://www.downkuai.com/soft/150113.html" },
@@ -1411,4 +1461,22 @@ function performSearch(keyword) {
 }
 
   </script>
+
+  <script>
+var dropdown = document.getElementsByClassName("dropdown")[0];
+var dropdownContent = dropdown.getElementsByClassName("dropdown-content")[0];
+
+// 点击空白处收回下拉菜单
+document.addEventListener("mouseup", function(event) {
+  if (!dropdown.contains(event.target)) {
+    dropdownContent.style.display = "none";
+  }
+});
+
+// 点击按钮切换下拉菜单显示和隐藏
+dropdown.addEventListener("click", function() {
+  dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+});
+
+</script>
 </html>
