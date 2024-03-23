@@ -1,5 +1,3 @@
-<!-- 油管链接：https://youtu.be/bFvfqUMjvsA -->
-<!-- YouTube大佬做的我只是借鉴一下，把我自己做的穿插到里面而已！ -->
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -8,40 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="js/style.js" />
-    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="Shortcut Icon"
       href="https://tuchuang.xkyfzs.top/img/favicon.png"
       type="image/x-icon"
     />
-    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/boxicons.min.css"> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    /> 
     <script>
       var alertBox;
 
       function showAlert() {
-        var message = "您好，查看该文件请先登录！";
+        var message = "您好，查看该文件请先注册/登录！";
         alertBox = document.createElement("div");
         alertBox.innerHTML =
           '<div style="display: flex; justify-content: center; align-items: center; height: 100%;"><div style="text-align: center;">' +
           message +
           '</div></div><button style="background: none; border: none; cursor: pointer; position: absolute; top: 5px; right: 5px;" onclick="closeAlert()">X</button>';
-        alertBox.style.backgroundColor = "rgb(255, 122, 122)";
+        alertBox.style.backgroundColor = "#7ad6ffff";
         alertBox.style.border = "2px solid #0010f3ff";
-        alertBox.style.color = "rgb(255, 255, 255)";
+        alertBox.style.color = "#000000ff";
         alertBox.style.padding = "10px";
         alertBox.classList.add("animate__animated", "animate__fadeIn"); // 添加动画类名
         alertBox.style.borderRadius = "5px";
         alertBox.style.width = "300px"; // 设置宽度
-        alertBox.style.height = "300px"; // 设置高度
+        alertBox.style.height = "200px"; // 设置高度
         alertBox.style.position = "fixed";
         alertBox.style.top = "50%";
         alertBox.style.left = "50%";
@@ -58,112 +49,29 @@
     </script>
   </head>
   <body>
-    <nav class="sidebar close">
-      <header>
-        <div class="image-text">
-          <span class="image">
-            <a href="denglu1.html"><img src="img/logo1.jpg" alt="" /></a>
-          </span>
-
-          <div class="text logo-text">
-            <span class="name">请登录</span>
-            <hr>
-            <span class="profession">游客登录</span>
-          </div>
-        </div>
-
-        <i class="bx bx-chevron-right toggle"></i>
-      </header>
-
-      <div class="menu-bar">
-        <div class="menu">
-          <li class="search-box">
-            <i class="bx bx-search icon"></i>
-            <div class="search-container">
-      <input type="text" id="searchInput" placeholder="请输入相关内容...">
-      <div id="searchResults"></div>
-      </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="javascript:">公告</a></li>
+          <li><a href="javascript:">评论区</a></li>
+          <li><a href="javascript:">博客</a></li>
+          <li><a href="javascript:">主题切换</a></li>
+          <li>
+            <p>|</p>
           </li>
-
-          <ul class="menu-links">
-            <li class="nav-link">
-              <a href="javascript:" onclick="showAlert()">
-                <i class='bx bx-book-bookmark icon'></i>
-                <span class="text nav-text">暗源使用手册</span>
-              </a>
-            </li>
-
-            <li class="nav-link">
-              <a href="javascript:" onclick="showAlert()">
-                <i class="bx bx-video-recording icon" ></i>
-                <span class="text nav-text">视频使用教程</span>
-              </a>
-            </li>
-
-            <li class="nav-link">
-              <a href="javascript:" onclick="showAlert()">
-                <i class='bx bxs-data icon' ></i>
-                <span class="text nav-text">所有公告</span>
-              </a>
-            </li>
-
-            <li class="nav-link">
-              <a href="javascript:" onclick="showAlert()">
-                <i class="bx bx-bell icon"></i>
-                <span class="text nav-text">新的公告</span>
-              </a>
-            </li>
-
-            <li class="nav-link">
-              <a href="javascript:" onclick="showAlert()">
-                <i class='bx bxl-blogger icon' ></i>
-                <span class="text nav-text">博客</span>
-              </a>
-            </li>
-
-            <li class="nav-link">
-              <a href="javascript:" onclick="showAlert()">
-                <i class="bx bx-chat icon"></i>
-                <span class="text nav-text">评论区</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-          </ul>
-        </div>
-
-        <div class="bottom-content">
-          <li class="">
-            <a href="denglu1.html">
-              <i class="bx bxs-user icon"></i>
-              <span class="text nav-text">登录</span>
-            </a>
+          <li>
+            <!-- <li class="register-login"> -->
+            <a href="denglu1.html">[登录]</a>
           </li>
-
-          <li class="mode">
-            <div class="sun-moon">
-              <i class="bx bx-moon icon moon"></i>
-              <i class="bx bx-sun icon sun"></i>
-            </div>
-            <span class="mode-text text">夜间模式</span>
-
-            <div class="toggle-switch">
-              <span class="switch"></span>
-            </div>
-          </li>
-        </div>
-      </div>
-    </nav>
-
-    <section class="home">
-      <div class="text">
-        <div style="margin: 3%">
-      <div class="row">
+        </ul>
+      </nav>
+    </header>
 
     <main>
-      <h1 style="text-align: center">欢迎来到最新正式版暗源网站！</h1>
-      <hr>
-      <hr>
+      <h1 style="text-align: center">欢迎来到暗源网站！</h1>
+      <p style="text-align: center">
+        感谢大家，能够来到此网站，我把网站重新的简洁化了一下！
+      </p>
     </main>
 
     <!-- 正文游戏图片 -->
@@ -179,7 +87,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -202,7 +110,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -225,7 +133,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -248,7 +156,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -271,7 +179,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -294,7 +202,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -317,7 +225,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -340,7 +248,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -363,7 +271,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -386,7 +294,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -409,7 +317,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -436,7 +344,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -463,7 +371,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -490,7 +398,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -517,7 +425,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -541,7 +449,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -565,7 +473,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -589,7 +497,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -613,7 +521,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -637,7 +545,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -661,7 +569,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -685,7 +593,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -709,7 +617,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -733,7 +641,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -757,7 +665,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -784,7 +692,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -808,7 +716,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -832,7 +740,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -856,7 +764,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -880,7 +788,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -904,7 +812,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -928,7 +836,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -952,7 +860,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -976,7 +884,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1000,7 +908,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1027,7 +935,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1054,7 +962,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1078,7 +986,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1102,7 +1010,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1126,7 +1034,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1150,7 +1058,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1174,7 +1082,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1198,7 +1106,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1222,7 +1130,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1246,7 +1154,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1270,7 +1178,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1294,7 +1202,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1318,7 +1226,7 @@
             <hr />
             <p
               style="
-                font-size: 60%;
+                font-size: 100%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1334,38 +1242,14 @@
       </div>
     </div>
 
-    <hr>
     <footer>
-      <div style="font-size: 50%;background-color: rgba(163, 252, 206, 0.279);">
+      <p>
         <p>使用博客一定要严格遵守博客规章制度，本博客所有内容全部免费，请不要将内容拿去做违法的事情，否则，一切后果请用户自负，本博客概不承担负责，等待您的只有法律的严惩！</p>
         <p>本站所发布一半以上的下载内容及软件的文章仅限用于学习和研究目的；不得将上述内容用于商业或者非法用途，否则，一切后果请用户自负。</p>
         <p>本站信息来自网络，版权争议与本站无关，您必须在下载后的 24个小时之内，从您的电脑中彻底删除上述内容。</p>
         <p>访问和下载本站内容，说明您已同意上述条款。</p>
         <p>本站为非盈利性站点，打赏功能仅仅作为用户喜欢本站捐赠打赏，本站不贩卖软件，所有内容不作为商业行为。</p>
-        </div>
+      </p>
     </footer>
-    <hr>
-    <hr>
-    <p>正式版本</p>
-    <hr>
-    </div>
-    </section>
-    <script src="index.js"></script>
-    <!-- <script>
-    // 检查localStorage中的标志
-    var hasRedirected = localStorage.getItem('hasRedirected');
-    
-    // 如果localStorage中的标志不存在或者为false，则进行跳转
-    if(!hasRedirected) {
-        // 设置localStorage标志为true
-        localStorage.setItem('hasRedirected', true);
-    } else {
-        // 如果已经跳转过了，则直接跳转到下一个页面
-        window.location.href = 'denglu.html1';
-    }
-    // 清除localStorage中的数据,最好不要使用，使用后悔，责任一概不担！
-    // localStorage.clear();
-
-</script> -->
   </body>
 </html>
