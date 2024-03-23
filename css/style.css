@@ -1,3 +1,65 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 注册登录按钮样式 */
+.register-login {
+  float: right;
+}
+
+.register-login a {
+  color: #fff;
+  background-color: #33333300;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.register-login a:hover {
+  background-color: #555555;
+}
+
 /* 正文图片 */
 .image-row {
   display: flex;
@@ -39,7 +101,7 @@
 /* 创建三个相等的列 */
 .column {
   float: left;
-  width: 25%;
+  width: 20%;
 }
 
 /* 列后清除浮动 */
@@ -50,7 +112,7 @@
 }
 
 /* 响应式布局 - 小于 600 px 时改为上下布局 */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
@@ -74,4 +136,84 @@ a {
 
 .alert-button:hover {
   background-color: #0069d9;
+}
+
+/* 下拉菜单 */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #75a0ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #8e8e8e;
+}
+
+.dropdown p {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background-color: #2e2e2e;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(96, 101, 60);
+}
+
+/* 下拉菜单效果 */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  background-color: #5196fc;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
