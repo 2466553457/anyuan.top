@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>暗源登录系统</title>
+    <link
+      rel="Shortcut Icon"
+      href="https://tuchuang.xkyfzs.top/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="css/denglu.css" />
+    <script src="denglutuichu.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p style="text-align: center">
+        <img
+          class="gallery-image"
+          src="https://imgs.xkyfzs.top/weixin/erweima.jpg"
+          alt="微信搜索：意闪科技"
+          style="width: 100px"
+        />
+      </p>
+      <h4>获取账号密码的方法:《请到微信公众号回复：网站账号》</h4>
+      <hr />
+      <h1>登录界面</h1>
+      <div class="form-group">
+        <label for="username">用户名:</label>
+        <input type="text" id="username" required />
+      </div>
+      <div class="form-group">
+        <label for="password">密码:</label>
+        <input type="password" id="password" required />
+      </div>
+      <div class="form-group">
+        <input type="button" value="登录" onclick="validateLogin()" />
+      </div>
+      <div id="error-message" class="error-message"></div>
+    </div>
+  </body>
+</html>

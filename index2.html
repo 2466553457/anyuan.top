@@ -1,3 +1,5 @@
+<!-- 油管链接：https://youtu.be/bFvfqUMjvsA -->
+<!-- YouTube大佬做的我只是借鉴一下，把我自己做的穿插到里面而已！ -->
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -5,6 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="js/style.js" />
     <script src="senlinzhizi/your-script-file.js"></script>
     <link rel="stylesheet" href="css/zhuti.css" />
@@ -14,86 +17,125 @@
       href="https://tuchuang.xkyfzs.top/img/favicon.png"
       type="image/x-icon"
     />
+    
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body class="light-theme" onload="disableBookmark();">
-    <header>
-      <nav>
-        <ul>
-          <div class="dropdown">
-            <button>菜单</button>
-            <div class="dropdown-content">
-              <a href="https://www.xkyfzs.top" target="_blank">博客</a>
-              <a href="gonggao.html" target="_blank">公告</a>
-              <a href="javascript:">网站使用教程</a>
-              <a href="javascript:">网站使用手册</a>
-            </div>
+  <body>
+    
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="shezhi.html" target="_blank"><img src="img/logo.png" alt="" /></a>
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">anyuan_125865</span>
+            <hr>
+            <span class="profession">游客登录</span>
           </div>
-          <!-- <li><a href="gongzhonghao.html" target="_blank">公众号</a></li> -->
-          <!-- <li><a href="https://www.xkyfzs.top" target="_blank">博客</a></li>
-          <li><a href="gonggao.html" target="_blank">公告</a></li> -->
-          <!-- <li>
-            <a href="javascript:" onclick="switchTheme()"
-              >主题切换</a
-            >
-          </li> -->
-          <li class="register-login">
-            <a href="shezhi.html" target="_blank">[游客]</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        </div>
 
-    <main>
-      <h1 style="text-align: center">欢迎来到暗源网站！</h1>
-      <p style="text-align: center">
-        感谢大家，能够来到此网站，我把网站重新的简洁化了一下！
-      </p>
-      <p style="text-align: center">
-        各位小伙伴注意一下：在用本站内置搜索框，搜索相关游戏时，请一定要用游戏中文名搜索(比如：gta5要用：“侠盗猎车手5”或者用其中的一个文字来搜索！)
-      </p>
-      <script>
-        var texts = [
-          "网站更新内容啦！快来看吧！[2024年3月19日]",
-          "网站更新内容啦！快来看吧！[2024年3月19日]",
-          "超市模拟器更新，小型更新并无公告显示",
-          "超市模拟器更新，小型更新并无公告显示",
-        ];
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
 
-        var index = 0;
-        function showNextText() {
-          var textContainer = document.querySelector("#text-container");
-          textContainer.innerHTML = texts[index];
-          index++;
-          if (index >= texts.length) {
-            index = 0;
-          }
-        }
-
-        setInterval(showNextText, 2000);
-      </script>
-      <hr />
-      <div
-        id="text-container"
-        style="
-          color: rgb(255, 0, 0);
-          text-align: center;
-          font-size: 130%;
-          background-color: rgba(100, 100, 100, 0.463);
-        "
-      >
-        网站更新内容啦！快来看吧！[2024年3月19日]
-      </div>
-      <hr />
-    </main>
-
-    <div class="search-container">
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="请输入相关文字寻找内容 比如：侠盗猎车.."
-      />
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <div class="search-container">
+      <input type="text" id="searchInput" placeholder="请输入相关内容...">
       <div id="searchResults"></div>
-    </div>
+      </div>
+            <!-- <input type="text" id="searchInput" placeholder="站内搜索..." /> -->
+          </li>
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="404.html" target="_blank">
+                <i class='bx bx-book-bookmark icon'></i>
+                <span class="text nav-text">暗源使用手册</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="404.html" target="_blank">
+                <i class="bx bx-video-recording icon" ></i>
+                <span class="text nav-text">视频使用教程</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="gonggao.html" target="_blank">
+                <i class='bx bxs-data icon' ></i>
+                <span class="text nav-text">所有公告</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="xin/jiu.html" target="_blank">
+                <i class="bx bx-bell icon" target="_blank"></i>
+                <span class="text nav-text">新的公告</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="https://www.xkyfzs.top/" target="_blank">
+                <i class='bx bxl-blogger icon' ></i>
+                <span class="text nav-text">博客</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="comments/comments.html" target="_blank">
+                <i class="bx bx-chat icon"></i>
+                <span class="text nav-text">评论区</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="">
+            <a href="denglutuichu.html">
+              <i class="bx bx-log-out icon"></i>
+              <span class="text nav-text">登出</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">夜间模式</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section class="home">
+      <div class="text">
+        <div style="margin: 3%">
+      <div class="row">
+    <main>
+      <h1 style="text-align: center;font-size: 130%;">欢迎来到最新正式版暗源网站！</h1>
+      <hr>
+      <hr>
+      <p style="text-align: center;font-size: 70%;color: #ff4343;">
+        各位小伙伴注意一下：在用本站内置搜索框，搜索相关游戏时，请一定要用游戏中文名搜索(比如：gta5这个游戏，要用：“侠盗猎车手5”或者用其中的一个文字来搜索！)
+      </p>
+    </main>
+<!-- <div class="search-container">
+      <input type="text" id="searchInput" placeholder="请输入内容...">
+      <div id="searchResults"></div>
+      </div> -->
 
     <!-- 正文游戏图片 -->
     <div style="margin: 3%">
@@ -102,22 +144,21 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="javascript:" onclick="showAlert()"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/qidai.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/qidai.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="javascript:" onclick="showAlert()">敬请期待新游戏！</a>
+              <a href="javascript:" onclick="showAlert()"
+                >敬请期待新游戏！</a
+              >
             </p>
             <hr />
           </div>
@@ -126,16 +167,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="zrkd11/mima.html" target="_blank" onclick="showAlert()"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/zrkd11.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/zrkd11.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -152,16 +190,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gdjhyssl/mima.html" target="_blank" onclick="showAlert()"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/gdjhyssl.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/gdjhyssl.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -178,16 +213,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gdjhxsg/mima.html" target="_blank" onclick="showAlert()"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/gdjhxsg.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/gdjhxsg.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -204,16 +236,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gdjh6/mima.html" target="_blank" onclick="showAlert()"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/gdjh6.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/gdjh6.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -230,16 +259,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="youtube/mima.html" target="_blank" onclick="showAlert()"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/youtube.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/youtube.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -256,16 +282,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="food/mima.html" target="_blank" onclick="showAlert()"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/foot.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/foot.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -282,16 +305,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="mfqs/mima.html" target="_blank" onclick="showAlert()"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/raft.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/raft.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -308,16 +328,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="60miao/mima.html" target="_blank" onclick="showAlert()"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/60miao.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/60miao.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -334,16 +351,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="csmnq/mima.html" target="_blank" onclick="showAlert()"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/csmnq.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/csmnq.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -360,22 +374,21 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="senlinzhizi/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/slzz.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/slzz.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="senlinzhizi/mima.html" target="_blank">森林之子</a>
+              <a href="senlinzhizi/mima.html" target="_blank"
+                >森林之子</a
+              >
             </p>
             <hr />
           </div>
@@ -384,11 +397,7 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a
-                href="xiadao5/mima.html"
-                target="_blank"
-                onerror="location.href='404.html'"
-                ><img
+              <a href="xiadao5/mima.html" target="_blank" onerror="location.href='404.html'"><img
                   src="https://tuchuang.xkyfzs.top/img/gta5.png"
                   alt="Pulpit rock"
                   width="70%"
@@ -397,17 +406,13 @@
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a
-                href="xiadao5/mima.html"
-                target="_blank"
-                onerror="location.href='404.html'"
-                >侠盗猎车手5</a
+              <a href="xiadao5/mima.html" target="_blank" onerror="location.href='404.html'">侠盗猎车手5</a
               >
             </p>
             <hr />
@@ -417,11 +422,7 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a
-                href="qk1/mima.html"
-                target="_blank"
-                onerror="location.href='404.html'"
-                ><img
+              <a href="qk1/mima.html" target="_blank" onerror="location.href='404.html'"><img
                   src="https://imgs.xkyfzs.top/anyuan/qk1.png"
                   alt="Pulpit rock"
                   width="70%"
@@ -430,17 +431,13 @@
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a
-                href="qk1/mima.html"
-                target="_blank"
-                onerror="location.href='404.html'"
-                >骑马与砍杀战团</a
+              <a href="qk1/mima.html" target="_blank" onerror="location.href='404.html'">骑马与砍杀战团</a
               >
             </p>
             <hr />
@@ -451,8 +448,8 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="https://www.xkyfzs.top/post/49df6c88.html"
-                target="_blank"
+                href="https://www.xkyfzs.top/post/49df6c88.html" target="_blank"
+               
                 ><img
                   src="https://tuchuang.xkyfzs.top/img/qmyks2b.png"
                   alt="Pulpit rock"
@@ -462,15 +459,15 @@
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
               <a
-                href="https://www.xkyfzs.top/post/49df6c88.html"
-                target="_blank"
+                href="https://www.xkyfzs.top/post/49df6c88.html" target="_blank"
+               
                 >骑马与砍杀2霸主</a
               >
             </p>
@@ -481,7 +478,9 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="zhilang/mima.html" target="_blank"
+              <a
+                href="zhilang/mima.html" target="_blank"
+               
                 ><img
                   src="https://tuchuang.xkyfzs.top/img/zhilang2.png"
                   alt="Pulpit rock"
@@ -491,88 +490,17 @@
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="zhilang/mima.html" target="_blank">只狼影逝二度</a>
-            </p>
-            <hr />
-          </div>
-        </div>
-
-        <div class="column">
-          <div style="margin: 5%">
-            <p style="text-align: center">
-              <a href="nuesha1/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/nsyx1.png"
-                  alt="Pulpit rock"
-                  width="70%"
-              /></a>
-            </p>
-            <hr />
-            <p
-              style="
-                font-size: 100%;
-                color: rgb(0, 0, 0);
-                font-weight: 800;
-                text-align: center;
-              "
-            >
-              <a href="nuesha1/mima.html" target="_blank">虐杀原形1</a>
-            </p>
-            <hr />
-          </div>
-        </div>
-
-        <div class="column">
-          <div style="margin: 5%">
-            <p style="text-align: center">
-              <a href="nuesha2/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/nsyx2.png"
-                  alt="Pulpit rock"
-                  width="70%"
-              /></a>
-            </p>
-            <hr />
-            <p
-              style="
-                font-size: 100%;
-                color: rgb(0, 0, 0);
-                font-weight: 800;
-                text-align: center;
-              "
-            >
-              <a href="nuesha2/mima.html" target="_blank">虐杀原形2</a>
-            </p>
-            <hr />
-          </div>
-        </div>
-
-        <div class="column">
-          <div style="margin: 5%">
-            <p style="text-align: center">
-              <a href="sbpk2077/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/sbpk2077.png"
-                  alt="Pulpit rock"
-                  width="70%"
-              /></a>
-            </p>
-            <hr />
-            <p
-              style="
-                font-size: 100%;
-                color: rgb(0, 0, 0);
-                font-weight: 800;
-                text-align: center;
-              "
-            >
-              <a href="sbpk2077/mima.html" target="_blank">赛博朋克2077</a>
+              <a
+                href="zhilang/mima.html" target="_blank"
+               
+                >只狼影逝二度</a
+              >
             </p>
             <hr />
           </div>
@@ -582,26 +510,107 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="https://www.downkuai.com/soft/127996.html"
-                target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/wz2.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                href="nuesha1/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/nsyx1.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
               <a
-                href="https://www.downkuai.com/soft/127996.html"
-                target="_blank"
+                href="nuesha1/mima.html" target="_blank"
+               
+                >虐杀原形1</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a
+                href="nuesha2/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/nsyx2.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 60%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a
+                href="nuesha2/mima.html" target="_blank"
+               
+                >虐杀原形2</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a
+                href="sbpk2077/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/sbpk2077.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 60%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a
+                href="sbpk2077/mima.html" target="_blank"
+               
+                >赛博朋克2077</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a
+                href="https://www.downkuai.com/soft/127996.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/wz2.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 60%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a
+                href="https://www.downkuai.com/soft/127996.html" target="_blank"
+               
                 >无主之地2</a
               >
             </p>
@@ -613,26 +622,23 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="https://www.downkuai.com/soft/118351.html"
-                target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/wz3.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                href="https://www.downkuai.com/soft/118351.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/wz3.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
               <a
-                href="https://www.downkuai.com/soft/118351.html"
-                target="_blank"
+                href="https://www.downkuai.com/soft/118351.html" target="_blank"
+               
                 >无主之地3</a
               >
             </p>
@@ -644,16 +650,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="http://www.91rjz.com/pcsoft/122386.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/gtxx4.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/gtxx4.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -671,26 +674,23 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="https://www.downkuai.com/soft/128815.html"
-                target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/sx3.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                href="https://www.downkuai.com/soft/128815.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/sx3.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
               <a
-                href="https://www.downkuai.com/soft/128815.html"
-                target="_blank"
+                href="https://www.downkuai.com/soft/128815.html" target="_blank"
+               
                 >杀手3</a
               >
             </p>
@@ -702,16 +702,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="https://www.aiweibk.com/435411.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/nejxjy.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/nejxjy.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -728,23 +725,24 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="dipingxian4/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/dpx4.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="dipingxian4/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/dpx4.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="dipingxian4/mima.html" target="_blank"
+              <a
+                href="dipingxian4/mima.html" target="_blank"
+               
                 >极限竞速地平线4</a
               >
             </p>
@@ -755,23 +753,24 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="dipingxian5/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/dpx5.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="dipingxian5/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/dpx5.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="dipingxian5/mima.html" target="_blank"
+              <a
+                href="dipingxian5/mima.html" target="_blank"
+               
                 >极限竞速地平线5</a
               >
             </p>
@@ -792,7 +791,7 @@
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -809,23 +808,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="ylxdj/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/ylx.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="ylxdj/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/ylx.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="ylxdj/mima.html" target="_blank">幽灵线：东京</a>
+              <a
+                href="ylxdj/mima.html" target="_blank"
+               
+                >幽灵线：东京</a
+              >
             </p>
             <hr />
           </div>
@@ -834,23 +836,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="ckxtyld/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/yld.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="ckxtyld/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/yld.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="ckxtyld/mima.html" target="_blank">刺客信条英灵殿</a>
+              <a
+                href="ckxtyld/mima.html" target="_blank"
+               
+                >刺客信条英灵殿</a
+              >
             </p>
             <hr />
           </div>
@@ -859,23 +864,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="fzzc/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/fzzc.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="fzzc/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/fzzc.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="fzzc/mima.html" target="_blank">放逐之城</a>
+              <a
+                href="fzzc/mima.html" target="_blank"
+               
+                >放逐之城</a
+              >
             </p>
             <hr />
           </div>
@@ -884,23 +892,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="ckxtads/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/ads.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="ckxtads/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/ads.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="ckxtads/mima.html" target="_blank">刺客信条奥德赛</a>
+              <a
+                href="ckxtads/mima.html" target="_blank"
+               
+                >刺客信条奥德赛</a
+              >
             </p>
             <hr />
           </div>
@@ -909,23 +920,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="gq5/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/gq5.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="gq5/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/gq5.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="gq5/mima.html" target="_blank">鬼泣5</a>
+              <a
+                href="gq5/mima.html" target="_blank"
+               
+                >鬼泣5</a
+              >
             </p>
             <hr />
           </div>
@@ -934,23 +948,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="qmzzsg/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/sg.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="qmzzsg/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/sg.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="qmzzsg/mima.html" target="_blank">全面战争三国</a>
+              <a
+                href="qmzzsg/mima.html" target="_blank"
+               
+                >全面战争三国</a
+              >
             </p>
             <hr />
           </div>
@@ -959,23 +976,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="ggsl/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/ggsl.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="ggsl/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/ggsl.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="ggsl/mima.html" target="_blank">港诡实录</a>
+              <a
+                href="ggsl/mima.html" target="_blank"
+               
+                >港诡实录</a
+              >
             </p>
             <hr />
           </div>
@@ -984,23 +1004,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="dtlq/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/dtlq.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="dtlq/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/dtlq.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="dtlq/mima.html" target="_blank">地铁离去</a>
+              <a
+                href="dtlq/mima.html" target="_blank"
+               
+                >地铁离去</a
+              >
             </p>
             <hr />
           </div>
@@ -1018,7 +1041,7 @@
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1037,7 +1060,9 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="zhuluoji1/mima.html" target="_blank"
+              <a
+                href="zhuluoji1/mima.html" target="_blank"
+               
                 ><img
                   src="https://tuchuang.xkyfzs.top/img/zhuluoji5.png"
                   alt="Pulpit rock"
@@ -1047,13 +1072,17 @@
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="zhuluoji1/mima.html" target="_blank">侏罗纪世界进化1</a>
+              <a
+                href="zhuluoji1/mima.html" target="_blank"
+               
+                >侏罗纪世界进化1</a
+              >
             </p>
             <hr />
           </div>
@@ -1062,7 +1091,9 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="zhuluoji2/mima.html" target="_blank"
+              <a
+                href="zhuluoji2/mima.html" target="_blank"
+               
                 ><img
                   src="https://tuchuang.xkyfzs.top/img/zhuluoji22.png"
                   alt="Pulpit rock"
@@ -1072,13 +1103,17 @@
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="zhuluoji2/mima.html" target="_blank">侏罗纪世界进化2</a>
+              <a
+                href="zhuluoji2/mima.html" target="_blank"
+               
+                >侏罗纪世界进化2</a
+              >
             </p>
             <hr />
           </div>
@@ -1087,23 +1122,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="fpjxs1/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/fpjxs.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="fpjxs1/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/fpjxs.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="fpjxs1/mima.html" target="_blank">废品机械师</a>
+              <a
+                href="fpjxs1/mima.html" target="_blank"
+               
+                >废品机械师</a
+              >
             </p>
             <hr />
           </div>
@@ -1113,16 +1151,13 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="https://www.aiweibk.com/435312.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/jxgd.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                ><img src="https://imgs.xkyfzs.top/anyuan/jxgd.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
@@ -1139,73 +1174,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="sgjz5tj/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/sgjz5.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="sgjz5tj/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/sgjz5.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="sgjz5tj/mima.html" target="_blank">上古卷轴5天际</a>
-            </p>
-            <hr />
-          </div>
-        </div>
-
-        <div class="column">
-          <div style="margin: 5%">
-            <p style="text-align: center">
-              <a href="mnnc19/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/mnnc19.png"
-                  alt="Pulpit rock"
-                  width="70%"
-              /></a>
-            </p>
-            <hr />
-            <p
-              style="
-                font-size: 100%;
-                color: rgb(0, 0, 0);
-                font-weight: 800;
-                text-align: center;
-              "
-            >
-              <a href="mnnc19/mima.html" target="_blank">模拟农场19</a>
-            </p>
-            <hr />
-          </div>
-        </div>
-
-        <div class="column">
-          <div style="margin: 5%">
-            <p style="text-align: center">
-              <a href="mnnc22/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/mnnc22.png"
-                  alt="Pulpit rock"
-                  width="70%"
-              /></a>
-            </p>
-            <hr />
-            <p
-              style="
-                font-size: 100%;
-                color: rgb(0, 0, 0);
-                font-weight: 800;
-                text-align: center;
-              "
-            >
-              <a href="mnnc22/mima.html" target="_blank">模拟农场22</a>
+              <a
+                href="sgjz5tj/mima.html" target="_blank"
+               
+                >上古卷轴5天际</a
+              >
             </p>
             <hr />
           </div>
@@ -1215,26 +1203,79 @@
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="https://www.downkuai.com/soft/148715.html"
-                target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/qljzs.png"
-                  alt="Pulpit rock"
-                  width="70%"
+                href="mnnc19/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/mnnc19.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
               <a
-                href="https://www.downkuai.com/soft/148715.html"
-                target="_blank"
+                href="mnnc19/mima.html" target="_blank"
+               
+                >模拟农场19</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a
+                href="mnnc22/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/mnnc22.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 60%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a
+                href="mnnc22/mima.html" target="_blank"
+               
+                >模拟农场22</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a
+                href="https://www.downkuai.com/soft/148715.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/qljzs.png" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 60%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a
+                href="https://www.downkuai.com/soft/148715.html" target="_blank"
+               
                 >桥梁建筑师1</a
               >
             </p>
@@ -1245,23 +1286,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="xxmy2/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/xxmy2.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="xxmy2/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/xxmy2.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="xxmy2/mima.html" target="_blank">小小梦魇2</a>
+              <a
+                href="xxmy2/mima.html" target="_blank"
+               
+                >小小梦魇2</a
+              >
             </p>
             <hr />
           </div>
@@ -1270,23 +1314,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="rllm/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/rllm.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="rllm/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/rllm.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="rllm/mima.html" target="_blank">人类黎明</a>
+              <a
+                href="rllm/mima.html" target="_blank"
+               
+                >人类黎明</a
+              >
             </p>
             <hr />
           </div>
@@ -1295,23 +1342,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="aedfh/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/aedfh.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="aedfh/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/aedfh.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="aedfh/mima.html" target="_blank">艾尔登法环</a>
+              <a
+                href="aedfh/mima.html" target="_blank"
+               
+                >艾尔登法环</a
+              >
             </p>
             <hr />
           </div>
@@ -1320,23 +1370,26 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="sydh/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/sydh.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="sydh/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/sydh.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="sydh/mima.html" target="_blank">石油大亨</a>
+              <a
+                href="sydh/mima.html" target="_blank"
+               
+                >石油大亨</a
+              >
             </p>
             <hr />
           </div>
@@ -1345,32 +1398,35 @@
         <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="ozkcmnq2/mima.html" target="_blank"
-                ><img
-                  src="https://imgs.xkyfzs.top/anyuan/ozkc2.png"
-                  alt="Pulpit rock"
-                  width="70%"
+              <a
+                href="ozkcmnq2/mima.html" target="_blank"
+               
+                ><img src="https://imgs.xkyfzs.top/anyuan/ozkc2.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
             <hr />
             <p
               style="
-                font-size: 100%;
+                font-size: 60%;
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
               "
             >
-              <a href="ozkcmnq2/mima.html" target="_blank">欧洲卡车模拟器2</a>
+              <a
+                href="ozkcmnq2/mima.html" target="_blank"
+               
+                >欧洲卡车模拟器2</a
+              >
             </p>
             <hr />
           </div>
         </div>
       </div>
     </div>
-
+    <hr>
     <footer>
-      <div>
+      <div style="font-size: 50%;background-color: rgba(163, 252, 206, 0.279);">
         <p>免责声明：</p>
         <p>
           使用网站内容一定要严格遵守博客规章制度，本网站所有内容全部免费，请不要将内容拿去做违法的事情，否则，一切后果请用户自负，本博客概不承担负责，等待您的只有法律的严惩！
@@ -1393,199 +1449,154 @@
         <p>
           注：本站所有资源均来自网络转载，版权归原作者和公司所有，如果有侵犯到您的权益，请第一时间联系2995209639@qq.com邮箱：我们将配合处理！
         </p>
-      </div>
+        </div>
     </footer>
+    <hr>
+    <hr>
+    <p style="font-size: 50%;text-align: center;">|&nbsp;&nbsp;&nbsp;&nbsp;暗源正式版本&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;版本号：v1.1.1203241&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;网站编号XYBKay240312&nbsp;&nbsp;&nbsp;&nbsp;|</p>
+    <hr>
+    </div>
+    </section>
+    <script src="index.js"></script>
   </body>
   <script>
-    function disableBookmark() {
-      if (
-        typeof window.sidebar === "object" &&
-        typeof window.sidebar.addPanel === "function"
-      ) {
-        window.sidebar.addPanel("", "", "");
-        setTimeout(function () {
-          document.body.removeChild(iframe);
-        }, 10);
-      } else if (typeof window.external === "object") {
-        window.external.AddFavorite("", "", "");
-      } else {
-        alert("目前网页不支持添加收藏功能");
-      }
-    }
-  </script>
-  <script>
     // 搜索功能
+    
+var searchInput = document.getElementById("searchInput");
 
-    var searchInput = document.getElementById("searchInput");
+// 当搜索框输入文字时触发搜索
+searchInput.addEventListener("input", function () {
+  var keyword = searchInput.value;
+  performSearch(keyword);
+});
+// 一个包含了内容的数组
+var contentArray = [
+  { title: "真人快打11", content: "", url: "zrkd11/mima.html"  },
+  { title: "孤岛惊魂原始杀戮", content: "", url: "gdjhyssl/mima.html"  },
+  { title: "孤岛惊魂新曙光", content: "", url: "gdjhxsg/mima.html"  },
+  { title: "孤岛惊魂6", content: "", url: "gdjh6/mima.html"  },
+  { title: "油管主播的生活", content: "", url: "youtube/mima.html"  },
+  { title: "跑僵尸的食物们", content: "", url: "food/mima.html" },
+  { title: "木筏求生", content: "", url: "mfqs/mima.html" },
+  { title: "60秒避难所重制版", content: "", url: "60miao/mima.html" },
+  { title: "超市模拟器", content: "", url: "csmnq/mima.html" },
+  { title: "森林之子", content: "", url: "senlinzhizi/mima.html" },
+  { title: "侠盗猎车手5", content: "", url: "xiadao5/mima.html" },
+  { title: "骑马与砍杀战团", content: "", url: "qk1/mima.html" },
+  { title: "骑马与砍杀2霸主", content: "", url: "https://www.xkyfzs.top/post/49df6c88.html" },
+  { title: "只狼影视二度", content: "", url: "zhilang/mima.html" },
+  { title: "虐杀原形1", content: "", url: "nuesha1/mima.html" },
+  { title: "虐杀原形2", content: "", url: "nuesha2/mima.html" },
+  { title: "赛博朋克2077", content: "", url: "sbpk2077/mima.html" },
+  { title: "无主之地2", content: "", url: "https://www.downkuai.com/soft/127996.html" },
+  { title: "无主之地3", content: "", url: "https://www.downkuai.com/soft/118351.html" },
+  { title: "钢铁雄心4", content: "", url: "https://www.91rjz.com/pcsoft/122386.html" },
+  { title: "杀手3", content: "", url: "https://www.downkuai.com/soft/128815.html" },
+  { title: "尼尔机械纪元", content: "", url: "https://www.aiweibk.com/435411.html" },
+  { title: "极限竞速地平线4", content: "", url: "dipingxian4/mima.html" },
+  { title: "极限竞速地平线5", content: "", url: "dipingxian5/mima.html" },
+  { title: "荒野大镖客2救赎", content: "", url: "https://www.xkyfzs.top/post/a50912a.html" },
+  { title: "幽灵线：东京", content: "", url: "ylxdj/mima.html" },
+  { title: "刺客信条英灵殿", content: "", url: "ckxtyld/mima.html" },
+  { title: "放逐之城", content: "", url: "fzzc/mima.html" },
+  { title: "刺客信条奥德赛", content: "", url: "ckxtads/mima.html" },
+  { title: "鬼泣5", content: "", url: "gq5/mima.html" },
+  { title: "全面战争三国", content: "", url: "qmzzsg/mima.html" },
+  { title: "港诡实录", content: "", url: "ggsl/mima.html" },
+  { title: "地铁离去", content: "", url: "dtlq/mima.html" },
+  { title: "侏罗纪世界进化1", content: "", url: "zhuluoji1/mima.html" },
+  { title: "侏罗纪世界进化2", content: "", url: "zhuluoji2/mima.html" },
+  { title: "废品机械师", content: "", url: "fpjxs1/mima.html" },
+  { title: "极限国度", content: "", url: "https://www.aiweibk.com/435312.html" },
+  { title: "上古卷轴5天际", content: "", url: "sgjz5tj/mima.html" },
+  { title: "模拟农场19", content: "", url: "mnnc19/mima.html" },
+  { title: "模拟农场22", content: "", url: "mnnc22/mima.html" },
+  { title: "桥梁建筑师1", content: "", url: "https://www.downkuai.com/soft/148715.html" },
+  { title: "小小梦魇2", content: "", url: "xxmy2/mima.html" },
+  { title: "人类黎明", content: "", url: "rllm/mima.html" },
+  { title: "艾尔登法环", content: "", url: "aedfh/mima.html" },
+  { title: "石油大亨", content: "", url: "sydh/mima.html" },
+  { title: "欧洲卡车模拟器2", content: "", url: "ozkcmnq2/mima.html" },
+  // 添加更多文章信息
+];
 
-    // 当搜索框输入文字时触发搜索
-    searchInput.addEventListener("input", function () {
-      var keyword = searchInput.value;
-      performSearch(keyword);
-    });
-    // 一个包含了内容的数组
-    var contentArray = [
-      { title: "真人快打11", content: "", url: "zrkd11/mima.html" },
-      { title: "孤岛惊魂原始杀戮", content: "", url: "gdjhyssl/mima.html" },
-      { title: "孤岛惊魂新曙光", content: "", url: "gdjhxsg/mima.html" },
-      { title: "孤岛惊魂6", content: "", url: "gdjh6/mima.html" },
-      { title: "油管主播的生活", content: "", url: "youtube/mima.html" },
-      { title: "跑僵尸的食物们", content: "", url: "food/mima.html" },
-      { title: "木筏求生", content: "", url: "mfqs/mima.html" },
-      { title: "60秒避难所重制版", content: "", url: "60miao/mima.html" },
-      { title: "超市模拟器", content: "", url: "csmnq/mima.html" },
-      { title: "森林之子", content: "", url: "senlinzhizi/mima.html" },
-      { title: "侠盗猎车手5", content: "", url: "xiadao5/mima.html" },
-      { title: "骑马与砍杀战团", content: "", url: "qk1/mima.html" },
-      {
-        title: "骑马与砍杀2霸主",
-        content: "",
-        url: "https://www.xkyfzs.top/post/49df6c88.html",
-      },
-      { title: "只狼影视二度", content: "", url: "zhilang/mima.html" },
-      { title: "虐杀原形1", content: "", url: "nuesha1/mima.html" },
-      { title: "虐杀原形2", content: "", url: "nuesha2/mima.html" },
-      { title: "赛博朋克2077", content: "", url: "sbpk2077/mima.html" },
-      {
-        title: "无主之地2",
-        content: "",
-        url: "https://www.downkuai.com/soft/127996.html",
-      },
-      {
-        title: "无主之地3",
-        content: "",
-        url: "https://www.downkuai.com/soft/118351.html",
-      },
-      {
-        title: "钢铁雄心4",
-        content: "",
-        url: "https://www.91rjz.com/pcsoft/122386.html",
-      },
-      {
-        title: "杀手3",
-        content: "",
-        url: "https://www.downkuai.com/soft/128815.html",
-      },
-      {
-        title: "尼尔机械纪元",
-        content: "",
-        url: "https://www.aiweibk.com/435411.html",
-      },
-      { title: "极限竞速地平线4", content: "", url: "dipingxian4/mima.html" },
-      { title: "极限竞速地平线5", content: "", url: "dipingxian5/mima.html" },
-      {
-        title: "荒野大镖客2救赎",
-        content: "",
-        url: "https://www.xkyfzs.top/post/a50912a.html",
-      },
-      { title: "幽灵线：东京", content: "", url: "ylxdj/mima.html" },
-      { title: "刺客信条英灵殿", content: "", url: "ckxtyld/mima.html" },
-      { title: "放逐之城", content: "", url: "fzzc/mima.html" },
-      { title: "刺客信条奥德赛", content: "", url: "ckxtads/mima.html" },
-      { title: "鬼泣5", content: "", url: "gq5/mima.html" },
-      { title: "全面战争三国", content: "", url: "qmzzsg/mima.html" },
-      { title: "港诡实录", content: "", url: "ggsl/mima.html" },
-      { title: "地铁离去", content: "", url: "dtlq/mima.html" },
-      { title: "侏罗纪世界进化1", content: "", url: "zhuluoji1/mima.html" },
-      { title: "侏罗纪世界进化2", content: "", url: "zhuluoji2/mima.html" },
-      { title: "废品机械师", content: "", url: "fpjxs1/mima.html" },
-      {
-        title: "极限国度",
-        content: "",
-        url: "https://www.aiweibk.com/435312.html",
-      },
-      { title: "上古卷轴5天际", content: "", url: "sgjz5tj/mima.html" },
-      { title: "模拟农场19", content: "", url: "mnnc19/mima.html" },
-      { title: "模拟农场22", content: "", url: "mnnc22/mima.html" },
-      {
-        title: "桥梁建筑师1",
-        content: "",
-        url: "https://www.downkuai.com/soft/148715.html",
-      },
-      { title: "小小梦魇2", content: "", url: "xxmy2/mima.html" },
-      { title: "人类黎明", content: "", url: "rllm/mima.html" },
-      { title: "艾尔登法环", content: "", url: "aedfh/mima.html" },
-      { title: "石油大亨", content: "", url: "sydh/mima.html" },
-      { title: "欧洲卡车模拟器2", content: "", url: "ozkcmnq2/mima.html" },
-      // 添加更多文章信息
-    ];
+function performSearch(keyword) {
+  // 清空搜索结果容器
+  var searchResults = document.getElementById("searchResults");
+  searchResults.innerHTML = "";
 
-    function performSearch(keyword) {
-      // 清空搜索结果容器
-      var searchResults = document.getElementById("searchResults");
-      searchResults.innerHTML = "";
-
-      // 遍历数组，查找匹配关键字的内容
-      for (var i = 0; i < contentArray.length; i++) {
-        var item = contentArray[i];
-        // 使用 JavaScript 的 String.prototype.includes 方法检查关键字是否存在于标题或内容中
-        if (item.title.includes(keyword) || item.content.includes(keyword)) {
-          // 创建一个新的搜索结果元素，并将结果添加到结果容器中
-          var resultItem = document.createElement("div");
-          resultItem.textContent = item.title;
-          searchResults.appendChild(resultItem);
-        }
-      }
+  // 遍历数组，查找匹配关键字的内容
+  for (var i = 0; i < contentArray.length; i++) {
+    var item = contentArray[i];
+    // 使用 JavaScript 的 String.prototype.includes 方法检查关键字是否存在于标题或内容中
+    if (item.title.includes(keyword) || item.content.includes(keyword)) {
+      // 创建一个新的搜索结果元素，并将结果添加到结果容器中
+      var resultItem = document.createElement("div");
+      resultItem.textContent = item.title;
+      searchResults.appendChild(resultItem);
     }
+  }
+}
 
-    var searchInput = document.getElementById("searchInput");
-    var searchResults = document.getElementById("searchResults");
+var searchInput = document.getElementById("searchInput");
+var searchResults = document.getElementById("searchResults");
 
-    // 当搜索框输入文字时触发搜索
-    searchInput.addEventListener("input", function () {
-      var keyword = searchInput.value.trim();
-      performSearch(keyword);
-    });
+// 当搜索框输入文字时触发搜索
+searchInput.addEventListener("input", function() {
+  var keyword = searchInput.value.trim();
+  performSearch(keyword);
+});
 
-    function performSearch(keyword) {
-      searchResults.innerHTML = "";
+function performSearch(keyword) {
+  searchResults.innerHTML = "";
 
-      var hasResults = false;
+  var hasResults = false;
 
-      for (var i = 0; i < contentArray.length; i++) {
-        var item = contentArray[i];
+  for (var i = 0; i < contentArray.length; i++) {
+    var item = contentArray[i];
 
-        if (item.title.includes(keyword) || item.content.includes(keyword)) {
-          var resultItem = document.createElement("a");
-          resultItem.href = item.url;
-          resultItem.target = "_blank"; // 在新的网页中打开链接
-          resultItem.textContent = item.title;
-          searchResults.appendChild(resultItem);
-          hasResults = true;
-        }
-      }
-
-      var noResultsItem = document.createElement("div");
-      noResultsItem.classList.add("no-results");
-      noResultsItem.textContent = "暂无此游戏";
-      searchResults.appendChild(noResultsItem);
-
-      if (hasResults) {
-        searchResults.style.display = "block";
-        noResultsItem.style.display = "none";
-      } else {
-        searchResults.style.display = "block";
-        noResultsItem.style.display = "block";
-      }
+    if (item.title.includes(keyword) || item.content.includes(keyword)) {
+      var resultItem = document.createElement("a");
+      resultItem.href = item.url;
+      resultItem.target = "_blank"; // 在新的网页中打开链接
+      resultItem.textContent = item.title;
+      searchResults.appendChild(resultItem);
+      hasResults = true;
     }
+  }
+
+  var noResultsItem = document.createElement("div");
+  noResultsItem.classList.add("no-results");
+  noResultsItem.textContent = "暂无此游戏";
+  searchResults.appendChild(noResultsItem);
+
+  if (hasResults) {
+    searchResults.style.display = "block";
+    noResultsItem.style.display = "none";
+  } else {
+    searchResults.style.display = "block";
+    noResultsItem.style.display = "block";
+  }
+}
+
   </script>
 
   <script>
-    var dropdown = document.getElementsByClassName("dropdown")[0];
-    var dropdownContent =
-      dropdown.getElementsByClassName("dropdown-content")[0];
+var dropdown = document.getElementsByClassName("dropdown")[0];
+var dropdownContent = dropdown.getElementsByClassName("dropdown-content")[0];
 
-    // 点击空白处收回下拉菜单
-    document.addEventListener("mouseup", function (event) {
-      if (!dropdown.contains(event.target)) {
-        dropdownContent.style.display = "none";
-      }
-    });
+// 点击空白处收回下拉菜单
+document.addEventListener("mouseup", function(event) {
+  if (!dropdown.contains(event.target)) {
+    dropdownContent.style.display = "none";
+  }
+});
 
-    // 点击按钮切换下拉菜单显示和隐藏
-    dropdown.addEventListener("click", function () {
-      dropdownContent.style.display =
-        dropdownContent.style.display === "block" ? "none" : "block";
-    });
-  </script>
+// 点击按钮切换下拉菜单显示和隐藏
+dropdown.addEventListener("click", function() {
+  dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+});
+
+</script>
+
 </html>

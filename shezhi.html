@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用户设置</title>
+    <link rel="stylesheet" href="css/shezhi.css" />
+    <link
+      rel="Shortcut Icon"
+      href="https://tuchuang.xkyfzs.top/img/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <div class="profile-image">
+          <img src="img/logo.png" alt="avatar" />
+        </div>
+        <div class="profile-info">
+          <p style="font-size: 200%; color: #000">
+            <strong>游客登录个人资料</strong>
+          </p>
+          <p style="font-size: 80%">《暗源网站正式版》</p>
+          <hr />
+          <ul>
+            <li>
+              <span class="label">游客:</span>
+              <span>anyuan_125865</span>
+            </li>
+            <li>
+              <span class="label">账号:</span>
+              <span class="value">aywzxkyfzs.top</span>
+            </li>
+            <li>
+              <span class="label">密码:</span>
+              <span class="value">aywzdlmm</span>
+            </li>
+          </ul>
+          <p class="bio">
+            游客已经登录暗源正式版，关闭重新启动浏览器后，无需重新登录!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 从localStorage中读取用户名
+      var username = localStorage.getItem("email");
+
+      if (username) {
+        // 如果用户名存在
+        document.getElementById("email").textContent = username;
+      } else {
+        // 如果用户名不存在
+        document.getElementById("email").textContent = "郁郁葱葱";
+      }
+    </script>
+  </body>
+</html>
