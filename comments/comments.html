@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>评论区</title>
+    <link
+      rel="Shortcut Icon"
+      href="https://tuchuang.xkyfzs.top/img/favicon.png"
+      type="image/x-icon"
+    />
+    <style>
+      .twikoo .tk-submit .el-textarea__inner {
+        min-height: 150px !important; /*评论框的高度 */
+      }
+      hr {
+        border: 3px solid rgb(212, 237, 255);
+      }
+      a {
+        text-decoration: none;
+        color: rgb(113, 125, 163);
+      }
+      a:hover {
+        color: #507bf9;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-image: url(https://ts1.cn.mm.bing.net/th/id/R-C.9d24a1376dcc936f4e83960ccceb3fa7?rik=GTYkTqvI8IqmfQ&riu=http%3a%2f%2fbbsfiles.vivo.com.cn%2fvivobbs%2fattachment%2fforum%2f201601%2f06%2f113520k4mk6hsqscussumb.jpg&ehk=TLtf1hycpILf3rW6TSekgrRxc1U6rhjW1KvIV2ZO%2bwQ%3d&risl=&pid=ImgRaw&r=0);
+    "
+  >
+    <div>
+      <h1 style="font-size: 300%; color: #ffffff; text-align: center">
+        暗源网站评论区
+      </h1>
+    </div>
+    <hr />
+    <div
+      style="
+        border-style: solid;
+        margin: 8%;
+        background-color: rgba(255, 255, 255, 0.9);
+      "
+    >
+      <div style="margin: 2%">
+        <div id="tcomment"></div>
+
+        <!-- <script src="https://cdn.staticfile.org/twikoo/1.6.32/twikoo.all.min.js"></script> -->
+        <script src="twikoo.all.min.js"></script>
+        <script>
+          twikoo.init({
+            envId: "https://twikoo.xkyfzs.top/", // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+            el: "#tcomment", // 容器元素
+            // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+            // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+            // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
