@@ -11,6 +11,21 @@
       type="image/x-icon"
     />
     <style>
+      .twikoo .tk-submit .el-textarea__inner {
+        min-height: 150px !important; /*评论框的高度 */
+      }
+      hr {
+        border: 3px solid rgb(212, 246, 255);
+      }
+      a {
+        text-decoration: none;
+        color: rgb(113, 125, 163);
+      }
+      a:hover {
+        color: #507bf9;
+      }
+    </style>
+    <style>
       input[type="button"] {
         background-color: red; /* 新公告颜色 */
         /* background-color: rgb(0, 81, 255); */ /* 旧公告颜色 */
@@ -53,19 +68,18 @@
   </head>
   <body>
     <div class="container">
-      <h1>网站最新公告</h1>
+      <h1>暗源网站正式版最新公告</h1>
       <p>尊敬的用户：</p>
-      <p>今天的内容进行了更新[2024/03/11]</p>
+      <p>今天的内容进行了更新[2024/03/24]</p>
       <p>一、游戏内容更新 ：</p>
       <p>
-        今天更新的游戏内容：孤岛惊魂6、孤岛惊魂新曙光、孤岛惊魂原始杀戮、真人快打11、鬼泣5。
+        今天更新的游戏内容：荒野大镖客2救赎、骑马与砍杀2霸主、使命召唤全系列、adobe软件。
       </p>
       <p>二、内容页面更新 ：</p>
-      <p>
-        今天更新的页面内容：孤岛惊魂6、孤岛惊魂新曙光、孤岛惊魂原始杀戮、真人快打11的主页显示卡片。
-      </p>
-      <!-- <p>二、页面新增功能 ：</p>
-      <p>新增了下拉菜单功能，以及未完成的网站使用教程和网站使用手册。</p> -->
+      <p>今天更新的页面内容：使命召唤全系列、adobe软件的主页显示卡片。</p>
+      <p>三、页面新增功能 ：</p>
+      <p>新增1：输入一次密码之后无需再次输入密码，即可进入页面。</p>
+      <p>新增1：评论功能，大家有什么问题可以直接在评论区输入。</p>
       <!-- <p>三、页面更新内容：</p>
       <p>
         修改了：卡片的清晰度，将不再模糊。
@@ -82,6 +96,31 @@
         value="返回公告首页"
         onclick="javascript:history.back(-1);"
       />
+    </div>
+    <hr />
+    <h1 style="text-align: center">评论</h1>
+    <div
+      style="
+        border-style: solid;
+        margin: 1%;
+        background-color: rgba(255, 255, 255, 0.9);
+      "
+    >
+      <div style="margin: 2%">
+        <div id="tcomment"></div>
+
+        <!-- <script src="https://cdn.staticfile.org/twikoo/1.6.32/twikoo.all.min.js"></script> -->
+        <script src="twikoo.all.min.js"></script>
+        <script>
+          twikoo.init({
+            envId: "https://twikoo.xkyfzs.top/", // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+            el: "#tcomment", // 容器元素
+            // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+            // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+            // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+          });
+        </script>
+      </div>
     </div>
   </body>
 </html>
