@@ -15,7 +15,7 @@
       type="image/x-icon"
     />
   </head>
-  <body class="light-theme" onload="disableBookmark();">
+  <body onload="onPageLoad()">
     <header>
       <nav>
         <ul>
@@ -50,38 +50,7 @@
       <p style="text-align: center">
         各位小伙伴注意一下：在用本站内置搜索框，搜索相关游戏时，请一定要用游戏中文名搜索(比如：gta5要用：“侠盗猎车手5”或者用其中的一个文字来搜索！)
       </p>
-      <!-- <script>
-        var texts = [
-          "网站更新内容啦！快来看吧！[2024年3月19日]",
-          "网站更新内容啦！快来看吧！[2024年3月19日]",
-          "超市模拟器更新，小型更新并无公告显示",
-          "超市模拟器更新，小型更新并无公告显示",
-        ];
-
-        var index = 0;
-        function showNextText() {
-          var textContainer = document.querySelector("#text-container");
-          textContainer.innerHTML = texts[index];
-          index++;
-          if (index >= texts.length) {
-            index = 0;
-          }
-        }
-
-        setInterval(showNextText, 2000);
-      </script> -->
-      <!-- <hr />
-      <div
-        id="text-container"
-        style="
-          color: rgb(255, 0, 0);
-          text-align: center;
-          font-size: 130%;
-          background-color: rgba(100, 100, 100, 0.463);
-        "
-      >
-        网站更新内容啦！快来看吧！[2024年3月19日]
-      </div> -->
+      <p>本站访客数: <span id="visitorCount"></span></p>
       
     </main>
     <hr />
@@ -1643,4 +1612,31 @@
         dropdownContent.style.display === "block" ? "none" : "block";
     });
   </script>
+<!-- 访问人数 -->
+  <script>
+      // 定义一个全局变量用于存储访问计数
+      var visitorCount = 0;
+
+      // 页面加载完成后执行的函数
+      function onPageLoad() {
+        // 从本地存储中获取访问计数
+        var count = localStorage.getItem('visitorCount');
+
+        // 如果本地存储中已经有计数，将其赋值给全局变量
+        if (count) {
+          visitorCount = parseInt(count);
+        } else {
+          visitorCount = 0;
+        }
+
+        // 增加访问计数
+        visitorCount++;
+        
+        // 将访问计数保存到本地存储中
+        localStorage.setItem('visitorCount', visitorCount);
+        
+        // 显示访问计数
+        document.getElementById('visitorCount').innerHTML = visitorCount;
+      }
+    </script>
 </html>
