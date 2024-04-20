@@ -28,7 +28,7 @@ function validateLogin() {
       localStorage.setItem("isLoggedIn", true);
 
       // 跳转到指定的页面
-      window.location.href = "http://w2995209639.3vzhuji.cc/index2.html"; // 请将链接替换为你希望跳转的目标页面的实际链接
+      window.location.href = "index2.html"; // 请将链接替换为你希望跳转的目标页面的实际链接
     } else {
       document.getElementById("error-message").innerHTML =
         "用户名或密码错误，请重新输入！";
