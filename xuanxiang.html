@@ -75,6 +75,16 @@
         max-width: 100%;
         max-height: 100%;
       }
+
+      .date {
+        color: #565656;
+        transition: color 0.3s; /* 添加颜色渐变过渡效果 */
+        cursor: pointer;
+      }
+
+      .date:hover {
+        color: #ff0000;
+      }
     </style>
   </head>
   <body>
@@ -84,13 +94,13 @@
         公告内容
       </button>
       <button class="tablinks" onclick="openTab(event, 'Tab2')">
-        暗源使用手册
+        网站功能更新
       </button>
       <button class="tablinks" onclick="openTab(event, 'Tab3')">
-        暗源使用视频
+        暗源使用手册
       </button>
       <button class="tablinks" onclick="openTab(event, 'Tab4')">
-        暂无开发
+        暗源使用视频
       </button>
       <button class="tablinks" onclick="openTab(event, 'Tab5')">
         暂无开发
@@ -455,6 +465,23 @@
     </div>
 
     <div id="Tab2" class="tabcontent">
+      <h1>功能介绍</h1>
+      <hr />
+      <p>更新日期：<span class="date">2024/4/20</span></p>
+      <p style="font-size: 150%">
+        1.随着游戏的增多，本网站之后的内容不再以微信公众号回复得到密码，而是通过后台AI运算给出大家验证码，输入即可！
+      </p>
+      <p style="font-size: 150%">
+        2.值得注意的是填写验证码时注意大小写，填写完成后点击提交按钮或敲击回车键即可！
+      </p>
+      <hr />
+      <p>更新日期：<span class="date">早期</span></p>
+      <p style="font-size: 150%">
+        <a href="gonggao.html" target="_blank">早期公告</a>
+      </p>
+    </div>
+
+    <div id="Tab3" class="tabcontent">
       <h1 style="text-align: center">暗源使用手册</h1>
       <hr />
       <p style="text-align: center">
@@ -484,16 +511,10 @@
       </p>
     </div>
 
-    <div id="Tab3" class="tabcontent">
+    <div id="Tab4" class="tabcontent">
       <h1>暗源使用视频</h1>
       <hr />
       <p>正在开发中...</p>
-    </div>
-
-    <div id="Tab4" class="tabcontent">
-      <h1>内容</h1>
-      <hr />
-      <p>暂无开发...</p>
     </div>
 
     <div id="Tab5" class="tabcontent">
