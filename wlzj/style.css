@@ -1,0 +1,98 @@
+/* 缩到一定宽度图片消失 */
+.responsive-image {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .responsive-image {
+    display: none;
+  }
+}
+
+/* 按钮样式 */
+
+.my-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.my-button:hover {
+  background-color: #00d91d;
+  color: #000;
+}
+
+/* 按钮样式2 */
+
+.my1-button {
+  background-color: #e2ff25;
+  color: #010101;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.my1-button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* 按钮样式3 */
+
+.my2-button {
+  background-color: #a764ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.my2-button:hover {
+  background-color: #ff7069;
+}
+
+/* a标签样式 */
+a {
+  text-decoration: none;
+  color: #d7d7d7;
+}
+
+.eve {
+  display: inline; /* 这是一个可以让两个盒子出现在一行之内，margin-left: 20px;这是让两个文字之间产生缝隙。 */
+  display: inline;
+}
+
+/* 让两个按钮分行 */
+/* button {
+  display: block;
+  margin-bottom: 10px;
+} */
+
+/* 主题切换 */
+/* 浅色主题样式 */
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+/* 深色主题样式 */
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 主题切换过渡效果 */
+
+body {
+  transition: background-color 1s ease;
+}
