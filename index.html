@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="js/style.js" />
+    <link rel="stylesheet" href="css/zhiding.css" />
     <link
       rel="Shortcut Icon"
       href="https://tuchuang.xkyfzs.top/img/favicon.png"
@@ -15,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <script>
       var alertBox;
 
@@ -47,6 +49,7 @@
         }
       }
     </script>
+    
   </head>
   <body>
     <header>
@@ -2083,6 +2086,14 @@
             <hr />
           </div>
         </div>
+        <!-- <button id="scrollToTopBtn" class="z2024">回到顶部</button> -->
+        <!-- <button id="scrollToTopBtn" title="回到顶部">
+  <i class="fas fa-arrow-up"></i>
+</button> -->
+<button id="scrollToTopBtn" title="回到顶部">
+  <span class="arrow-icon"><i class="fas fa-arrow-up"></i></span>
+  <span class="text">顶</span>
+</button>
       </div>
     </div>
 
@@ -2118,4 +2129,20 @@
       </p>
     </footer>
   </body>
+  <!-- 置顶按钮 -->
+    <script>
+      window.addEventListener('scroll', function() {
+  var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  // 当页面滚动超过一定高度时显示按钮，否则隐藏按钮
+  if (window.pageYOffset > 100) {
+    scrollToTopBtn.style.display = 'block';
+  } else {
+    scrollToTopBtn.style.display = 'none';
+  }
+});
+
+document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+    </script>
 </html>
