@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中文设置教程</title>
+    <link
+      rel="Shortcut Icon"
+      href="https://tuchuang.xkyfzs.top/img/favicon.png"
+      type="image/x-icon"
+    />
+    <script src="../base/jquery-3.4.1.min.js"></script>
+    <style type="text/css">
+      .imgPreview {
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%; /*容器占满整个屏幕*/
+        height: 100%;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .imgPreview img {
+        z-index: 100;
+        width: 60%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      /*添加鼠标移入图片效果*/
+      .img {
+        cursor: url("/imgs/sc1.png"), auto;
+      }
+    </style>
+
+    <script type="text/javascript">
+      $(function () {
+        $(".img").on("click", function () {
+          var src = $(this).attr("src");
+          $(".imgPreview img").attr("src", src);
+          $(".imgPreview").show();
+        });
+        $(".imgPreview").on("click", function () {
+          $(".imgPreview").hide();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- <p style="text-align: center">
+      <a href="/imgs/sc1.png" target="_blank"
+        ><img src="/imgs/sc1.png" alt="1" width="200px" title="点击查看大图"
+      /></a>
+    </p> -->
+    <h1>第一步:</h1>
+    <img src="1.jpg" class="img" style="width: 1000px; text-align: center" />
+    <h1>第二步:</h1>
+    <img src="2.jpg" class="img" style="width: 1000px; text-align: center" />
+    <h1>第三步:</h1>
+    <img src="3.jpg" class="img" style="width: 1000px; text-align: center" />
+  </body>
+</html>
