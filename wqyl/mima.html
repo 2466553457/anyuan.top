@@ -1,127 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <title>输入密码</title>
+    <title>暗源网站</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mima.css" />
     <link
       rel="Shortcut Icon"
       href="https://tuchuang.xkyfzs.top/img/favicon.png"
       type="image/x-icon"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <style>
-      .hidden {
-        display: none;
-      }
-      /* 默认布局 */
-      .password-page {
-        background-color: #f5f5f5;
-        padding: 20px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 60vh;
-      }
-
-      .password-page__title {
-        font-size: 150%;
-        margin-top: 0;
-      }
-
-      .password-page__form {
-        margin-top: 20px;
-      }
-
-      .password-page__label {
-        font-size: 20px;
-        margin-right: 10px;
-      }
-
-      .password-page__input {
-        font-size: 20px;
-        padding: 5px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-      }
-
-      .password-page__button {
-        font-size: 20px;
-        padding: 5px 10px;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        margin-left: 10px;
-      }
-
-      .password-page__button:hover {
-        background-color: #0069d9;
-      }
-
-      /* 小屏幕布局 */
-      @media screen and (max-width: 768px) {
-        .password-page {
-          padding: 10%;
-          height: auto;
-        }
-
-        .password-page__title {
-          font-size: 150%;
-        }
-
-        .password-page__label {
-          font-size: 140%;
-        }
-
-        .password-page__input {
-          font-size: 100%;
-        }
-
-        .password-page__button {
-          font-size: 120%;
-          padding: 1px 1px;
-          margin-left: 5px;
-        }
-      }
-    </style>
+    <title>暗源安全验证</title>
   </head>
   <body>
-    <div id="password-page" class="password-page">
-      <p style="text-align: center">
-        <img
-          class="gallery-image"
-          src="https://imgs.xkyfzs.top/weixin/erweima.jpg"
-          alt="微信搜索：意闪科技"
-          style="width: 260px"
-        />
+    <h1>请填写验证码</h1>
+    <h4 style="color: #ff0000;text-align: center;">*注意：填写验证码时注意大小写 | 填写完成后点击提交按钮或敲击回车键即可！</h4>
+    <hr />
+    <form onsubmit="return validateForm();" action="">
+      <div class="input-group">
+        <label for="captcha">验证码：</label>
+        <input type="text" id="captcha" name="captcha" required />
+        <button type="button" onclick="generateCaptcha();">获取验证码</button>
+      </div>
+      <p>
+      <div id="generatedCaptcha" style="color: #ff0000;"></div>
       </p>
-      <h1 class="password-page__title">
-        获取密码的方法:《请到微信公众号回复：王权陨落》
-      </h1>
-      <form class="password-page__form" id="password-form">
-        <label class="password-page__label" for="password-input">密码：</label>
-        <input
-          class="password-page__input"
-          type="password"
-          id="password-input"
-        />
-        <button class="password-page__button" type="submit">确认</button>
-      </form>
-    </div>
+      <br />
 
-    <div id="content-page" class="hidden">
-      <!-- <button id="go-to-next-page-button">去下一个页面</button> -->
-      <!-- 在这里放置需要输入密码才能访问的内容 -->
-    </div>
-    <script src="script.js"></script>
+      <input type="submit" value="提交" class="bu1" />
+    </form>
+    <script src="mima.js"></script>
   </body>
 </html>
