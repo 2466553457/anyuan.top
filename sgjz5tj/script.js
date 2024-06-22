@@ -29,3 +29,17 @@ passwordForm.addEventListener("submit", function (event) {
     alert("密码错误，请重新输入！");
   }
 });
+
+// // 检查localStorage中的标志
+// var hasRedirected = localStorage.getItem("hasRedirected");
+
+// // 如果localStorage中的标志不存在或者为false，则进行跳转
+// if (!hasRedirected) {
+//   // 设置localStorage标志为true
+//   localStorage.setItem("hasRedirected", true);
+// } else {
+//   // 如果已经跳转过了，则直接跳转到下一个页面
+//   window.location.href = "sgjz5tj8491.html";
+// }
+// // 清除localStorage中的数据,最好不要使用，使用后悔，责任一概不担！
+// // localStorage.clear();
