@@ -111,12 +111,36 @@ footer {
   clear: both;
 }
 
-/* 响应式布局 - 小于 600 px 时改为上下布局 */
+/* 响应式布局 */
+
+/* 当屏幕宽度小于等于1600px时，.column 占据25%宽度 */
+@media screen and (max-width: 1600px) {
+  .column {
+    width: 25%;
+  }
+}
+
+/* 当屏幕宽度小于等于1100px时，.column 占据33.33%宽度 */
+@media screen and (max-width: 1100px) {
+  .column {
+    width: 33.33%;
+  }
+}
+
+/* 当屏幕宽度小于等于800px时，.column 占据50%宽度 */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* 当屏幕宽度小于等于600px时，.column 占据100%宽度 */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
 }
+
 a {
   text-decoration: none;
   color: #7a7a7a;
