@@ -113,6 +113,12 @@ footer {
 
 /* 响应式布局 */
 
+/* 初始设置 */
+.column {
+  width: 100%; /* 默认宽度为100% */
+  transition: width 0.45s; /* 添加过渡效果 */
+}
+
 /* 当屏幕宽度小于等于1600px时，.column 占据25%宽度 */
 @media screen and (max-width: 1600px) {
   .column {
