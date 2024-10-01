@@ -4,7 +4,7 @@ function validateForm() {
 
   if (captcha === generatedCaptcha) {
     // 跳转到另一个页面
-    window.location.href = "qjq8996.html";
+    window.location.href = "clxsj2703.html";
   } else {
     alert("验证码错误，请重新输入！");
   }
