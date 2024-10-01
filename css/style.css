@@ -115,7 +115,6 @@ footer {
 
 /* 初始设置 */
 .column {
-  width: 100%; /* 默认宽度为100% */
   transition: width 0.45s; /* 添加过渡效果 */
 }
 
