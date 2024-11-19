@@ -27,8 +27,113 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <style>
+      /* 弹窗样式 */
+.popup {
+    z-index: 9999;
+    position: fixed;
+    top: 50%; /* 居中显示 */
+    left: 50%; /* 居中显示 */
+    transform: translate(-50%, -50%); /* 水平垂直居中 */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    opacity: 0; /* 初始透明度 */
+    animation: fadeIn 0.5s forwards; /* 弹入动画 */
+    /* text-align: left; */
+}
+
+/* 关闭按钮样式 */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* 弹入动画 */
+@keyframes fadeIn {
+    from {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.popup-content {
+    /* text-align: center; */
+    text-align: left;
+}
+
+.close {
+    color: #ff0000;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: rgb(0, 0, 0);
+}
+.popup {
+    z-index: 9999;
+}
+
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // JS代码在DOM加载完成后执行
+    const popup = document.getElementById('popup');
+    const closePopupButton = document.getElementById('close-popup');
+
+    // Show the popup
+    popup.style.display = 'block';
+
+    // Close the popup when the close button is clicked
+    closePopupButton.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+});
+
+document.body.appendChild(popupElement); // 将弹窗插入到 body 的最后
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const popup = document.getElementById('popup');
+    
+    // 弹窗显示
+    popup.style.display = 'block';
+});
+
+    </script>
   </head>
   <body onload="onPageLoad()">
+    
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h1 style="text-align: center;">重大公告</h1>
+        <p>1.网站正式发布，内容还不完善，还没有将本网站的所有内容全部移交过去，但是新网站的所有内容目前都是最新的。</p>
+        <p>2.目前不注册登录账号是无法进入网站的，后续可能会对此限制解除。</p>
+        <p>网站地址：<a href="https://bd.xkyfzs.top/" target="_blank" style="color: blue;">https://bd.xkyfzs.top/</a></p>
+        <p><span style="color: rgb(255, 0, 0);">发布日期：</span><span style="color: rgb(87, 87, 87);">2024/11/19</span></p>
+        <hr>
+        <p>1.(希望一定要看完)由于本网站过于老旧，还有加载速度较慢，所以我决定要建立一个新的网站。</p>
+        <p>2.网站其实在10月中旬就开始编写、整合和测试了，只不过当时是本地化网络访问，所以并未发出公告。</p>
+        <p>3.在11月5日开始购买服务器，由于资金有限，所以服务器的硬盘空间不是很大，请大家使用网站的一些功能时，一定要按规定使用。</p>
+        <p>4.用不了多久网站就会全面上线，功能肯定要多于当前网站，当然还有一些小小的限制，下面我来介绍新网站的功能。</p>
+        <p>5.新网站是基于wordpress系统开发的，里面的一些主题和插件一些功能，并不能满足所有要求，所以我自己修改了一些代码，可能会存在一些问题，但是经过多次测试，这些问题是不影响正常使用的。</p>
+        <p>6.网站的功能大概有：用户注册登录系统、分类/标签系统、站内搜索系统、用户评论系统、投稿/编辑系统。</p>
+        <p>7.这些功能就不详细介绍了，到时候我会把链接放在微信公众号和本片公告。</p>
+        <p><span style="color: rgb(255, 0, 0);">发布日期：</span><span style="color: rgb(87, 87, 87);">2024/11/11</span></p>
+        </div>
+    </div>
+
     <header>
       <nav>
         <ul>
