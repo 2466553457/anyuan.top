@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-color: #ebebeb;
 }
 
 /* Header Styles */
@@ -98,7 +99,7 @@ footer {
   }
 }
 /* 正文 */
-/* 创建三个相等的列 */
+/* 创建五个相等的列 */
 .column {
   float: left;
   width: 20%;
