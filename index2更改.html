@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="js/style.js" />
     <!-- <script src="senlinzhizi/your-script-file.js"></script> -->
     <!-- <link rel="stylesheet" href="css/zhuti.css" /> -->
-    <!-- <link rel="stylesheet" href="css/sousuo.css" /> -->
+    <link rel="stylesheet" href="css/sousuo.css" />
     <link rel="stylesheet" href="css/zhiding.css" />
     <meta property="og:type" content="website">
     <meta property="og:title" content="暗源网站">
@@ -85,116 +85,6 @@
 }
 
     </style>
-    <!-- 搜索功能2 -->
-     <style>
-
-      .search-container {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .search-box {
-        display: flex;
-        width: 100%;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 50px;
-        overflow: hidden;
-      }
-
-      #search-input {
-        flex: 1;
-        padding: 15px 20px;
-        border: none;
-        font-size: 1.1rem;
-        outline: none;
-      }
-
-      #search-button {
-        background: #3498db;
-        color: rgb(255, 255, 255);
-        border: none;
-        padding: 15px 25px;
-        cursor: pointer;
-        font-size: 1.1rem;
-        transition: background 0.3s;
-      }
-
-      #search-button:hover {
-        background: #000000;
-      }
-
-      .content-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 25px;
-        margin-top: 30px;
-      }
-/* body内容设置 */
-      .searchable {
-        background: #ebebeb;
-        border-radius: 10px;
-        padding: 25px;
-        box-shadow: 0 5px 15px #ebebeb;
-        transition: all 0.3s ease;
-        transform-origin: center top;
-      }
-
-      .searchable h2 {
-        color: #2c3e50;
-        margin-bottom: 15px;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 10px;
-      }
-
-      .searchable p {
-        line-height: 1.6;
-        color: #555;
-      }
-
-      .hidden {
-        opacity: 0;
-        transform: scale(0.9);
-        height: 0;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-      }
-
-      .no-results {
-        text-align: center;
-        grid-column: 1 / -1;
-        padding: 40px;
-        background: rgb(255, 255, 255);
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        display: none;
-      }
-
-      .no-results.show {
-        display: block;
-      }
-
-      .search-info {
-        text-align: center;
-        margin: 20px 0;
-        font-size: 1.1rem;
-        color: #2c3e50;
-      }
-
-      .tag {
-        display: inline-block;
-        background: #ffffff;
-        color: #3498db;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 0.9rem;
-        margin-top: 15px;
-      }
-    </style>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
     // JS代码在DOM加载完成后执行
@@ -228,12 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="popup-content">
             <span class="close" id="close-popup">&times;</span>
             <h1 style="text-align: center;">重大公告</h1>
-        <p>1.本网站功能已经得到全面更新：</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #3498db;">(1).在搜索框搜索内容，不仅仅会显示文字，还会显示其图片。</span></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #3498db;">(2).在搜索框搜索内容，只会显示相应的内容，其他无关内容无法可见。</span></p>
-        <p>2.将搜索框美化，网站多于无关的内容进行了删除，使网站更加简洁明了。</p>
-        <p><span style="color: rgb(255, 0, 0);">发布日期：</span><span style="color: rgb(87, 87, 87);">2025/08/30</span></p>
-        <!-- <p>1.网站正式发布，内容还不完善，还没有将本网站的所有内容全部移交过去，但是新网站的所有内容目前都是最新的。</p>
+        <p>1.网站正式发布，内容还不完善，还没有将本网站的所有内容全部移交过去，但是新网站的所有内容目前都是最新的。</p>
         <p>2.目前不注册登录账号可以正常进入网站。</p>
         <p>网站地址：<a href="https://bd.xkyfzs.top/" target="_blank" style="color: blue;">https://bd.xkyfzs.top/</a></p>
         <p><span style="color: rgb(255, 0, 0);">发布日期：</span><span style="color: rgb(87, 87, 87);">2025/07/16</span></p>
@@ -245,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <p>5.新网站是基于wordpress系统开发的，里面的一些主题和插件一些功能，并不能满足所有要求，所以我自己修改了一些代码，可能会存在一些问题，但是经过多次测试，这些问题是不影响正常使用的。</p>
         <p>6.网站的功能大概有：用户注册登录系统、分类/标签系统、站内搜索系统、用户评论系统、投稿/编辑系统。</p>
         <p>7.这些功能就不详细介绍了，到时候我会把链接放在微信公众号和本片公告。</p>
-        <p><span style="color: rgb(255, 0, 0);">发布日期：</span><span style="color: rgb(87, 87, 87);">2024/11/11</span></p> -->
+        <p><span style="color: rgb(255, 0, 0);">发布日期：</span><span style="color: rgb(87, 87, 87);">2024/11/11</span></p>
         </div>
     </div>
 
@@ -274,54 +159,57 @@ document.addEventListener("DOMContentLoaded", function() {
 
     <main>
       <h1 style="text-align: center">欢迎来到暗源网站！</h1>
-      <!-- <p style="text-align: center;">游戏数量：<span style="color: rgb(255, 0, 0);">113</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;软件数量：<span style="color: rgb(255, 0, 0);">3</span></p> -->
-      <!-- <p style="text-align: center">
+      <p style="text-align: center;">网站最新更新：<span style="color: rgb(255, 0, 0);">点击“本地资源库官网(点击进入)”直接跳转至本地资源库官网 | 2025年7月16日(这也是最后一次更新了)。</span></p>
+      <p style="text-align: center">
         各位小伙伴注意一下：在用本站内置搜索框，搜索相关游戏时，请一定要用游戏中文名搜索(比如：gta5要用：“侠盗猎车手5”或者用其中的一个文字来搜索！)
-      </p> -->
-      <!-- <p style="text-align: center;color: #ff0000;">
+      </p>
+      <p style="text-align: center;color: #ff0000;">
         《当游戏数量达到100个时，更新速度将缓慢进行！》
-      </p> -->
+      </p>
       <!-- <p>您访问本站数: <span id="visitorCount"></span></p> -->
       
     </main>
     <hr />
 
-    <!-- <div class="search-container">
+    <div class="search-container">
       <input
         type="text"
         id="searchInput"
         placeholder="请输入相关文字寻找内容 比如：侠盗猎车.."
       />
       <div id="searchResults"></div>
-    </div> -->
-    <!-- 搜索功能2 -->
-     <div class="container">
-      <!-- <header>
-        <h1>网站内容搜索功能</h1>
-        <p>在下方搜索框中输入关键词，系统将自动过滤并显示相关内容</p>
-      </header> -->
-
-      <div class="search-container">
-        <div class="search-box">
-          <input
-            type="text"
-            id="search-input"
-            placeholder="输入关键词搜索..."
-          />
-          <button id="search-button">搜索</button>
-        </div>
-      </div>
-
-      <div class="search-info" id="search-info">请在搜索框内输入关键词开始搜索</div>
+    </div>
 
     <!-- 正文游戏图片 -->
     <div style="margin: 3%">
       <div class="row">
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="wgcs/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/" target="_blank" onclick="showAlert()"
+                ><img src="https://bd.xkyfzs.top/wp-content/uploads/2025/07/2025071610113359.jpg" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="https://bd.xkyfzs.top/" target="_blank" onclick="showAlert()"
+                >本地资源库官网(点击进入)</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="https://bd.xkyfzs.top/wgzskbbhvrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/wgcs.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -332,22 +220,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="wgcs/mima.html" target="_blank" onclick="showAlert()"
-                >王国重生/Kingdoms Reborn</a
+              <a href="https://bd.xkyfzs.top/wgzskbbhvrlg.html" target="_blank" onclick="showAlert()"
+                >王国重生</a
               >
             </p>
             <hr />
           </div>
         </div>
-        </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="bgrz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/bgrztbbhvrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/bgrz.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -358,22 +243,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="bgrz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/bgrztbbhvrlg.html" target="_blank" onclick="showAlert()"
                 >被感染者/The Infected</a
               >
             </p>
             <hr />
           </div>
         </div>
-        </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="qh9798/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/qht.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/qh9798.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -384,22 +266,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="qh9798/mima.html" target="_blank" onclick="showAlert()"
-                >拳皇97/拳皇98/THE KING OF FIGHTERS '97/98</a
+              <a href="https://bd.xkyfzs.top/qht.html" target="_blank" onclick="showAlert()"
+                >拳皇97/拳皇98</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="cyxkj/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/cyxkjsbbhvrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/cyxkj.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -410,22 +289,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="cyxkj/mima.html" target="_blank" onclick="showAlert()"
-                >超阈限空间/Superliminal</a
+              <a href="https://bd.xkyfzs.top/cyxkjsbbhvrlg.html" target="_blank" onclick="showAlert()"
+                >超阈限空间</a
               >
             </p>
             <hr />
           </div>
         </div>
-        </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="lzzkklt/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/lzzkkltdbbhv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/lzzkklt.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -436,22 +312,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="lzzkklt/mima.html" target="_blank" onclick="showAlert()"
-                >龙珠Z：卡卡罗特/DRAGON BALL Z: KAKAROT</a
+              <a href="https://bd.xkyfzs.top/lzzkkltdbbhv.html" target="_blank" onclick="showAlert()"
+                >龙珠Z：卡卡罗特</a
               >
             </p>
             <hr />
           </div>
         </div>
-        </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="lzgdz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/lzzszlzgdzlzdszbbhv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/lzgdz.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -462,22 +335,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="lzgdz/mima.html" target="_blank" onclick="showAlert()"
-                >龙珠格斗Z/DRAGON BALL Fighter Z</a
+              <a href="https://bd.xkyfzs.top/lzzszlzgdzlzdszbbhv.html" target="_blank" onclick="showAlert()"
+                >龙珠格斗Z</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="hjdt/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/hjdthjmzzsz.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/hjdt.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -488,22 +358,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="hjdt/mima.html" target="_blank" onclick="showAlert()"
-                >合金弹头合集/METAL SLUG 1/2/3/4/重装上阵</a
+              <a href="https://bd.xkyfzs.top/hjdthjmzzsz.html" target="_blank" onclick="showAlert()"
+                >合金弹头合集</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="clxsj/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/ljxsjtbbhvrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/clxsj.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -514,22 +381,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="clxsj/mima.html" target="_blank" onclick="showAlert()"
-                >林间小世界/Tiny Glade</a
+              <a href="https://bd.xkyfzs.top/ljxsjtbbhvrlg.html" target="_blank" onclick="showAlert()"
+                >林间小世界</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="qjq/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/qjqvbbhvjtzwb.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/qjq.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -540,22 +404,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="qjq/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/qjqvbbhvjtzwb.html" target="_blank" onclick="showAlert()"
                 >取景器/Viewfinder</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="jgsdr/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/jgsdrsbbhvrlm.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/jgsdr.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -566,22 +427,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="jgsdr/mima.html" target="_blank" onclick="showAlert()"
-                >讲故事的人/Storyteller</a
+              <a href="https://bd.xkyfzs.top/jgsdrsbbhvrlm.html" target="_blank" onclick="showAlert()"
+                >讲故事的人</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="bsdgs/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/bsdgsbbbvrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/bsdgs.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -592,22 +450,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="bsdgs/mima.html" target="_blank" onclick="showAlert()"
-                >百视达公司/</a
+              <a href="https://bd.xkyfzs.top/bsdgsbbbvrlg.html" target="_blank" onclick="showAlert()"
+                >百视达公司</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="qmzzdqdg/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/qmzzdqdgbbhvgcbrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/dqdg.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -618,22 +473,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="qmzzdqdg/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/qmzzdqdgbbhvgcbrlg.html" target="_blank" onclick="showAlert()"
                 >全面战争大清帝国</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="ngq/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/ngqkhltbbhv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/ngq12.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -644,22 +496,42 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="ngq/mima.html" target="_blank" onclick="showAlert()"
-                >女鬼桥1开魂路 / 女鬼桥2释魂路</a
+              <a href="https://bd.xkyfzs.top/ngqkhltbbhv.html" target="_blank" onclick="showAlert()"
+                >女鬼桥1</a
               >
             </p>
             <hr />
           </div>
+        </div>
+        <div class="column">
+          <div style="margin: 5%">
+            <p style="text-align: center">
+              <a href="https://bd.xkyfzs.top/ngqshltbbvrlg.html" target="_blank" onclick="showAlert()"
+                ><img src="https://imgs.xkyfzs.top/anyuan/ngq12.jpg" alt="Pulpit rock" width="70%"
+              /></a>
+            </p>
+            <hr />
+            <p
+              style="
+                font-size: 100%;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                text-align: center;
+              "
+            >
+              <a href="https://bd.xkyfzs.top/ngqshltbbvrlg.html" target="_blank" onclick="showAlert()"
+                >女鬼桥2</a
+              >
+            </p>
+            <hr />
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="emlp/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/emlpbbbhvljb.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/emlp.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -670,22 +542,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="emlp/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/emlpbbbhvljb.html" target="_blank" onclick="showAlert()"
                 >恶魔轮盘</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="xqgj/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/xqgjtbbhvrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/xqgj.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -696,22 +565,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="xqgj/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/xqgjtbbhvrlg.html" target="_blank" onclick="showAlert()"
                 >星球工匠</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="wgrq/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/wgrqibbhvrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/wgrq.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -722,19 +588,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="wgrq/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/wgrqibbhvrlg.html" target="_blank" onclick="showAlert()"
                 >无感染区</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gdq/mima.html" target="_blank" onclick="showAlert()"
@@ -748,22 +611,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="gdq/mima.html" target="_blank" onclick="showAlert()"
-                >鬼打墙8号出口/Dead end Exit 8</a
+                >鬼打墙8号出口</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="xj/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/sssxjbbbhvljbhhzwrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/sssxj.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -774,19 +634,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="xj/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/sssxjbbbhvljbhhzwrlg.html" target="_blank" onclick="showAlert()"
                 >随身摄像机/Bodycam</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="8hzt/mima.html" target="_blank" onclick="showAlert()"
@@ -800,7 +657,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="8hzt/mima.html" target="_blank" onclick="showAlert()"
@@ -809,10 +665,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="8hck/mima.html" target="_blank" onclick="showAlert()"
@@ -826,7 +680,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="8hck/mima.html" target="_blank" onclick="showAlert()"
@@ -835,13 +688,11 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="zyr/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/zyryjzzfbbhvrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/zyr.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -852,22 +703,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="zyr/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/zyryjzzfbbhvrlg.html" target="_blank" onclick="showAlert()"
                 >自由人:游击战争</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="shmh2/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/shmhldzxshmhbdzxsb.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/shmh2.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -878,22 +726,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="shmh2/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/shmhldzxshmhbdzxsb.html" target="_blank" onclick="showAlert()"
                 >深海迷航:零度之下</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="shmh1/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/shmhsbbhvrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/shmh1.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -904,22 +749,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="shmh1/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/shmhsbbhvrlg.html" target="_blank" onclick="showAlert()"
                 >深海迷航</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="fcdr2/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/fcdrhbbhvrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/fcdr2.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -930,22 +772,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="fcdr2/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/fcdrhbbhvrlg.html" target="_blank" onclick="showAlert()"
                 >房产达人2</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="fcdr/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/fcdrhbbhvjcdrlg.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/fcdr.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -956,22 +795,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="fcdr/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/fcdrhbbhvjcdrlg.html" target="_blank" onclick="showAlert()"
                 >房产达人</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="mnsy3/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/mnsygbbhv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/mnsy3.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -982,19 +818,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="mnsy3/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/mnsygbbhv.html" target="_blank" onclick="showAlert()"
                 >模拟山羊3</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="pc2/mima.html" target="_blank" onclick="showAlert()"
@@ -1008,7 +841,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="pc2/mima.html" target="_blank" onclick="showAlert()"
@@ -1017,10 +849,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="pc1/mima.html" target="_blank" onclick="showAlert()"
@@ -1034,7 +864,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="pc1/mima.html" target="_blank" onclick="showAlert()"
@@ -1043,10 +872,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="md/mima.html" target="_blank" onclick="showAlert()"
@@ -1060,7 +887,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="md/mima.html" target="_blank" onclick="showAlert()"
@@ -1069,13 +895,11 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="tlry/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/tlrytbbhvgfjtzw.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/tlry.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1086,22 +910,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="tlry/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/tlrytbbhvgfjtzw.html" target="_blank" onclick="showAlert()"
                 >泰拉瑞亚</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="qy/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/qyobbhv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/qy.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1112,22 +933,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="qy/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/qyobbhv.html" target="_blank" onclick="showAlert()"
                 >缺氧</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="rlz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=HumanitZ" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/rlz.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1138,22 +956,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="rlz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=HumanitZ" target="_blank" onclick="showAlert()"
                 >人性末日Z</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="dayz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=DayZ" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/dayz.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1164,22 +979,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="dayz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=DayZ" target="_blank" onclick="showAlert()"
                 >DayZ/僵尸末日</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="rz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=SCUM" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/rz.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1190,22 +1002,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="rz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=SCUM" target="_blank" onclick="showAlert()"
                 >人渣</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="7rs/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=7+Days+to+Die" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/7rs.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1216,19 +1025,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="7rs/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=7+Days+to+Die" target="_blank" onclick="showAlert()"
                 >七日杀/7日杀</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="https://pan.baidu.com/s/1G6SGxY3GTBGa1SQsQw_KGQ?pwd=lm02" target="_blank" onclick="showAlert()"
@@ -1242,7 +1048,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="https://pan.baidu.com/s/1G6SGxY3GTBGa1SQsQw_KGQ?pwd=lm02" target="_blank" onclick="showAlert()"
@@ -1251,10 +1056,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="https://pan.baidu.com/s/1WlTUlkYX75Ps1ntVtwyJGQ?pwd=lm01" target="_blank" onclick="showAlert()"
@@ -1268,7 +1071,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="https://pan.baidu.com/s/1WlTUlkYX75Ps1ntVtwyJGQ?pwd=lm01" target="_blank" onclick="showAlert()"
@@ -1277,10 +1079,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="https://pan.baidu.com/s/19A_z2kEJxJGgS9HRuWivvw?pwd=ldwz" target="_blank" onclick="showAlert()"
@@ -1294,7 +1094,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="https://pan.baidu.com/s/19A_z2kEJxJGgS9HRuWivvw?pwd=ldwz" target="_blank" onclick="showAlert()"
@@ -1303,10 +1102,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="https://pan.baidu.com/s/1jTYR7orUsUrzyfJoMPPGVw?pwd=zatl" target="_blank" onclick="showAlert()"
@@ -1320,7 +1117,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="https://pan.baidu.com/s/1jTYR7orUsUrzyfJoMPPGVw?pwd=zatl" target="_blank" onclick="showAlert()"
@@ -1329,13 +1125,11 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="zdmnq/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Ravenfield" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/zdmnq.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1346,22 +1140,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="zdmnq/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Ravenfield" target="_blank" onclick="showAlert()"
                 >战地模拟器</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="wlzj/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Sword+With+Sauce" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/wlzj.jpg" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1372,22 +1163,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="wlzj/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Sword+With+Sauce" target="_blank" onclick="showAlert()"
                 >无理之剑/剑与汁</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="sdllj/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Calm+Down%2C+Stalin" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/sdllj.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1398,22 +1186,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="sdllj/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Calm+Down%2C+Stalin" target="_blank" onclick="showAlert()"
                 >斯大林请冷静</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="zylz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Manor+Lords" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/zylz.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1424,22 +1209,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="zylz/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Manor+Lords" target="_blank" onclick="showAlert()"
                 >庄园领主</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="xlgwy/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Stardew+Valley" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/xlgwy.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1450,22 +1232,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="xlgwy/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Stardew+Valley" target="_blank" onclick="showAlert()"
                 >星露谷物语</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="txzzg/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/txzzgabbvzwhhb.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/txzzg.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1476,22 +1255,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="txzzg/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/txzzgabbvzwhhb.html" target="_blank" onclick="showAlert()"
                 >偷袭珍珠港</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="hsjj2/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/hsjjrbbhzwhhb.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/hsjj2.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1502,22 +1278,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="hsjj2/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/hsjjrbbhzwhhb.html" target="_blank" onclick="showAlert()"
                 >红色警戒2合集</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="bdzm3/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/bdzmbbbhvrlgfdljbd.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/bdzm3.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1528,19 +1301,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="bdzm3/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/bdzmbbbhvrlgfdljbd.html" target="_blank" onclick="showAlert()"
                 >博德之门3</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="aly/mima.html" target="_blank" onclick="showAlert()"
@@ -1554,7 +1324,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="aly/mima.html" target="_blank" onclick="showAlert()"
@@ -1563,10 +1332,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="nplqmzz/mima.html" target="_blank" onclick="showAlert()"
@@ -1580,7 +1347,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="nplqmzz/mima.html" target="_blank" onclick="showAlert()"
@@ -1589,10 +1355,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="dgqmzz/mima.html" target="_blank" onclick="showAlert()"
@@ -1606,7 +1370,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="dgqmzz/mima.html" target="_blank" onclick="showAlert()"
@@ -1615,10 +1378,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qmzzmnq/mima.html" target="_blank" onclick="showAlert()"
@@ -1632,7 +1393,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qmzzmnq/mima.html" target="_blank" onclick="showAlert()"
@@ -1641,10 +1401,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="sdyy/mima.html" target="_blank" onclick="showAlert()"
@@ -1658,7 +1416,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="sdyy/mima.html" target="_blank" onclick="showAlert()"
@@ -1667,13 +1424,11 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="zsjwc/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/zsjwcmbbhv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/zsjwc.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1684,22 +1439,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="zsjwc/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/zsjwcmbbhv.html" target="_blank" onclick="showAlert()"
                 >中世纪王朝</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="cstjx2/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/cstjxcbbhv-2.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/cstjx2.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1710,22 +1462,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="cstjx2/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/cstjxcbbhv-2.html" target="_blank" onclick="showAlert()"
                 >城市天际线2</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="cstjx/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Cities%3A+Skylines" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/cstjx.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1736,22 +1485,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="cstjx/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Cities%3A+Skylines" target="_blank" onclick="showAlert()"
                 >城市天际线1</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="hdqs/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/hdqssbbhvzwb.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/hdqs.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1762,22 +1508,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="hdqs/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/hdqssbbhvzwb.html" target="_blank" onclick="showAlert()"
                 >荒岛求生</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="wqyl/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/wqylwzyltbbv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/wqyl.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1788,22 +1531,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="wqyl/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/wqylwzyltbbv.html" target="_blank" onclick="showAlert()"
                 >王权陨落/王座陨落</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="jsjc/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/jdjcjsjccbbhv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/jsjc.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1814,22 +1554,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="jsjc/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/jdjcjsjccbbhv.html" target="_blank" onclick="showAlert()"
                 >缉私警察</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="yzyd/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Ready+or+Not" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/yzyd.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1840,22 +1577,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="yzyd/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=Ready+or+Not" target="_blank" onclick="showAlert()"
                 >严阵以待</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="xsdgm2/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=%E6%B6%88%E9%80%9D%E7%9A%84%E5%85%89%E8%8A%922" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/xsdgm2.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1866,22 +1600,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="xsdgm2/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=%E6%B6%88%E9%80%9D%E7%9A%84%E5%85%89%E8%8A%922" target="_blank" onclick="showAlert()"
                 >消逝的光芒2</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="xsdgm1/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/xsdgmdbbhv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/xsdgm1.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1892,19 +1623,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="xsdgm1/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/xsdgmdbbhv.html" target="_blank" onclick="showAlert()"
                 >消逝的光芒1</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="sl/mima.html" target="_blank" onclick="showAlert()"
@@ -1918,7 +1646,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="sl/mima.html" target="_blank" onclick="showAlert()"
@@ -1927,13 +1654,11 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="hydbk1js/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/hydbkjsrbbv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/hydbk1.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1944,22 +1669,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="hydbk1js/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/hydbkjsrbbv.html" target="_blank" onclick="showAlert()"
                 >荒野大镖客1救赎</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="ywjs/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/ywjstbbhv.html" target="_blank" onclick="showAlert()"
                 ><img src="https://imgs.xkyfzs.top/anyuan/ywjs.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -1970,19 +1692,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="ywjs/mima.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/ywjstbbhv.html" target="_blank" onclick="showAlert()"
                 >亿万僵尸</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="lsdy/mima.html" target="_blank" onclick="showAlert()"
@@ -1996,7 +1715,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="lsdy/mima.html" target="_blank" onclick="showAlert()"
@@ -2004,11 +1722,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qszl2/mima.html" target="_blank" onclick="showAlert()"
@@ -2022,7 +1738,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qszl2/mima.html" target="_blank" onclick="showAlert()"
@@ -2030,11 +1745,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qszl1/mima.html" target="_blank" onclick="showAlert()"
@@ -2048,7 +1761,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qszl1/mima.html" target="_blank" onclick="showAlert()"
@@ -2056,11 +1768,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qljzs3/mima.html" target="_blank" onclick="showAlert()"
@@ -2074,7 +1784,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qljzs3/mima.html" target="_blank" onclick="showAlert()"
@@ -2082,11 +1791,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qljzs2/mima.html" target="_blank" onclick="showAlert()"
@@ -2100,7 +1807,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qljzs2/mima.html" target="_blank" onclick="showAlert()"
@@ -2108,11 +1814,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qljzs1/mima.html" target="_blank" onclick="showAlert()"
@@ -2126,7 +1830,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qljzs1/mima.html" target="_blank" onclick="showAlert()"
@@ -2135,13 +1838,11 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="smzhqxl/mima1.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4" target="_blank" onclick="showAlert()"
                 ><img src="https://tuchuang.xkyfzs.top/img/smzhqxl2.png" alt="Pulpit rock" width="70%"
               /></a>
             </p>
@@ -2152,19 +1853,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="smzhqxl/mima1.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4" target="_blank" onclick="showAlert()"
                 >使命召唤全系列</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="adobe/mima2.html" target="_blank" onclick="showAlert()"
@@ -2178,7 +1876,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="adobe/mima2.html" target="_blank" onclick="showAlert()"
@@ -2186,11 +1883,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="zrkd11/mima5.html" target="_blank" onclick="showAlert()"
@@ -2207,7 +1902,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="zrkd11/mima5.html" target="_blank" onclick="showAlert()"
@@ -2215,11 +1909,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gdjhyssl/mima6.html" target="_blank" onclick="showAlert()"
@@ -2236,7 +1928,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="gdjhyssl/mima6.html" target="_blank" onclick="showAlert()"
@@ -2244,11 +1935,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gdjhxsg/mima7.html" target="_blank" onclick="showAlert()"
@@ -2265,7 +1954,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="gdjhxsg/mima7.html" target="_blank" onclick="showAlert()"
@@ -2273,14 +1961,12 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="gdjh6/mima8.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/gdjhzjbfbbhvzjb.html" target="_blank" onclick="showAlert()"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/gdjh6.png"
                   alt="Pulpit rock"
@@ -2294,19 +1980,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="gdjh6/mima8.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/gdjhzjbfbbhvzjb.html" target="_blank" onclick="showAlert()"
                 >孤岛惊魂6</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="youtube/mima9.html" target="_blank" onclick="showAlert()"
@@ -2323,7 +2006,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="youtube/mima9.html" target="_blank" onclick="showAlert()"
@@ -2331,11 +2013,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="food/mima10.html" target="_blank" onclick="showAlert()"
@@ -2352,7 +2032,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="food/mima10.html" target="_blank" onclick="showAlert()"
@@ -2360,14 +2039,12 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="mfqs/mima11.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=%E6%9C%A8%E7%AD%8F%E6%B1%82%E7%94%9F+%2F+Raft" target="_blank" onclick="showAlert()"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/raft.png"
                   alt="Pulpit rock"
@@ -2381,22 +2058,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="mfqs/mima11.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=%E6%9C%A8%E7%AD%8F%E6%B1%82%E7%94%9F+%2F+Raft" target="_blank" onclick="showAlert()"
                 >木筏求生</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="60miao/mima12.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/mczbsbbv.html" target="_blank" onclick="showAlert()"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/60miao.png"
                   alt="Pulpit rock"
@@ -2410,22 +2084,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="60miao/mima12.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/mczbsbbv.html" target="_blank" onclick="showAlert()"
                 >60秒避难所重制版</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="csmnq/mima13.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=%E8%B6%85%E5%B8%82%E6%A8%A1%E6%8B%9F%E5%99%A8%2FS" target="_blank" onclick="showAlert()"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/csmnq.png"
                   alt="Pulpit rock"
@@ -2439,22 +2110,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="csmnq/mima13.html" target="_blank" onclick="showAlert()"
+              <a href="https://bd.xkyfzs.top/?s=%E8%B6%85%E5%B8%82%E6%A8%A1%E6%8B%9F%E5%99%A8%2FS" target="_blank" onclick="showAlert()"
                 >超市模拟器</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="senlinzhizi/mima14.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/slzzsbbv.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/slzz.png"
                   alt="Pulpit rock"
@@ -2468,22 +2136,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="senlinzhizi/mima14.html" target="_blank">森林之子</a>
+              <a href="https://bd.xkyfzs.top/slzzsbbv.html" target="_blank">森林之子</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="xiadao5/mima15.html"
+                href="https://bd.xkyfzs.top/xdlcsgbbv.html"
                 target="_blank"
                 onerror="location.href='404.html'"
                 ><img
@@ -2499,27 +2164,24 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
-                href="xiadao5/mima15.html"
+                href="https://bd.xkyfzs.top/xdlcsgbbv.html"
                 target="_blank"
                 onerror="location.href='404.html'"
                 >侠盗猎车手5</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="qk1/mima16.html"
+                href="https://bd.xkyfzs.top/qmyksztmbbhv.html"
                 target="_blank"
                 onerror="location.href='404.html'"
                 ><img
@@ -2535,27 +2197,24 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
-                href="qk1/mima16.html"
+                href="https://bd.xkyfzs.top/qmyksztmbbhv.html"
                 target="_blank"
                 onerror="location.href='404.html'"
                 >骑马与砍杀战团</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="qk2/mima3.html"
+                href="https://bd.xkyfzs.top/?s=%E9%AA%91%E9%A9%AC%E4%B8%8E%E7%A0%8D%E6%9D%802"
                 target="_blank"
                 ><img
                   src="https://tuchuang.xkyfzs.top/img/qmyks2b.png"
@@ -2570,25 +2229,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
-                href="qk2/mima3.html"
+                href="https://bd.xkyfzs.top/?s=%E9%AA%91%E9%A9%AC%E4%B8%8E%E7%A0%8D%E6%9D%802"
                 target="_blank"
                 >骑马与砍杀2霸主</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="zhilang/mima17.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/zlysedsbbhv.html" target="_blank"
                 ><img
                   src="https://tuchuang.xkyfzs.top/img/zhilang2.png"
                   alt="Pulpit rock"
@@ -2602,18 +2258,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="zhilang/mima17.html" target="_blank">只狼影逝二度</a>
+              <a href="https://bd.xkyfzs.top/zlysedsbbhv.html" target="_blank">只狼影逝二度</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="nuesha1/mima18.html" target="_blank"
@@ -2630,18 +2283,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="nuesha1/mima18.html" target="_blank">虐杀原形1</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="nuesha2/mima19.html" target="_blank"
@@ -2658,21 +2308,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="nuesha2/mima19.html" target="_blank">虐杀原形2</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="sbpk2077/mima20.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/sbpkcbbhv.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/sbpk2077.png"
                   alt="Pulpit rock"
@@ -2686,18 +2333,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="sbpk2077/mima20.html" target="_blank">赛博朋克2077</a>
+              <a href="https://bd.xkyfzs.top/sbpkcbbhv.html" target="_blank">赛博朋克2077</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
@@ -2716,7 +2360,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
@@ -2726,12 +2369,10 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
@@ -2750,7 +2391,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
@@ -2760,15 +2400,13 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="http://www.91rjz.com/pcsoft/122386.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/?s=%E9%92%A2%E9%93%81%E9%9B%84%E5%BF%834" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/gtxx4.png"
                   alt="Pulpit rock"
@@ -2782,24 +2420,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="gtxx4/mima.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/?s=%E9%92%A2%E9%93%81%E9%9B%84%E5%BF%834" target="_blank"
                 >钢铁雄心4</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
-                href="ss3/mima.html"
+                href="https://bd.xkyfzs.top/sshbbhv.html"
                 target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/sx3.png"
@@ -2814,25 +2449,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
-                href="ss3/mima.html"
+                href="https://bd.xkyfzs.top/sshbbhv.html"
                 target="_blank"
                 >杀手3</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="nejxjy/mima.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/nejxjynbbhndb.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/nejxjy.png"
                   alt="Pulpit rock"
@@ -2846,23 +2478,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="nejxjy/mima.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/nejxjynbbhndb.html" target="_blank"
                 >尼尔机械纪元年度版</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="dipingxian4/mima21.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/jxjsdpxbbhv.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/dpx4.png"
                   alt="Pulpit rock"
@@ -2876,23 +2505,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="dipingxian4/mima21.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/jxjsdpxbbhv.html" target="_blank"
                 >极限竞速地平线4</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="dipingxian5/mima22.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/jxjsdpxfbbhv.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/dpx5.png"
                   alt="Pulpit rock"
@@ -2906,23 +2532,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="dipingxian5/mima22.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/jxjsdpxfbbhv.html" target="_blank"
                 >极限竞速地平线5</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="hydbk2js/mima4.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/hydbkjsrbbhv.html" target="_blank"
                 ><img
                   src="https://tuchuang.xkyfzs.top/img/hydbk2.png"
                   alt="Pulpit rock"
@@ -2936,20 +2559,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="hydbk2js/mima4.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/hydbkjsrbbhv.html" target="_blank"
                 >荒野大镖客2救赎</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="ylxdj/mima23.html" target="_blank"
@@ -2966,18 +2586,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="ylxdj/mima23.html" target="_blank">幽灵线：东京</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="ckxtyld/mima24.html" target="_blank"
@@ -2994,18 +2611,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="ckxtyld/mima24.html" target="_blank">刺客信条英灵殿</a>
             </p>
             <hr />
           </div>
-          </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="fzzc/mima25.html" target="_blank"
@@ -3022,18 +2636,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="fzzc/mima25.html" target="_blank">放逐之城</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="ckxtads/mima26.html" target="_blank"
@@ -3050,21 +2661,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="ckxtads/mima26.html" target="_blank">刺客信条奥德赛</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="gq5/mima27.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/gqdbbhv.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/gq5.png"
                   alt="Pulpit rock"
@@ -3078,21 +2686,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="gq5/mima27.html" target="_blank">鬼泣5</a>
+              <a href="https://bd.xkyfzs.top/gqdbbhv.html" target="_blank">鬼泣5</a>
             </p>
             <hr />
-          </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="qmzzsg/mima28.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/qmzzsgtbbhv.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/sg.png"
                   alt="Pulpit rock"
@@ -3106,21 +2711,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="qmzzsg/mima28.html" target="_blank">全面战争三国</a>
+              <a href="https://bd.xkyfzs.top/qmzzsgtbbhv.html" target="_blank">全面战争三国</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/ggsl7253.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/ggslpbbhv.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/ggsl.png"
                   alt="Pulpit rock"
@@ -3134,21 +2736,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/ggsl7253.html" target="_blank">港诡实录/Paranormal HK</a>
+              <a href="https://bd.xkyfzs.top/ggslpbbhv.html" target="_blank">港诡实录</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/dtlq7583.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/dtlqmbbhvzqb.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/dtlq.png"
                   alt="Pulpit rock"
@@ -3162,21 +2761,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/dtlq7583.html" target="_blank">地铁离去增强版/Metro Exodus</a>
+              <a href="https://bd.xkyfzs.top/dtlqmbbhvzqb.html" target="_blank">地铁离去</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/zhuluoji5147.html" target="_blank"
+              <a href="zhuluoji1/mima31.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/zlj1.png"
                   alt="Pulpit rock"
@@ -3190,21 +2786,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/zhuluoji5147.html" target="_blank">侏罗纪世界进化1/Jurassic World Evolution</a>
+              <a href="zhuluoji1/mima31.html" target="_blank">侏罗纪世界进化1</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/zhuluoji6280.html" target="_blank"
+              <a href="zhuluoji2/mima32.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/zlj2.png"
                   alt="Pulpit rock"
@@ -3218,21 +2811,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/zhuluoji6280.html" target="_blank">侏罗纪世界：进化2/Jurassic World Evolution 2</a>
+              <a href="zhuluoji2/mima32.html" target="_blank">侏罗纪世界进化2</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/fpjxs6585.html" target="_blank"
+              <a href="fpjxs1/mima33.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/fpjxs.png"
                   alt="Pulpit rock"
@@ -3246,21 +2836,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/fpjxs6585.html" target="_blank">废品机械师/Scrap Mechanic</a>
+              <a href="fpjxs1/mima33.html" target="_blank">废品机械师</a>
             </p>
             <hr />
-          </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="sgjz5tj/mima34.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/sgjztjtbbhv.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/sgjz5.png"
                   alt="Pulpit rock"
@@ -3274,21 +2861,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/sgjz5tj8491.html" target="_blank">上古卷轴5天际/The Elder Scrolls V: Skyrim</a>
+              <a href="https://bd.xkyfzs.top/sgjztjtbbhv.html" target="_blank">上古卷轴5天际</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/sgjz5tj8491.html" target="_blank"
+              <a href="mnnc19/mima35.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/mnnc19.png"
                   alt="Pulpit rock"
@@ -3302,21 +2886,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/nc19137.html" target="_blank">模拟农场19/Farming Simulator 19</a>
+              <a href="mnnc19/mima35.html" target="_blank">模拟农场19</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/nc19137.html" target="_blank"
+              <a href="mnnc22/mima36.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/mnnc22.png"
                   alt="Pulpit rock"
@@ -3330,21 +2911,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/nc228784.html" target="_blank">模拟农场22/Farming Simulator 22</a>
+              <a href="mnnc22/mima36.html" target="_blank">模拟农场22</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
-
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/xxmy25997.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/?s=Little+Nightmares" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/xxmy2.png"
                   alt="Pulpit rock"
@@ -3358,21 +2935,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/xxmy25997.html" target="_blank">小小梦魇2增强版/Little Nightmares II</a>
+              <a href="https://bd.xkyfzs.top/?s=Little+Nightmares" target="_blank">小小梦魇2</a>
             </p>
             <hr />
-          </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="rllm/mima38.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/rllmdbbhvbb.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/rllm.png"
                   alt="Pulpit rock"
@@ -3386,21 +2960,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="rllm/mima38.html" target="_blank">人类黎明</a>
+              <a href="https://bd.xkyfzs.top/rllmdbbhvbb.html" target="_blank">人类黎明</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/aedfh1734.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/?s=%E8%89%BE%E5%B0%94%E7%99%BB%E6%B3%95%E7%8E%AF" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/aedfh.png"
                   alt="Pulpit rock"
@@ -3414,21 +2985,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/aedfh1734.html" target="_blank">艾尔登法环/Elden Ring</a>
+              <a href="https://bd.xkyfzs.top/?s=%E8%89%BE%E5%B0%94%E7%99%BB%E6%B3%95%E7%8E%AF" target="_blank">艾尔登法环</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="sydh/mima40.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/sydhtbbhv.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/sydh.png"
                   alt="Pulpit rock"
@@ -3442,21 +3010,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="sydh/mima40.html" target="_blank">石油大亨</a>
+              <a href="https://bd.xkyfzs.top/sydhtbbhv.html" target="_blank">石油大亨</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="ozkcmnq2/mima41.html" target="_blank"
+              <a href="https://bd.xkyfzs.top/ozkcmnqe.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/ozkc2.png"
                   alt="Pulpit rock"
@@ -3470,13 +3035,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="ozkcmnq2/mima41.html" target="_blank">欧洲卡车模拟器2</a>
+              <a href="https://bd.xkyfzs.top/ozkcmnqe.html" target="_blank">欧洲卡车模拟器2</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <!-- <button id="scrollToTopBtn" class="z2024">回到顶部</button> -->
@@ -3518,7 +3081,7 @@ document.addEventListener("DOMContentLoaded", function() {
       
       <p style="font-size: 100%; text-align: center">
         <hr />
-        |&nbsp;&nbsp;&nbsp;&nbsp;暗源正式版本&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;版本号：v1.2.1710830&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;网站编号XYBKay240312&nbsp;&nbsp;&nbsp;&nbsp;|
+        |&nbsp;&nbsp;&nbsp;&nbsp;暗源正式版本&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;版本号：v1.1.1610226&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;网站编号XYBKay240312&nbsp;&nbsp;&nbsp;&nbsp;|
         <hr />
       </p>
       
@@ -3541,7 +3104,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   </script>
-  <!-- <script>
+  <script>
     // 搜索功能
 
     var searchInput = document.getElementById("searchInput");
@@ -3553,121 +3116,122 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     // 一个包含了内容的数组
     var contentArray = [
-      { title: "王国重生", content: "", url: "wgcs/mima.html" },
-      { title: "被感染者/The Infected", content: "", url: "bgrz/mima.html" },
-      { title: "拳皇97/拳皇98", content: "", url: "qh9798/mima.html" },
-      { title: "超阈限空间", content: "", url: "cyxkj/mima.html" },
-      { title: "龙珠Z：卡卡罗特", content: "", url: "lzzkklt/mima.html" },
-      { title: "龙珠格斗Z", content: "", url: "lzgdz/mima.html" },
-      { title: "合金弹头合集", content: "", url: "hjdt/mima.html" },
-      { title: "林间小世界", content: "", url: "clxsj/mima.html" },
-      { title: "取景器/Viewfinder", content: "", url: "qjq/mima.html" },
-      { title: "讲故事的人", content: "", url: "jgsdr/mima.html" },
-      { title: "百视达公司", content: "", url: "bsdgs/mima.html" },
-      { title: "全面战争大清帝国", content: "", url: "qmzzdqdg/mima.html" },
-      { title: "女鬼桥1+2", content: "", url: "emlp/mima.html" },
-      { title: "恶魔轮盘", content: "", url: "emlp/mima.html" },
-      { title: "星球工匠", content: "", url: "xqgj/mima.html" },
-      { title: "无感染区", content: "", url: "wgrq/mima.html" },
+      { title: "王国重生", content: "", url: "https://bd.xkyfzs.top/wgzskbbhvrlg.html" },
+      { title: "被感染者/The Infected", content: "", url: "https://bd.xkyfzs.top/bgrztbbhvrlg.html" },
+      { title: "拳皇97/拳皇98", content: "", url: "https://bd.xkyfzs.top/qht.html" },
+      { title: "超阈限空间", content: "", url: "https://bd.xkyfzs.top/cyxkjsbbhvrlg.html" },
+      { title: "龙珠Z：卡卡罗特", content: "", url: "https://bd.xkyfzs.top/lzzkkltdbbhv.html" },
+      { title: "龙珠格斗Z", content: "", url: "https://bd.xkyfzs.top/lzzszlzgdzlzdszbbhv.html" },
+      { title: "合金弹头合集", content: "", url: "https://bd.xkyfzs.top/hjdthjmzzsz.html" },
+      { title: "林间小世界", content: "", url: "https://bd.xkyfzs.top/ljxsjtbbhvrlg.html" },
+      { title: "取景器/Viewfinder", content: "", url: "https://bd.xkyfzs.top/qjqvbbhvjtzwb.html" },
+      { title: "讲故事的人", content: "", url: "https://bd.xkyfzs.top/jgsdrsbbhvrlm.html" },
+      { title: "百视达公司", content: "", url: "https://bd.xkyfzs.top/bsdgsbbbvrlg.html" },
+      { title: "全面战争大清帝国", content: "", url: "https://bd.xkyfzs.top/qmzzdqdgbbhvgcbrlg.html" },
+      { title: "女鬼桥1", content: "", url: "https://bd.xkyfzs.top/ngqkhltbbhv.html" },
+      { title: "女鬼桥2", content: "", url: "https://bd.xkyfzs.top/ngqshltbbvrlg.html" },
+      { title: "恶魔轮盘", content: "", url: "https://bd.xkyfzs.top/emlpbbbhvljb.html" },
+      { title: "星球工匠", content: "", url: "https://bd.xkyfzs.top/xqgjtbbhvrlg.html" },
+      { title: "无感染区", content: "", url: "https://bd.xkyfzs.top/wgrqibbhvrlg.html" },
       { title: "鬼打墙8号出口", content: "", url: "gdq/mima.html" },
-      { title: "随身摄像机/Bodycam", content: "", url: "xj/mima.html" },
+      { title: "随身摄像机/Bodycam", content: "", url: "https://bd.xkyfzs.top/sssxjbbbhvljbhhzwrlg.html" },
       { title: "8号站台/Platform 8", content: "", url: "zhzt/mima.html" },
       { title: "8号出口/The Exit 8", content: "", url: "8hck/mima.html" },
-      { title: "自由人:游击战争", content: "", url: "zyr/mima.html" },
-      { title: "深海迷航:零度之下", content: "", url: "shmh2/mima.html" },
-      { title: "深海迷航", content: "", url: "shmh1/mima.html" },
-      { title: "房产达人2", content: "", url: "fcdr2/mima.html" },
-      { title: "房产达人", content: "", url: "fcdr/mima.html" },
-      { title: "模拟山羊3", content: "", url: "mnsy3/mima.html" },
+      { title: "自由人:游击战争", content: "", url: "https://bd.xkyfzs.top/zyryjzzfbbhvrlg.html" },
+      { title: "深海迷航:零度之下", content: "", url: "https://bd.xkyfzs.top/shmhldzxshmhbdzxsb.html" },
+      { title: "深海迷航", content: "", url: "https://bd.xkyfzs.top/shmhsbbhvrlg.html" },
+      { title: "房产达人2", content: "", url: "https://bd.xkyfzs.top/fcdrhbbhvrlg.html" },
+      { title: "房产达人", content: "", url: "https://bd.xkyfzs.top/fcdrhbbhvjcdrlg.html" },
+      { title: "模拟山羊3", content: "", url: "https://bd.xkyfzs.top/mnsygbbhv.html" },
       { title: "装机模拟器2", content: "", url: "pc2/mima.html" },
       { title: "装机模拟器", content: "", url: "pc1/mima.html" },
-      { title: "泰拉瑞亚", content: "", url: "tlry/mima.html" },
-      { title: "缺氧", content: "", url: "qy/mima.html" },
-      { title: "人性末日Z", content: "", url: "rlz/mima.html" },
-      { title: "DayZ/僵尸末日", content: "", url: "dayz/mima.html" },
-      { title: "人渣", content: "", url: "rz/mima.html" },
-      { title: "七日杀/7日杀", content: "", url: "7rs/mima.html" },
+      { title: "泰拉瑞亚", content: "", url: "https://bd.xkyfzs.top/tlrytbbhvgfjtzw.html" },
+      { title: "缺氧", content: "", url: "https://bd.xkyfzs.top/qyobbhv.html" },
+      { title: "人性末日Z", content: "", url: "https://bd.xkyfzs.top/?s=HumanitZ" },
+      { title: "DayZ/僵尸末日", content: "", url: "https://bd.xkyfzs.top/?s=DayZ" },
+      { title: "人渣", content: "", url: "https://bd.xkyfzs.top/?s=SCUM" },
+      { title: "七日杀/7日杀", content: "", url: "https://bd.xkyfzs.top/?s=7+Days+to+Die" },
       { title: "全面战争罗马2", content: "", url: "https://pan.baidu.com/s/1G6SGxY3GTBGa1SQsQw_KGQ?pwd=lm02" },
       { title: "全面战争罗马1", content: "", url: "https://pan.baidu.com/s/1WlTUlkYX75Ps1ntVtwyJGQ?pwd=lm01" },
       { title: "全面战争不列颠的王座", content: "", url: "https://pan.baidu.com/s/19A_z2kEJxJGgS9HRuWivvw?pwd=ldwz" },
       { title: "全面战争阿提拉", content: "", url: "https://pan.baidu.com/s/1jTYR7orUsUrzyfJoMPPGVw?pwd=zatl" },
-      { title: "战地模拟器", content: "", url: "zdmnq/mima.html" },
-      { title: "无理之剑/剑与汁", content: "", url: "wlzj/mima.html" },
-      { title: "斯大林冷静", content: "", url: "sdllj/mima.html" },
-      { title: "庄园领主", content: "", url: "zylz/mima.html" },
-      { title: "星露谷物语", content: "", url: "xlgwy/mima.html" },
-      { title: "偷袭珍珠港", content: "", url: "txzzg/mima.html" },
-      { title: "红色警戒2", content: "", url: "hsjj2/mima.html" },
-      { title: "博德之门3", content: "", url: "bdzm3/mima.html" },
+      { title: "战地模拟器", content: "", url: "https://bd.xkyfzs.top/?s=Ravenfield" },
+      { title: "无理之剑/剑与汁", content: "", url: "https://bd.xkyfzs.top/?s=Sword+With+Sauce" },
+      { title: "斯大林请冷静", content: "", url: "https://bd.xkyfzs.top/?s=Calm+Down%2C+Stalin" },
+      { title: "庄园领主", content: "", url: "https://bd.xkyfzs.top/?s=Manor+Lords" },
+      { title: "星露谷物语", content: "", url: "https://bd.xkyfzs.top/?s=Stardew+Valley" },
+      { title: "偷袭珍珠港", content: "", url: "https://bd.xkyfzs.top/txzzgabbvzwhhb.html" },
+      { title: "红色警戒2", content: "", url: "https://bd.xkyfzs.top/hsjjrbbhzwhhb.html" },
+      { title: "博德之门3", content: "", url: "https://bd.xkyfzs.top/bdzmbbbhvrlgfdljbd.html" },
       { title: "阿拉亚", content: "", url: "aly/mima.html" },
       { title: "拿破仑全面战争", content: "", url: "nplqmzz/mima.html" },
       { title: "全面战争帝国", content: "", url: "dgqmzz/mima.html" },
       { title: "全面战争模拟器", content: "", url: "qmzzmnq/mima.html" },
       { title: "双点医院", content: "", url: "sdyy/mima.html" },
-      { title: "中世纪王朝", content: "", url: "zsjwc/mima.html" },
-      { title: "城市天际线2", content: "", url: "cstjx2/mima.html" },
-      { title: "城市天际线1", content: "", url: "cstjx/mima.html" },
-      { title: "荒岛求生", content: "", url: "hdqs/mima.html" },
-      { title: "王权陨落/王座陨落", content: "", url: "wqyl/mima.html" },
-      { title: "缉私警察", content: "", url: "jsjc/mima.html" },
-      { title: "严阵以待", content: "", url: "yzyd/mima.html" },
-      { title: "消逝的光芒2", content: "", url: "xsdgm2/mima.html" },
-      { title: "消逝的光芒1", content: "", url: "xsdgm1/mima.html" },
+      { title: "中世纪王朝", content: "", url: "https://bd.xkyfzs.top/zsjwcmbbhv.html" },
+      { title: "城市天际线2", content: "", url: "https://bd.xkyfzs.top/cstjxcbbhv-2.html" },
+      { title: "城市天际线1", content: "", url: "https://bd.xkyfzs.top/?s=Cities%3A+Skylines" },
+      { title: "荒岛求生", content: "", url: "https://bd.xkyfzs.top/hdqssbbhvzwb.html" },
+      { title: "王权陨落/王座陨落", content: "", url: "https://bd.xkyfzs.top/wqylwzyltbbv.html" },
+      { title: "缉私警察", content: "", url: "https://bd.xkyfzs.top/jdjcjsjccbbhv.html" },
+      { title: "严阵以待", content: "", url: "https://bd.xkyfzs.top/?s=Ready+or+Not" },
+      { title: "消逝的光芒2", content: "", url: "https://bd.xkyfzs.top/?s=%E6%B6%88%E9%80%9D%E7%9A%84%E5%85%89%E8%8A%922" },
+      { title: "消逝的光芒1", content: "", url: "https://bd.xkyfzs.top/xsdgmdbbhv.html" },
       { title: "森林/迷失森林", content: "", url: "sl/mima.html" },
-      { title: "荒野大镖客1救赎", content: "", url: "hydbk1js/mima.html" },
-      { title: "亿万僵尸", content: "", url: "ywjs/mima.html" },
+      { title: "荒野大镖客1救赎", content: "", url: "https://bd.xkyfzs.top/hydbkjsrbbv.html" },
+      { title: "亿万僵尸", content: "", url: "https://bd.xkyfzs.top/ywjstbbhv.html" },
       { title: "绿色地狱", content: "", url: "lsdy/mima.html" },
       { title: "求生之路2", content: "", url: "qszl2/mima.html" },
       { title: "求生之路1", content: "", url: "qszl1/mima.html" },
       { title: "桥梁建筑师3", content: "", url: "qljzs3/mima.html" },
       { title: "桥梁建筑师2", content: "", url: "qljzs2/mima.html" },
       { title: "桥梁建筑师1", content: "", url: "qljzs1/mima.html" },
-      { title: "使命召唤全系列", content: "", url: "smzhqxl/mima1.html" },
+      { title: "使命召唤全系列", content: "", url: "https://bd.xkyfzs.top/?s=%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4" },
       { title: "Adobe软件", content: "", url: "adobe/mima2.html" },
       { title: "真人快打11", content: "", url: "zrkd11/mima5.html" },
       { title: "孤岛惊魂原始杀戮", content: "", url: "gdjhyssl/mima6.html" },
       { title: "孤岛惊魂新曙光", content: "", url: "gdjhxsg/mima7.html" },
-      { title: "孤岛惊魂6", content: "", url: "gdjh6/mima8.html" },
+      { title: "孤岛惊魂6", content: "", url: "https://bd.xkyfzs.top/gdjhzjbfbbhvzjb.html" },
       { title: "油管主播的生活", content: "", url: "youtube/mima9.html" },
       { title: "跑僵尸的食物们", content: "", url: "food/mima10.html" },
-      { title: "木筏求生", content: "", url: "mfqs/mima11.html" },
-      { title: "60秒避难所重制版", content: "", url: "60miao/mima12.html" },
-      { title: "超市模拟器", content: "", url: "csmnq/mima13.html" },
-      { title: "森林之子", content: "", url: "senlinzhizi/mima14.html" },
-      { title: "侠盗猎车手5", content: "", url: "xiadao5/mima15.html" },
-      { title: "骑马与砍杀战团", content: "", url: "qk1/mima16.html" },
-      { title: "骑马与砍杀2霸主", content: "", url: "qk2/mima3.html", },
-      { title: "只狼影逝二度", content: "", url: "zhilang/mima17.html" },
+      { title: "木筏求生", content: "", url: "https://bd.xkyfzs.top/?s=%E6%9C%A8%E7%AD%8F%E6%B1%82%E7%94%9F+%2F+Raft" },
+      { title: "60秒避难所重制版", content: "", url: "https://bd.xkyfzs.top/mczbsbbv.html" },
+      { title: "超市模拟器", content: "", url: "https://bd.xkyfzs.top/?s=%E8%B6%85%E5%B8%82%E6%A8%A1%E6%8B%9F%E5%99%A8%2FS" },
+      { title: "森林之子", content: "", url: "https://bd.xkyfzs.top/slzzsbbv.html" },
+      { title: "侠盗猎车手5", content: "", url: "https://bd.xkyfzs.top/xdlcsgbbv.html" },
+      { title: "骑马与砍杀战团", content: "", url: "https://bd.xkyfzs.top/qmyksztmbbhv.html" },
+      { title: "骑马与砍杀2霸主", content: "", url: "https://bd.xkyfzs.top/?s=%E9%AA%91%E9%A9%AC%E4%B8%8E%E7%A0%8D%E6%9D%802", },
+      { title: "只狼影逝二度", content: "", url: "https://bd.xkyfzs.top/zlysedsbbhv.html" },
       { title: "虐杀原形1", content: "", url: "nuesha1/mima18.html" },
       { title: "虐杀原形2", content: "", url: "nuesha2/mima19.html" },
-      { title: "赛博朋克2077", content: "", url: "sbpk2077/mima20.html" },
+      { title: "赛博朋克2077", content: "", url: "https://bd.xkyfzs.top/sbpkcbbhv.html" },
       { title: "无主之地2", content: "", url: "https://pan.baidu.com/s/1GjPrMAu0L0el_s7IzupNKw?pwd=wzzd", },
       { title: "无主之地3", content: "", url: "https://pan.baidu.com/s/1ta_qz0LUvjQmF_YNurNZ8Q?pwd=wzzd", },
-      // { title: "钢铁雄心4", content: "", url: "gtxx4/mima.html", },
-      { title: "杀手3", content: "", url: "ss3/mima.html", },
-      { title: "尼尔机械纪元年度版", content: "", url: "nejxjy/mima.html", },
-      { title: "极限竞速地平线4", content: "", url: "dipingxian4/mima21.html" },
-      { title: "极限竞速地平线5", content: "", url: "dipingxian5/mima22.html" },
-      { title: "荒野大镖客2救赎", content: "", url: "hydbk2js/mima4.html" },
+      { title: "钢铁雄心4", content: "", url: "https://bd.xkyfzs.top/?s=%E9%92%A2%E9%93%81%E9%9B%84%E5%BF%834", },
+      { title: "杀手3", content: "", url: "https://bd.xkyfzs.top/sshbbhv.html", },
+      { title: "尼尔机械纪元年度版", content: "", url: "https://bd.xkyfzs.top/nejxjynbbhndb.html", },
+      { title: "极限竞速地平线4", content: "", url: "https://bd.xkyfzs.top/jxjsdpxbbhv.html" },
+      { title: "极限竞速地平线5", content: "", url: "https://bd.xkyfzs.top/jxjsdpxfbbhv.html" },
+      { title: "荒野大镖客2救赎", content: "", url: "https://bd.xkyfzs.top/hydbkjsrbbhv.html" },
       { title: "幽灵线：东京", content: "", url: "ylxdj/mima23.html" },
       { title: "刺客信条英灵殿", content: "", url: "ckxtyld/mima24.html" },
       { title: "放逐之城", content: "", url: "fzzc/mima25.html" },
       { title: "刺客信条奥德赛", content: "", url: "ckxtads/mima26.html" },
-      { title: "鬼泣5", content: "", url: "gq5/mima27.html" },
-      { title: "全面战争三国", content: "", url: "qmzzsg/mima28.html" },
-      { title: "港诡实录", content: "", url: "ggsl/mima29.html" },
-      { title: "地铁离去增强版/Metro Exodus", content: "", url: "game/dtlq7583.html" },
-      { title: "侏罗纪世界：进化/Jurassic World Evolution", content: "", url: "game/zhuluoji5147.html" },
-      { title: "侏罗纪世界：进化2/Jurassic World Evolution 2", content: "", url: "game/zhuluoji6280.html" },
-      { title: "废品机械师/Scrap Mechanic", content: "", url: "game/fpjxs6585.html" },
-      { title: "上古卷轴5天际/The Elder Scrolls V: Skyrim", content: "", url: "game/sgjz5tj8491.html" },
-      { title: "模拟农场19", content: "", url: "game/nc19137.html" },
-      { title: "模拟农场22/Farming Simulator 22", content: "", url: "game/nc228784.html" },
-      { title: "小小梦魇2增强版/Little Nightmares II", content: "", url: "game/xxmy25997.html" },
-      { title: "人类黎明", content: "", url: "rllm/mima38.html" },
-      { title: "艾尔登法环/Elden Ring", content: "", url: "game/aedfh1734.html" },
-      { title: "石油大亨", content: "", url: "sydh/mima40.html" },
-      { title: "欧洲卡车模拟器2", content: "", url: "ozkcmnq2/mima41.html" },
+      { title: "鬼泣5", content: "", url: "https://bd.xkyfzs.top/gqdbbhv.html" },
+      { title: "全面战争三国", content: "", url: "https://bd.xkyfzs.top/qmzzsgtbbhv.html" },
+      { title: "港诡实录", content: "", url: "https://bd.xkyfzs.top/ggslpbbhv.html" },
+      { title: "地铁离去", content: "", url: "https://bd.xkyfzs.top/dtlqmbbhvzqb.html" },
+      { title: "侏罗纪世界进化1", content: "", url: "zhuluoji1/mima31.html" },
+      { title: "侏罗纪世界进化2", content: "", url: "zhuluoji2/mima32.html" },
+      { title: "废品机械师", content: "", url: "fpjxs1/mima33.html" },
+      { title: "上古卷轴5天际", content: "", url: "https://bd.xkyfzs.top/sgjztjtbbhv.html" },
+      { title: "模拟农场19", content: "", url: "mnnc19/mima35.html" },
+      { title: "模拟农场22", content: "", url: "mnnc22/mima36.html" },
+      { title: "小小梦魇2", content: "", url: "https://bd.xkyfzs.top/?s=Little+Nightmares" },
+      { title: "人类黎明", content: "", url: "https://bd.xkyfzs.top/rllmdbbhvbb.html" },
+      { title: "艾尔登法环", content: "", url: "https://bd.xkyfzs.top/?s=%E8%89%BE%E5%B0%94%E7%99%BB%E6%B3%95%E7%8E%AF" },
+      { title: "石油大亨", content: "", url: "https://bd.xkyfzs.top/sydhtbbhv.html" },
+      { title: "欧洲卡车模拟器2", content: "", url: "https://bd.xkyfzs.top/ozkcmnqe.html" },
       // 添加更多文章信息
     ];
 
@@ -3748,9 +3312,9 @@ document.addEventListener("DOMContentLoaded", function() {
       dropdownContent.style.display =
         dropdownContent.style.display === "block" ? "none" : "block";
     });
-  </script> -->
+  </script>
 <!-- 访问人数 -->
-  <!-- <script>
+  <script>
       // 定义一个全局变量用于存储访问计数
       var visitorCount = 0;
 
@@ -3775,7 +3339,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // 显示访问计数
         document.getElementById('visitorCount').innerHTML = visitorCount;
       }
-    </script> -->
+    </script>
 
     <!-- 置顶按钮 -->
     <script>
@@ -3792,65 +3356,5 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById('scrollToTopBtn').addEventListener('click', function() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
-    </script>
-    <!-- 搜索功能2 -->
-     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const searchInput = document.getElementById("search-input");
-        const searchButton = document.getElementById("search-button");
-        const searchInfo = document.getElementById("search-info");
-        const noResults = document.getElementById("no-results");
-        const searchableItems = document.querySelectorAll(".searchable");
-
-        // 执行搜索函数
-        function performSearch() {
-          const searchTerm = searchInput.value.trim().toLowerCase();
-          let resultsCount = 0;
-
-          if (searchTerm === "") {
-            // 如果搜索词为空，显示所有项目
-            searchableItems.forEach((item) => {
-              item.classList.remove("hidden");
-            });
-            searchInfo.textContent = "请输入关键词开始搜索";
-            noResults.classList.remove("show");
-            return;
-          }
-
-          // 遍历所有可搜索项目
-          searchableItems.forEach((item) => {
-            const textContent = item.textContent.toLowerCase();
-
-            if (textContent.includes(searchTerm)) {
-              item.classList.remove("hidden");
-              resultsCount++;
-            } else {
-              item.classList.add("hidden");
-            }
-          });
-
-          // 显示搜索结果信息
-          if (resultsCount > 0) {
-            searchInfo.textContent = `找到 ${resultsCount} 个与 "${searchTerm}" 相关的结果`;
-            noResults.classList.remove("show");
-          } else {
-            searchInfo.textContent = `没有找到与 "${searchTerm}" 相关的结果`;
-            noResults.classList.add("show");
-          }
-        }
-
-        // 添加事件监听器
-        searchButton.addEventListener("click", performSearch);
-        searchInput.addEventListener("keyup", function (e) {
-          if (e.key === "Enter") {
-            performSearch();
-          }
-        });
-
-        // 初始显示所有内容
-        searchableItems.forEach((item) => {
-          item.classList.remove("hidden");
-        });
-      });
     </script>
 </html>

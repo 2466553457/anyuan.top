@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="js/style.js" />
     <!-- <script src="senlinzhizi/your-script-file.js"></script> -->
     <!-- <link rel="stylesheet" href="css/zhuti.css" /> -->
-    <!-- <link rel="stylesheet" href="css/sousuo.css" /> -->
+    <link rel="stylesheet" href="css/sousuo.css" />
     <link rel="stylesheet" href="css/zhiding.css" />
     <meta property="og:type" content="website">
     <meta property="og:title" content="暗源网站">
@@ -85,116 +85,6 @@
 }
 
     </style>
-    <!-- 搜索功能2 -->
-     <style>
-
-      .search-container {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .search-box {
-        display: flex;
-        width: 100%;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 50px;
-        overflow: hidden;
-      }
-
-      #search-input {
-        flex: 1;
-        padding: 15px 20px;
-        border: none;
-        font-size: 1.1rem;
-        outline: none;
-      }
-
-      #search-button {
-        background: #3498db;
-        color: rgb(255, 255, 255);
-        border: none;
-        padding: 15px 25px;
-        cursor: pointer;
-        font-size: 1.1rem;
-        transition: background 0.3s;
-      }
-
-      #search-button:hover {
-        background: #000000;
-      }
-
-      .content-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 25px;
-        margin-top: 30px;
-      }
-/* body内容设置 */
-      .searchable {
-        background: #ebebeb;
-        border-radius: 10px;
-        padding: 25px;
-        box-shadow: 0 5px 15px #ebebeb;
-        transition: all 0.3s ease;
-        transform-origin: center top;
-      }
-
-      .searchable h2 {
-        color: #2c3e50;
-        margin-bottom: 15px;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 10px;
-      }
-
-      .searchable p {
-        line-height: 1.6;
-        color: #555;
-      }
-
-      .hidden {
-        opacity: 0;
-        transform: scale(0.9);
-        height: 0;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-      }
-
-      .no-results {
-        text-align: center;
-        grid-column: 1 / -1;
-        padding: 40px;
-        background: rgb(255, 255, 255);
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        display: none;
-      }
-
-      .no-results.show {
-        display: block;
-      }
-
-      .search-info {
-        text-align: center;
-        margin: 20px 0;
-        font-size: 1.1rem;
-        color: #2c3e50;
-      }
-
-      .tag {
-        display: inline-block;
-        background: #ffffff;
-        color: #3498db;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 0.9rem;
-        margin-top: 15px;
-      }
-    </style>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
     // JS代码在DOM加载完成后执行
@@ -228,12 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="popup-content">
             <span class="close" id="close-popup">&times;</span>
             <h1 style="text-align: center;">重大公告</h1>
-        <p>1.本网站功能已经得到全面更新：</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #3498db;">(1).在搜索框搜索内容，不仅仅会显示文字，还会显示其图片。</span></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #3498db;">(2).在搜索框搜索内容，只会显示相应的内容，其他无关内容无法可见。</span></p>
-        <p>2.将搜索框美化，网站多于无关的内容进行了删除，使网站更加简洁明了。</p>
-        <p><span style="color: rgb(255, 0, 0);">发布日期：</span><span style="color: rgb(87, 87, 87);">2025/08/30</span></p>
-        <!-- <p>1.网站正式发布，内容还不完善，还没有将本网站的所有内容全部移交过去，但是新网站的所有内容目前都是最新的。</p>
+        <p>1.网站正式发布，内容还不完善，还没有将本网站的所有内容全部移交过去，但是新网站的所有内容目前都是最新的。</p>
         <p>2.目前不注册登录账号可以正常进入网站。</p>
         <p>网站地址：<a href="https://bd.xkyfzs.top/" target="_blank" style="color: blue;">https://bd.xkyfzs.top/</a></p>
         <p><span style="color: rgb(255, 0, 0);">发布日期：</span><span style="color: rgb(87, 87, 87);">2025/07/16</span></p>
@@ -245,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <p>5.新网站是基于wordpress系统开发的，里面的一些主题和插件一些功能，并不能满足所有要求，所以我自己修改了一些代码，可能会存在一些问题，但是经过多次测试，这些问题是不影响正常使用的。</p>
         <p>6.网站的功能大概有：用户注册登录系统、分类/标签系统、站内搜索系统、用户评论系统、投稿/编辑系统。</p>
         <p>7.这些功能就不详细介绍了，到时候我会把链接放在微信公众号和本片公告。</p>
-        <p><span style="color: rgb(255, 0, 0);">发布日期：</span><span style="color: rgb(87, 87, 87);">2024/11/11</span></p> -->
+        <p><span style="color: rgb(255, 0, 0);">发布日期：</span><span style="color: rgb(87, 87, 87);">2024/11/11</span></p>
         </div>
     </div>
 
@@ -274,51 +159,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
     <main>
       <h1 style="text-align: center">欢迎来到暗源网站！</h1>
-      <!-- <p style="text-align: center;">游戏数量：<span style="color: rgb(255, 0, 0);">113</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;软件数量：<span style="color: rgb(255, 0, 0);">3</span></p> -->
-      <!-- <p style="text-align: center">
+      <p style="text-align: center;">游戏数量：<span style="color: rgb(255, 0, 0);">113</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;软件数量：<span style="color: rgb(255, 0, 0);">3</span></p>
+      <p style="text-align: center">
         各位小伙伴注意一下：在用本站内置搜索框，搜索相关游戏时，请一定要用游戏中文名搜索(比如：gta5要用：“侠盗猎车手5”或者用其中的一个文字来搜索！)
-      </p> -->
-      <!-- <p style="text-align: center;color: #ff0000;">
+      </p>
+      <p style="text-align: center;color: #ff0000;">
         《当游戏数量达到100个时，更新速度将缓慢进行！》
-      </p> -->
+      </p>
       <!-- <p>您访问本站数: <span id="visitorCount"></span></p> -->
       
     </main>
     <hr />
 
-    <!-- <div class="search-container">
+    <div class="search-container">
       <input
         type="text"
         id="searchInput"
         placeholder="请输入相关文字寻找内容 比如：侠盗猎车.."
       />
       <div id="searchResults"></div>
-    </div> -->
-    <!-- 搜索功能2 -->
-     <div class="container">
-      <!-- <header>
-        <h1>网站内容搜索功能</h1>
-        <p>在下方搜索框中输入关键词，系统将自动过滤并显示相关内容</p>
-      </header> -->
-
-      <div class="search-container">
-        <div class="search-box">
-          <input
-            type="text"
-            id="search-input"
-            placeholder="输入关键词搜索..."
-          />
-          <button id="search-button">搜索</button>
-        </div>
-      </div>
-
-      <div class="search-info" id="search-info">请在搜索框内输入关键词开始搜索</div>
+    </div>
 
     <!-- 正文游戏图片 -->
     <div style="margin: 3%">
       <div class="row">
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="wgcs/mima.html" target="_blank" onclick="showAlert()"
@@ -332,19 +197,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="wgcs/mima.html" target="_blank" onclick="showAlert()"
-                >王国重生/Kingdoms Reborn</a
+                >王国重生</a
               >
             </p>
             <hr />
           </div>
         </div>
-        </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="bgrz/mima.html" target="_blank" onclick="showAlert()"
@@ -358,7 +220,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="bgrz/mima.html" target="_blank" onclick="showAlert()"
@@ -368,9 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <hr />
           </div>
         </div>
-        </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qh9798/mima.html" target="_blank" onclick="showAlert()"
@@ -384,19 +243,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qh9798/mima.html" target="_blank" onclick="showAlert()"
-                >拳皇97/拳皇98/THE KING OF FIGHTERS '97/98</a
+                >拳皇97/拳皇98</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="cyxkj/mima.html" target="_blank" onclick="showAlert()"
@@ -410,19 +266,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="cyxkj/mima.html" target="_blank" onclick="showAlert()"
-                >超阈限空间/Superliminal</a
+                >超阈限空间</a
               >
             </p>
             <hr />
           </div>
         </div>
-        </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="lzzkklt/mima.html" target="_blank" onclick="showAlert()"
@@ -436,19 +289,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="lzzkklt/mima.html" target="_blank" onclick="showAlert()"
-                >龙珠Z：卡卡罗特/DRAGON BALL Z: KAKAROT</a
+                >龙珠Z：卡卡罗特</a
               >
             </p>
             <hr />
           </div>
         </div>
-        </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="lzgdz/mima.html" target="_blank" onclick="showAlert()"
@@ -462,19 +312,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="lzgdz/mima.html" target="_blank" onclick="showAlert()"
-                >龙珠格斗Z/DRAGON BALL Fighter Z</a
+                >龙珠格斗Z</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="hjdt/mima.html" target="_blank" onclick="showAlert()"
@@ -488,19 +335,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="hjdt/mima.html" target="_blank" onclick="showAlert()"
-                >合金弹头合集/METAL SLUG 1/2/3/4/重装上阵</a
+                >合金弹头合集</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="clxsj/mima.html" target="_blank" onclick="showAlert()"
@@ -514,19 +358,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="clxsj/mima.html" target="_blank" onclick="showAlert()"
-                >林间小世界/Tiny Glade</a
+                >林间小世界</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qjq/mima.html" target="_blank" onclick="showAlert()"
@@ -540,7 +381,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qjq/mima.html" target="_blank" onclick="showAlert()"
@@ -549,10 +389,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="jgsdr/mima.html" target="_blank" onclick="showAlert()"
@@ -566,19 +404,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="jgsdr/mima.html" target="_blank" onclick="showAlert()"
-                >讲故事的人/Storyteller</a
+                >讲故事的人</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="bsdgs/mima.html" target="_blank" onclick="showAlert()"
@@ -592,19 +427,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="bsdgs/mima.html" target="_blank" onclick="showAlert()"
-                >百视达公司/</a
+                >百视达公司</a
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qmzzdqdg/mima.html" target="_blank" onclick="showAlert()"
@@ -618,7 +450,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qmzzdqdg/mima.html" target="_blank" onclick="showAlert()"
@@ -627,10 +458,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="ngq/mima.html" target="_blank" onclick="showAlert()"
@@ -644,19 +473,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="ngq/mima.html" target="_blank" onclick="showAlert()"
-                >女鬼桥1开魂路 / 女鬼桥2释魂路</a
+                >女鬼桥1+2</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="emlp/mima.html" target="_blank" onclick="showAlert()"
@@ -670,7 +496,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="emlp/mima.html" target="_blank" onclick="showAlert()"
@@ -679,10 +504,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="xqgj/mima.html" target="_blank" onclick="showAlert()"
@@ -696,7 +519,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="xqgj/mima.html" target="_blank" onclick="showAlert()"
@@ -705,10 +527,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="wgrq/mima.html" target="_blank" onclick="showAlert()"
@@ -722,7 +542,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="wgrq/mima.html" target="_blank" onclick="showAlert()"
@@ -731,10 +550,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gdq/mima.html" target="_blank" onclick="showAlert()"
@@ -748,19 +565,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="gdq/mima.html" target="_blank" onclick="showAlert()"
-                >鬼打墙8号出口/Dead end Exit 8</a
+                >鬼打墙8号出口</a
               >
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="xj/mima.html" target="_blank" onclick="showAlert()"
@@ -774,7 +588,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="xj/mima.html" target="_blank" onclick="showAlert()"
@@ -783,10 +596,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="8hzt/mima.html" target="_blank" onclick="showAlert()"
@@ -800,7 +611,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="8hzt/mima.html" target="_blank" onclick="showAlert()"
@@ -809,10 +619,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="8hck/mima.html" target="_blank" onclick="showAlert()"
@@ -826,7 +634,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="8hck/mima.html" target="_blank" onclick="showAlert()"
@@ -835,10 +642,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="zyr/mima.html" target="_blank" onclick="showAlert()"
@@ -852,7 +657,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="zyr/mima.html" target="_blank" onclick="showAlert()"
@@ -861,10 +665,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="shmh2/mima.html" target="_blank" onclick="showAlert()"
@@ -878,7 +680,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="shmh2/mima.html" target="_blank" onclick="showAlert()"
@@ -887,10 +688,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="shmh1/mima.html" target="_blank" onclick="showAlert()"
@@ -904,7 +703,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="shmh1/mima.html" target="_blank" onclick="showAlert()"
@@ -913,10 +711,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="fcdr2/mima.html" target="_blank" onclick="showAlert()"
@@ -930,7 +726,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="fcdr2/mima.html" target="_blank" onclick="showAlert()"
@@ -939,10 +734,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="fcdr/mima.html" target="_blank" onclick="showAlert()"
@@ -956,7 +749,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="fcdr/mima.html" target="_blank" onclick="showAlert()"
@@ -965,10 +757,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="mnsy3/mima.html" target="_blank" onclick="showAlert()"
@@ -982,7 +772,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="mnsy3/mima.html" target="_blank" onclick="showAlert()"
@@ -991,10 +780,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="pc2/mima.html" target="_blank" onclick="showAlert()"
@@ -1008,7 +795,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="pc2/mima.html" target="_blank" onclick="showAlert()"
@@ -1017,10 +803,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="pc1/mima.html" target="_blank" onclick="showAlert()"
@@ -1034,7 +818,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="pc1/mima.html" target="_blank" onclick="showAlert()"
@@ -1043,10 +826,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="md/mima.html" target="_blank" onclick="showAlert()"
@@ -1060,7 +841,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="md/mima.html" target="_blank" onclick="showAlert()"
@@ -1069,10 +849,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="tlry/mima.html" target="_blank" onclick="showAlert()"
@@ -1086,7 +864,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="tlry/mima.html" target="_blank" onclick="showAlert()"
@@ -1095,10 +872,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qy/mima.html" target="_blank" onclick="showAlert()"
@@ -1112,7 +887,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qy/mima.html" target="_blank" onclick="showAlert()"
@@ -1121,10 +895,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="rlz/mima.html" target="_blank" onclick="showAlert()"
@@ -1138,7 +910,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="rlz/mima.html" target="_blank" onclick="showAlert()"
@@ -1147,10 +918,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="dayz/mima.html" target="_blank" onclick="showAlert()"
@@ -1164,7 +933,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="dayz/mima.html" target="_blank" onclick="showAlert()"
@@ -1173,10 +941,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="rz/mima.html" target="_blank" onclick="showAlert()"
@@ -1190,7 +956,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="rz/mima.html" target="_blank" onclick="showAlert()"
@@ -1199,10 +964,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="7rs/mima.html" target="_blank" onclick="showAlert()"
@@ -1216,7 +979,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="7rs/mima.html" target="_blank" onclick="showAlert()"
@@ -1225,10 +987,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="https://pan.baidu.com/s/1G6SGxY3GTBGa1SQsQw_KGQ?pwd=lm02" target="_blank" onclick="showAlert()"
@@ -1242,7 +1002,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="https://pan.baidu.com/s/1G6SGxY3GTBGa1SQsQw_KGQ?pwd=lm02" target="_blank" onclick="showAlert()"
@@ -1251,10 +1010,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="https://pan.baidu.com/s/1WlTUlkYX75Ps1ntVtwyJGQ?pwd=lm01" target="_blank" onclick="showAlert()"
@@ -1268,7 +1025,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="https://pan.baidu.com/s/1WlTUlkYX75Ps1ntVtwyJGQ?pwd=lm01" target="_blank" onclick="showAlert()"
@@ -1277,10 +1033,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="https://pan.baidu.com/s/19A_z2kEJxJGgS9HRuWivvw?pwd=ldwz" target="_blank" onclick="showAlert()"
@@ -1294,7 +1048,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="https://pan.baidu.com/s/19A_z2kEJxJGgS9HRuWivvw?pwd=ldwz" target="_blank" onclick="showAlert()"
@@ -1303,10 +1056,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="https://pan.baidu.com/s/1jTYR7orUsUrzyfJoMPPGVw?pwd=zatl" target="_blank" onclick="showAlert()"
@@ -1320,7 +1071,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="https://pan.baidu.com/s/1jTYR7orUsUrzyfJoMPPGVw?pwd=zatl" target="_blank" onclick="showAlert()"
@@ -1329,10 +1079,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="zdmnq/mima.html" target="_blank" onclick="showAlert()"
@@ -1346,7 +1094,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="zdmnq/mima.html" target="_blank" onclick="showAlert()"
@@ -1355,10 +1102,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="wlzj/mima.html" target="_blank" onclick="showAlert()"
@@ -1372,7 +1117,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="wlzj/mima.html" target="_blank" onclick="showAlert()"
@@ -1381,10 +1125,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="sdllj/mima.html" target="_blank" onclick="showAlert()"
@@ -1398,7 +1140,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="sdllj/mima.html" target="_blank" onclick="showAlert()"
@@ -1407,10 +1148,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="zylz/mima.html" target="_blank" onclick="showAlert()"
@@ -1424,7 +1163,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="zylz/mima.html" target="_blank" onclick="showAlert()"
@@ -1433,10 +1171,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="xlgwy/mima.html" target="_blank" onclick="showAlert()"
@@ -1450,7 +1186,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="xlgwy/mima.html" target="_blank" onclick="showAlert()"
@@ -1459,10 +1194,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="txzzg/mima.html" target="_blank" onclick="showAlert()"
@@ -1476,7 +1209,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="txzzg/mima.html" target="_blank" onclick="showAlert()"
@@ -1485,10 +1217,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="hsjj2/mima.html" target="_blank" onclick="showAlert()"
@@ -1502,7 +1232,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="hsjj2/mima.html" target="_blank" onclick="showAlert()"
@@ -1511,10 +1240,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="bdzm3/mima.html" target="_blank" onclick="showAlert()"
@@ -1528,7 +1255,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="bdzm3/mima.html" target="_blank" onclick="showAlert()"
@@ -1537,10 +1263,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="aly/mima.html" target="_blank" onclick="showAlert()"
@@ -1554,7 +1278,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="aly/mima.html" target="_blank" onclick="showAlert()"
@@ -1563,10 +1286,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="nplqmzz/mima.html" target="_blank" onclick="showAlert()"
@@ -1580,7 +1301,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="nplqmzz/mima.html" target="_blank" onclick="showAlert()"
@@ -1589,10 +1309,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="dgqmzz/mima.html" target="_blank" onclick="showAlert()"
@@ -1606,7 +1324,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="dgqmzz/mima.html" target="_blank" onclick="showAlert()"
@@ -1615,10 +1332,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qmzzmnq/mima.html" target="_blank" onclick="showAlert()"
@@ -1632,7 +1347,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qmzzmnq/mima.html" target="_blank" onclick="showAlert()"
@@ -1641,10 +1355,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="sdyy/mima.html" target="_blank" onclick="showAlert()"
@@ -1658,7 +1370,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="sdyy/mima.html" target="_blank" onclick="showAlert()"
@@ -1667,10 +1378,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="zsjwc/mima.html" target="_blank" onclick="showAlert()"
@@ -1684,7 +1393,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="zsjwc/mima.html" target="_blank" onclick="showAlert()"
@@ -1693,10 +1401,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="cstjx2/mima.html" target="_blank" onclick="showAlert()"
@@ -1710,7 +1416,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="cstjx2/mima.html" target="_blank" onclick="showAlert()"
@@ -1719,10 +1424,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="cstjx/mima.html" target="_blank" onclick="showAlert()"
@@ -1736,7 +1439,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="cstjx/mima.html" target="_blank" onclick="showAlert()"
@@ -1745,10 +1447,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="hdqs/mima.html" target="_blank" onclick="showAlert()"
@@ -1762,7 +1462,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="hdqs/mima.html" target="_blank" onclick="showAlert()"
@@ -1771,10 +1470,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="wqyl/mima.html" target="_blank" onclick="showAlert()"
@@ -1788,7 +1485,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="wqyl/mima.html" target="_blank" onclick="showAlert()"
@@ -1797,10 +1493,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="jsjc/mima.html" target="_blank" onclick="showAlert()"
@@ -1814,7 +1508,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="jsjc/mima.html" target="_blank" onclick="showAlert()"
@@ -1823,10 +1516,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="yzyd/mima.html" target="_blank" onclick="showAlert()"
@@ -1840,7 +1531,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="yzyd/mima.html" target="_blank" onclick="showAlert()"
@@ -1849,10 +1539,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="xsdgm2/mima.html" target="_blank" onclick="showAlert()"
@@ -1866,7 +1554,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="xsdgm2/mima.html" target="_blank" onclick="showAlert()"
@@ -1875,10 +1562,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="xsdgm1/mima.html" target="_blank" onclick="showAlert()"
@@ -1892,7 +1577,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="xsdgm1/mima.html" target="_blank" onclick="showAlert()"
@@ -1901,10 +1585,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="sl/mima.html" target="_blank" onclick="showAlert()"
@@ -1918,7 +1600,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="sl/mima.html" target="_blank" onclick="showAlert()"
@@ -1927,10 +1608,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="hydbk1js/mima.html" target="_blank" onclick="showAlert()"
@@ -1944,7 +1623,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="hydbk1js/mima.html" target="_blank" onclick="showAlert()"
@@ -1952,11 +1630,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="ywjs/mima.html" target="_blank" onclick="showAlert()"
@@ -1970,7 +1646,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="ywjs/mima.html" target="_blank" onclick="showAlert()"
@@ -1979,10 +1654,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="lsdy/mima.html" target="_blank" onclick="showAlert()"
@@ -1996,7 +1669,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="lsdy/mima.html" target="_blank" onclick="showAlert()"
@@ -2004,11 +1676,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qszl2/mima.html" target="_blank" onclick="showAlert()"
@@ -2022,7 +1692,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qszl2/mima.html" target="_blank" onclick="showAlert()"
@@ -2030,11 +1699,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qszl1/mima.html" target="_blank" onclick="showAlert()"
@@ -2048,7 +1715,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qszl1/mima.html" target="_blank" onclick="showAlert()"
@@ -2056,11 +1722,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qljzs3/mima.html" target="_blank" onclick="showAlert()"
@@ -2074,7 +1738,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qljzs3/mima.html" target="_blank" onclick="showAlert()"
@@ -2082,11 +1745,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qljzs2/mima.html" target="_blank" onclick="showAlert()"
@@ -2100,7 +1761,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qljzs2/mima.html" target="_blank" onclick="showAlert()"
@@ -2108,11 +1768,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qljzs1/mima.html" target="_blank" onclick="showAlert()"
@@ -2126,7 +1784,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qljzs1/mima.html" target="_blank" onclick="showAlert()"
@@ -2135,10 +1792,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="smzhqxl/mima1.html" target="_blank" onclick="showAlert()"
@@ -2152,7 +1807,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="smzhqxl/mima1.html" target="_blank" onclick="showAlert()"
@@ -2160,11 +1814,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="adobe/mima2.html" target="_blank" onclick="showAlert()"
@@ -2178,7 +1830,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="adobe/mima2.html" target="_blank" onclick="showAlert()"
@@ -2186,11 +1837,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="zrkd11/mima5.html" target="_blank" onclick="showAlert()"
@@ -2207,7 +1856,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="zrkd11/mima5.html" target="_blank" onclick="showAlert()"
@@ -2215,11 +1863,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gdjhyssl/mima6.html" target="_blank" onclick="showAlert()"
@@ -2236,7 +1882,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="gdjhyssl/mima6.html" target="_blank" onclick="showAlert()"
@@ -2244,11 +1889,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gdjhxsg/mima7.html" target="_blank" onclick="showAlert()"
@@ -2265,7 +1908,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="gdjhxsg/mima7.html" target="_blank" onclick="showAlert()"
@@ -2273,11 +1915,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gdjh6/mima8.html" target="_blank" onclick="showAlert()"
@@ -2294,7 +1934,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="gdjh6/mima8.html" target="_blank" onclick="showAlert()"
@@ -2302,11 +1941,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="youtube/mima9.html" target="_blank" onclick="showAlert()"
@@ -2323,7 +1960,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="youtube/mima9.html" target="_blank" onclick="showAlert()"
@@ -2331,11 +1967,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="food/mima10.html" target="_blank" onclick="showAlert()"
@@ -2352,7 +1986,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="food/mima10.html" target="_blank" onclick="showAlert()"
@@ -2360,11 +1993,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="mfqs/mima11.html" target="_blank" onclick="showAlert()"
@@ -2381,7 +2012,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="mfqs/mima11.html" target="_blank" onclick="showAlert()"
@@ -2389,11 +2019,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="60miao/mima12.html" target="_blank" onclick="showAlert()"
@@ -2410,7 +2038,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="60miao/mima12.html" target="_blank" onclick="showAlert()"
@@ -2418,11 +2045,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="csmnq/mima13.html" target="_blank" onclick="showAlert()"
@@ -2439,7 +2064,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="csmnq/mima13.html" target="_blank" onclick="showAlert()"
@@ -2447,11 +2071,9 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="senlinzhizi/mima14.html" target="_blank"
@@ -2468,18 +2090,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="senlinzhizi/mima14.html" target="_blank">森林之子</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
@@ -2499,7 +2118,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
@@ -2510,12 +2128,10 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
@@ -2535,7 +2151,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
@@ -2546,12 +2161,10 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
@@ -2570,7 +2183,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
@@ -2581,11 +2193,9 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="zhilang/mima17.html" target="_blank"
@@ -2602,18 +2212,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="zhilang/mima17.html" target="_blank">只狼影逝二度</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="nuesha1/mima18.html" target="_blank"
@@ -2630,18 +2237,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="nuesha1/mima18.html" target="_blank">虐杀原形1</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="nuesha2/mima19.html" target="_blank"
@@ -2658,18 +2262,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="nuesha2/mima19.html" target="_blank">虐杀原形2</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="sbpk2077/mima20.html" target="_blank"
@@ -2686,18 +2287,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="sbpk2077/mima20.html" target="_blank">赛博朋克2077</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
@@ -2716,7 +2314,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
@@ -2726,12 +2323,10 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
@@ -2750,7 +2345,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
@@ -2760,12 +2354,10 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
-        <div class="column">
-          <div class="searchable">
+        <!-- <div class="column">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="http://www.91rjz.com/pcsoft/122386.html" target="_blank"
@@ -2782,7 +2374,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="gtxx4/mima.html" target="_blank"
@@ -2790,12 +2381,10 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a
@@ -2814,7 +2403,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a
@@ -2824,12 +2412,10 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="nejxjy/mima.html" target="_blank"
@@ -2846,7 +2432,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="nejxjy/mima.html" target="_blank"
@@ -2854,12 +2439,10 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="dipingxian4/mima21.html" target="_blank"
@@ -2876,7 +2459,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="dipingxian4/mima21.html" target="_blank"
@@ -2884,12 +2466,10 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="dipingxian5/mima22.html" target="_blank"
@@ -2906,7 +2486,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="dipingxian5/mima22.html" target="_blank"
@@ -2915,11 +2494,9 @@ document.addEventListener("DOMContentLoaded", function() {
             </p>
             <hr />
           </div>
-          </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="hydbk2js/mima4.html" target="_blank"
@@ -2936,7 +2513,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="hydbk2js/mima4.html" target="_blank"
@@ -2944,12 +2520,10 @@ document.addEventListener("DOMContentLoaded", function() {
               >
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="ylxdj/mima23.html" target="_blank"
@@ -2966,18 +2540,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="ylxdj/mima23.html" target="_blank">幽灵线：东京</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="ckxtyld/mima24.html" target="_blank"
@@ -2994,18 +2565,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="ckxtyld/mima24.html" target="_blank">刺客信条英灵殿</a>
             </p>
             <hr />
           </div>
-          </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="fzzc/mima25.html" target="_blank"
@@ -3022,18 +2590,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="fzzc/mima25.html" target="_blank">放逐之城</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="ckxtads/mima26.html" target="_blank"
@@ -3050,18 +2615,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="ckxtads/mima26.html" target="_blank">刺客信条奥德赛</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="gq5/mima27.html" target="_blank"
@@ -3078,18 +2640,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="gq5/mima27.html" target="_blank">鬼泣5</a>
             </p>
             <hr />
           </div>
-          </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="qmzzsg/mima28.html" target="_blank"
@@ -3106,21 +2665,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="qmzzsg/mima28.html" target="_blank">全面战争三国</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/ggsl7253.html" target="_blank"
+              <a href="ggsl/mima29.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/ggsl.png"
                   alt="Pulpit rock"
@@ -3134,21 +2690,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/ggsl7253.html" target="_blank">港诡实录/Paranormal HK</a>
+              <a href="ggsl/mima29.html" target="_blank">港诡实录</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/dtlq7583.html" target="_blank"
+              <a href="dtlq/mima30.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/dtlq.png"
                   alt="Pulpit rock"
@@ -3162,21 +2715,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/dtlq7583.html" target="_blank">地铁离去增强版/Metro Exodus</a>
+              <a href="dtlq/mima30.html" target="_blank">地铁离去</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/zhuluoji5147.html" target="_blank"
+              <a href="zhuluoji1/mima31.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/zlj1.png"
                   alt="Pulpit rock"
@@ -3190,21 +2740,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/zhuluoji5147.html" target="_blank">侏罗纪世界进化1/Jurassic World Evolution</a>
+              <a href="zhuluoji1/mima31.html" target="_blank">侏罗纪世界进化1</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/zhuluoji6280.html" target="_blank"
+              <a href="zhuluoji2/mima32.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/zlj2.png"
                   alt="Pulpit rock"
@@ -3218,21 +2765,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/zhuluoji6280.html" target="_blank">侏罗纪世界：进化2/Jurassic World Evolution 2</a>
+              <a href="zhuluoji2/mima32.html" target="_blank">侏罗纪世界进化2</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/fpjxs6585.html" target="_blank"
+              <a href="fpjxs1/mima33.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/fpjxs.png"
                   alt="Pulpit rock"
@@ -3246,18 +2790,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/fpjxs6585.html" target="_blank">废品机械师/Scrap Mechanic</a>
+              <a href="fpjxs1/mima33.html" target="_blank">废品机械师</a>
             </p>
             <hr />
-          </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="sgjz5tj/mima34.html" target="_blank"
@@ -3274,21 +2815,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/sgjz5tj8491.html" target="_blank">上古卷轴5天际/The Elder Scrolls V: Skyrim</a>
+              <a href="sgjz5tj/mima34.html" target="_blank">上古卷轴5天际</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/sgjz5tj8491.html" target="_blank"
+              <a href="mnnc19/mima35.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/mnnc19.png"
                   alt="Pulpit rock"
@@ -3302,21 +2840,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/nc19137.html" target="_blank">模拟农场19/Farming Simulator 19</a>
+              <a href="mnnc19/mima35.html" target="_blank">模拟农场19</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/nc19137.html" target="_blank"
+              <a href="mnnc22/mima36.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/mnnc22.png"
                   alt="Pulpit rock"
@@ -3330,21 +2865,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/nc228784.html" target="_blank">模拟农场22/Farming Simulator 22</a>
+              <a href="mnnc22/mima36.html" target="_blank">模拟农场22</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
-
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/xxmy25997.html" target="_blank"
+              <a href="xxmy2/mima37.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/xxmy2.png"
                   alt="Pulpit rock"
@@ -3358,18 +2889,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/xxmy25997.html" target="_blank">小小梦魇2增强版/Little Nightmares II</a>
+              <a href="xxmy2/mima37.html" target="_blank">小小梦魇2</a>
             </p>
             <hr />
-          </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="rllm/mima38.html" target="_blank"
@@ -3386,21 +2914,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="rllm/mima38.html" target="_blank">人类黎明</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
-              <a href="game/aedfh1734.html" target="_blank"
+              <a href="aedfh/mima39.html" target="_blank"
                 ><img
                   src="https://imgs.xkyfzs.top/anyuan/aedfh.png"
                   alt="Pulpit rock"
@@ -3414,18 +2939,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
-              <a href="game/aedfh1734.html" target="_blank">艾尔登法环/Elden Ring</a>
+              <a href="aedfh/mima39.html" target="_blank">艾尔登法环</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="sydh/mima40.html" target="_blank"
@@ -3442,18 +2964,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="sydh/mima40.html" target="_blank">石油大亨</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
 
         <div class="column">
-          <div class="searchable">
           <div style="margin: 5%">
             <p style="text-align: center">
               <a href="ozkcmnq2/mima41.html" target="_blank"
@@ -3470,13 +2989,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 color: rgb(0, 0, 0);
                 font-weight: 800;
                 text-align: center;
-                height: 50px;
               "
             >
               <a href="ozkcmnq2/mima41.html" target="_blank">欧洲卡车模拟器2</a>
             </p>
             <hr />
-            </div>
           </div>
         </div>
         <!-- <button id="scrollToTopBtn" class="z2024">回到顶部</button> -->
@@ -3518,7 +3035,7 @@ document.addEventListener("DOMContentLoaded", function() {
       
       <p style="font-size: 100%; text-align: center">
         <hr />
-        |&nbsp;&nbsp;&nbsp;&nbsp;暗源正式版本&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;版本号：v1.2.1710830&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;网站编号XYBKay240312&nbsp;&nbsp;&nbsp;&nbsp;|
+        |&nbsp;&nbsp;&nbsp;&nbsp;暗源正式版本&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;版本号：v1.1.1610226&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;网站编号XYBKay240312&nbsp;&nbsp;&nbsp;&nbsp;|
         <hr />
       </p>
       
@@ -3541,7 +3058,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   </script>
-  <!-- <script>
+  <script>
     // 搜索功能
 
     var searchInput = document.getElementById("searchInput");
@@ -3656,16 +3173,16 @@ document.addEventListener("DOMContentLoaded", function() {
       { title: "鬼泣5", content: "", url: "gq5/mima27.html" },
       { title: "全面战争三国", content: "", url: "qmzzsg/mima28.html" },
       { title: "港诡实录", content: "", url: "ggsl/mima29.html" },
-      { title: "地铁离去增强版/Metro Exodus", content: "", url: "game/dtlq7583.html" },
-      { title: "侏罗纪世界：进化/Jurassic World Evolution", content: "", url: "game/zhuluoji5147.html" },
-      { title: "侏罗纪世界：进化2/Jurassic World Evolution 2", content: "", url: "game/zhuluoji6280.html" },
-      { title: "废品机械师/Scrap Mechanic", content: "", url: "game/fpjxs6585.html" },
-      { title: "上古卷轴5天际/The Elder Scrolls V: Skyrim", content: "", url: "game/sgjz5tj8491.html" },
-      { title: "模拟农场19", content: "", url: "game/nc19137.html" },
-      { title: "模拟农场22/Farming Simulator 22", content: "", url: "game/nc228784.html" },
-      { title: "小小梦魇2增强版/Little Nightmares II", content: "", url: "game/xxmy25997.html" },
+      { title: "地铁离去", content: "", url: "dtlq/mima30.html" },
+      { title: "侏罗纪世界进化1", content: "", url: "zhuluoji1/mima31.html" },
+      { title: "侏罗纪世界进化2", content: "", url: "zhuluoji2/mima32.html" },
+      { title: "废品机械师", content: "", url: "fpjxs1/mima33.html" },
+      { title: "上古卷轴5天际", content: "", url: "sgjz5tj/mima34.html" },
+      { title: "模拟农场19", content: "", url: "mnnc19/mima35.html" },
+      { title: "模拟农场22", content: "", url: "mnnc22/mima36.html" },
+      { title: "小小梦魇2", content: "", url: "xxmy2/mima37.html" },
       { title: "人类黎明", content: "", url: "rllm/mima38.html" },
-      { title: "艾尔登法环/Elden Ring", content: "", url: "game/aedfh1734.html" },
+      { title: "艾尔登法环", content: "", url: "aedfh/mima39.html" },
       { title: "石油大亨", content: "", url: "sydh/mima40.html" },
       { title: "欧洲卡车模拟器2", content: "", url: "ozkcmnq2/mima41.html" },
       // 添加更多文章信息
@@ -3748,9 +3265,9 @@ document.addEventListener("DOMContentLoaded", function() {
       dropdownContent.style.display =
         dropdownContent.style.display === "block" ? "none" : "block";
     });
-  </script> -->
+  </script>
 <!-- 访问人数 -->
-  <!-- <script>
+  <script>
       // 定义一个全局变量用于存储访问计数
       var visitorCount = 0;
 
@@ -3775,7 +3292,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // 显示访问计数
         document.getElementById('visitorCount').innerHTML = visitorCount;
       }
-    </script> -->
+    </script>
 
     <!-- 置顶按钮 -->
     <script>
@@ -3792,65 +3309,5 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById('scrollToTopBtn').addEventListener('click', function() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
-    </script>
-    <!-- 搜索功能2 -->
-     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const searchInput = document.getElementById("search-input");
-        const searchButton = document.getElementById("search-button");
-        const searchInfo = document.getElementById("search-info");
-        const noResults = document.getElementById("no-results");
-        const searchableItems = document.querySelectorAll(".searchable");
-
-        // 执行搜索函数
-        function performSearch() {
-          const searchTerm = searchInput.value.trim().toLowerCase();
-          let resultsCount = 0;
-
-          if (searchTerm === "") {
-            // 如果搜索词为空，显示所有项目
-            searchableItems.forEach((item) => {
-              item.classList.remove("hidden");
-            });
-            searchInfo.textContent = "请输入关键词开始搜索";
-            noResults.classList.remove("show");
-            return;
-          }
-
-          // 遍历所有可搜索项目
-          searchableItems.forEach((item) => {
-            const textContent = item.textContent.toLowerCase();
-
-            if (textContent.includes(searchTerm)) {
-              item.classList.remove("hidden");
-              resultsCount++;
-            } else {
-              item.classList.add("hidden");
-            }
-          });
-
-          // 显示搜索结果信息
-          if (resultsCount > 0) {
-            searchInfo.textContent = `找到 ${resultsCount} 个与 "${searchTerm}" 相关的结果`;
-            noResults.classList.remove("show");
-          } else {
-            searchInfo.textContent = `没有找到与 "${searchTerm}" 相关的结果`;
-            noResults.classList.add("show");
-          }
-        }
-
-        // 添加事件监听器
-        searchButton.addEventListener("click", performSearch);
-        searchInput.addEventListener("keyup", function (e) {
-          if (e.key === "Enter") {
-            performSearch();
-          }
-        });
-
-        // 初始显示所有内容
-        searchableItems.forEach((item) => {
-          item.classList.remove("hidden");
-        });
-      });
     </script>
 </html>
