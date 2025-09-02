@@ -316,6 +316,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <div class="search-info" id="search-info">请在搜索框内输入关键词开始搜索</div>
 
     <!-- 正文游戏图片 -->
+     <div id="gallery-observer">
     <div style="margin: 3%">
       <div class="row">
         <div class="column">
@@ -3446,6 +3447,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
           </div>
         </div>
+        </div>
         <!-- <button id="scrollToTopBtn" class="z2024">回到顶部</button> -->
         <!-- <button id="scrollToTopBtn" title="回到顶部">
   <i class="fas fa-arrow-up"></i>
@@ -3819,5 +3821,30 @@ document.getElementById('scrollToTopBtn').addEventListener('click', function() {
           item.classList.remove("hidden");
         });
       });
+    </script>
+    <script>
+      // 为所有容器生成图片
+        generateImages('gallery-observer');
+            // 方法1: Intersection Observer
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            if (img.dataset.src) {
+                                img.src = img.dataset.src;
+                                img.classList.add('loaded');
+                                img.removeAttribute('data-src');
+                            }
+                            observer.unobserve(img);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                
+                // 只观察observer方法的图片
+                document.querySelectorAll('#gallery-observer .lazy-image').forEach(img => {
+                    observer.observe(img);
+                });
+            }
     </script>
 </html>
