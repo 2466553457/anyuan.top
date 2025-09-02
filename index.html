@@ -3822,9 +3822,51 @@ document.getElementById('scrollToTopBtn').addEventListener('click', function() {
         });
       });
     </script>
+    <!-- 图片懒加载 -->
     <script>
-      // 为所有容器生成图片
+        // 生成图片的函数
+        function generateImages(containerId, count = 6) {
+            const container = document.getElementById(containerId);
+            const methods = {
+                'gallery-observer': 'observer',
+                'gallery-scroll': 'scroll',
+                'gallery-native': 'native'
+            };
+            
+            const method = methods[containerId];
+            
+            for (let i = 1; i <= count; i++) {
+                const card = document.createElement('div');
+                card.className = 'card';
+                
+                const imageId = method + '-image-' + i;
+                const imageNum = (i % 10) + 1; // 使用1-10的图片
+                
+                card.innerHTML = `
+                    <div class="image-container">
+                        <div class="placeholder"></div>
+                        <img data-src="https://picsum.photos/id/${imageNum}00/600/400" 
+                             alt="示例图片 ${i}" 
+                             class="lazy-image"
+                             id="${imageId}">
+                    </div>
+                    <div class="content">
+                        <h3>${method} 图片 ${i}</h3>
+                        <p>这是使用${method}方法实现的懒加载示例图片。</p>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            }
+        }
+        
+        // 为所有容器生成图片
         generateImages('gallery-observer');
+        generateImages('gallery-scroll');
+        generateImages('gallery-native');
+        
+        // Intersection Observer 实现
+        document.addEventListener('DOMContentLoaded', function() {
             // 方法1: Intersection Observer
             if ('IntersectionObserver' in window) {
                 const observer = new IntersectionObserver((entries, observer) => {
@@ -3846,5 +3888,46 @@ document.getElementById('scrollToTopBtn').addEventListener('click', function() {
                     observer.observe(img);
                 });
             }
+            
+            // 方法2: 滚动事件监听 + 防抖
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) + 100 &&
+                    rect.bottom >= -100
+                );
+            }
+            
+            function lazyLoad() {
+                const lazyImages = document.querySelectorAll('#gallery-scroll .lazy-image');
+                lazyImages.forEach(img => {
+                    if (isInViewport(img) && img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.classList.add('loaded');
+                        img.removeAttribute('data-src');
+                    }
+                });
+            }
+            
+            function debounce(func, wait) {
+                let timeout;
+                return function() {
+                    clearTimeout(timeout);
+                    timeout = setTimeout(func, wait);
+                };
+            }
+            
+            window.addEventListener('scroll', debounce(lazyLoad, 100));
+            window.addEventListener('resize', debounce(lazyLoad, 100));
+            lazyLoad(); // 初始加载
+            
+            // 方法3: 原生loading="lazy" - 由浏览器自动处理
+            document.querySelectorAll('#gallery-native .lazy-image').forEach(img => {
+                img.loading = 'lazy';
+                img.src = img.dataset.src;
+                img.classList.add('loaded');
+                img.removeAttribute('data-src');
+            });
+        });
     </script>
 </html>
