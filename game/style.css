@@ -96,3 +96,13 @@ a {
 body {
   transition: background-color 1s ease;
 }
+
+/* 文字前加点 */
+.feature-list {
+  font-weight: 400;
+  color: @black-color;
+  font-size: 16px;
+  line-height: 30px;
+  margin-left: 1rem;
+  list-style-type: disc;
+}
